@@ -13,7 +13,11 @@ android {
         minSdk 24                 // Android 7.0 i nowsze
         targetSdk 34
         versionCode 1
+<<<<<<< HEAD
         versionName "1.3.0"
+=======
+        versionName "1.6.0"
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
 
         ndk {
             // architektury telefonów; arm64-v8a wystarczy dla urządzeń z ostatnich lat

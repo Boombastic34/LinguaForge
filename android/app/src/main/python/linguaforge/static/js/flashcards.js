@@ -1,5 +1,9 @@
 // Fiszki 2.0 — duża karta, wpisywanie w obu kierunkach, skróty klawiszowe, pasek serii
+<<<<<<< HEAD
 async function viewFlashcards(cat, theme, count, retype) {
+=======
+async function viewFlashcards(cat, theme, count, retype, dirMode, learnMode) {
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
   const m = clearMain();
   const stats = await API.get("/api/content/stats");
   m.append(hero("🃏", theme && theme !== "all" ? "Fiszki: " + theme : "Fiszki",
@@ -76,8 +80,39 @@ async function viewFlashcards(cat, theme, count, retype) {
     const retypeCheck = el("input", { type: "checkbox",
       ...(LFSET.get("fc_retype", false) ? { checked: "" } : {}),
       onchange: e => LFSET.set("fc_retype", e.target.checked) });
+<<<<<<< HEAD
     const extraBox = el("div", { style: "margin-top:10px" },
       el("label", { class: "chip chip-check fc-retype-toggle" },
+=======
+    // kierunek tłumaczenia
+    let chosenDir = LFSET_str("fc_dir", "mix");
+    const dirRow = el("div", { class: "opt-row-btns" });
+    [["mix", "🔀 Losowo", "raz tak, raz tak"],
+     ["pl_en", "🇵🇱→🇬🇧 Z polskiego", "widzisz PL, piszesz EN"],
+     ["en_pl", "🇬🇧→🇵🇱 Z angielskiego", "widzisz EN, piszesz PL"]]
+      .forEach(([v, label, sub]) => {
+        const b = el("button", { class: "mode-btn" + (chosenDir === v ? " active" : ""),
+          onclick: () => {
+            chosenDir = v; LFSET_setStr("fc_dir", v);
+            dirRow.querySelectorAll(".mode-btn").forEach(x => x.classList.remove("active"));
+            b.classList.add("active");
+          } }, el("b", {}, label), el("div", { class: "small" }, sub));
+        dirRow.append(b);
+      });
+
+    const learnCheck = el("input", { type: "checkbox",
+      ...(LFSET.get("fc_learn", false) ? { checked: "" } : {}),
+      onchange: e => LFSET.set("fc_learn", e.target.checked) });
+
+    const extraBox = el("div", { style: "margin-top:10px" },
+      el("div", { class: "muted small", style: "margin-bottom:6px" }, "Kierunek tłumaczenia:"),
+      dirRow,
+      el("label", { class: "chip chip-check", style: "margin-top:10px" },
+        learnCheck, " 📖 Tryb nauki (najpierw pokaż znaczenie)"),
+      el("p", { class: "muted small", style: "margin-top:4px" },
+        "Każde słówko zobaczysz najpierw z tłumaczeniem i przykładem, dopiero potem je wpiszesz."),
+      el("label", { class: "chip chip-check fc-retype-toggle", style: "margin-top:8px" },
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
         retypeCheck, " ✍️ Przepisz błąd na czysto"),
       el("p", { class: "muted small", style: "margin-top:4px" },
         "Gdy błędnie wpiszesz słowo, zanim przejdziesz dalej, przepiszesz je raz poprawnie — pomaga zapamiętać pisownię."),
@@ -87,7 +122,11 @@ async function viewFlashcards(cat, theme, count, retype) {
       subtitle: (theme === "all" ? `Cała baza: ${info.pool} fiszek, wybierane losowo` :
         `W tej kategorii jest ${info.pool} fiszek`) +
         (info.due ? `, w tym ${info.due} czeka na powtórkę` : "") + ". Wybierz długość sesji.",
+<<<<<<< HEAD
       onStart: v => viewFlashcards(cat, theme, v, retypeCheck.checked),
+=======
+      onStart: v => viewFlashcards(cat, theme, v, retypeCheck.checked, chosenDir, learnCheck.checked),
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
       extra: extraBox,
     }));
     return;
@@ -96,7 +135,18 @@ async function viewFlashcards(cat, theme, count, retype) {
   const data = await API.get("/api/cards/session?cat=" + cat + (theme ? "&theme=" + theme : "") + "&n=" + count);
   enterFocus({ title: "🃏 Fiszki", subtitle: theme && theme !== "all" ? theme : "sesja nauki",
     onExit: () => viewFlashcards() });
+<<<<<<< HEAD
   let queue = data.cards.map(c => ({ ...c, dir: Math.random() < 0.55 ? "pl_en" : "en_pl" }));
+=======
+  const dm = dirMode || LFSET_str("fc_dir", "mix");
+  let queue = data.cards.map(c => ({ ...c,
+    dir: dm === "pl_en" ? "pl_en"
+       : dm === "en_pl" ? "en_pl"
+       : (Math.random() < 0.55 ? "pl_en" : "en_pl") }));
+  // tryb nauki: KAŻDA karta najpierw pokazywana do przeczytania
+  const learn = learnMode !== undefined ? learnMode : LFSET.get("fc_learn", false);
+  if (learn) queue.forEach(c => { c.new = true; });
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
   if (!queue.length) {
     m.append(el("div", { class: "card" }, el("p", {}, "Brak kart w tej kategorii."),
       el("button", { class: "btn primary", onclick: () => viewFlashcards() }, "← Wybierz inną")));
@@ -295,7 +345,11 @@ async function viewFlashcards(cat, theme, count, retype) {
         el("div", { class: "week-cell" }, el("div", { class: "big" }, String(sessionXp)), el("div", { class: "muted small" }, "XP")),
         el("div", { class: "week-cell" }, el("div", { class: "big" }, "🔥 " + best), el("div", { class: "muted small" }, "najdłuższa seria"))),
       el("div", { class: "fb-btns", style: "justify-content:center" },
+<<<<<<< HEAD
         el("button", { class: "btn primary", onclick: () => viewFlashcards(cat, theme, count, retype) }, "Jeszcze jedna sesja"),
+=======
+        el("button", { class: "btn primary", onclick: () => viewFlashcards(cat, theme, count, retype, dirMode, learnMode) }, "Jeszcze jedna sesja"),
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
         el("button", { class: "btn ghost", onclick: () => viewFlashcards(cat, theme) }, "Inna liczba fiszek"),
         el("button", { class: "btn ghost", onclick: () => viewFlashcards() }, "Zmień kategorię"),
         el("button", { class: "btn ghost", onclick: () => location.hash = "#dashboard" }, "Pulpit"))));

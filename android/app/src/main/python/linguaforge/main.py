@@ -63,10 +63,17 @@ from fastapi.staticfiles import StaticFiles
 
 from core import storage, auth, fsrs, skills as sk, grader, placement, composer
 
+<<<<<<< HEAD
 APP_VERSION = "1.3.0"
 START_TIME = time.time()   # do sprawdzania, jak długo serwer działa
 LAN_MODE = os.environ.get("LF_LAN", "") == "1"   # tryb dostępu z telefonu
 PORT = 8177
+=======
+APP_VERSION = "1.6.0"
+START_TIME = time.time()   # do sprawdzania, jak długo serwer działa
+LAN_MODE = os.environ.get("LF_LAN", "") == "1"   # tryb dostępu z telefonu
+PORT = int(os.environ.get("PORT", "8177"))   # hosting nadpisuje przez PORT
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
 
 
 def local_ip():
@@ -243,9 +250,22 @@ async def api_settings(request: Request):
     for k in ("target_level", "domains"):
         if k in body:
             prof[k] = body[k]
+<<<<<<< HEAD
     for flag in ("dark", "tts_auto", "haptics"):
         if flag in body:
             prof["settings"][flag] = bool(body[flag])
+=======
+    for flag in ("dark", "tts_auto", "haptics", "fc_retype", "fc_learn"):
+        if flag in body:
+            prof["settings"][flag] = bool(body[flag])
+    if "tts_rate" in body:
+        try:
+            prof["settings"]["tts_rate"] = max(0.5, min(1.5, float(body["tts_rate"])))
+        except (TypeError, ValueError):
+            pass
+    if body.get("fc_dir") in ("mix", "pl_en", "en_pl"):
+        prof["settings"]["fc_dir"] = body["fc_dir"]
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
     if "daily_goal_xp" in body:
         prof["settings"]["daily_goal_xp"] = int(body["daily_goal_xp"])
     storage.save_profile(who["username"], prof)
@@ -2034,7 +2054,16 @@ async def listen_check(request: Request):
         target, pl_txt = it["en"], it.get("pl", "")
         score = res["score"]
         out = {"kind": "dictation", "detail": res}
+<<<<<<< HEAD
     correct = score >= 0.7
+=======
+    # Dyktando: zaliczamy tylko komplet słów — jedno błędne słowo to błąd.
+    # (Wcześniej próg 70% przepuszczał "way" zamiast "wear".)
+    if out["kind"] == "dictation":
+        correct = not res.get("wrong")
+    else:
+        correct = score >= 0.7
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
     prof["skills"]["listening"] = sk.update_skill(
         prof["skills"]["listening"], it["level"], correct, body.get("rt"))
     xp = round(8 * score)
@@ -2053,6 +2082,7 @@ async def listen_check(request: Request):
 
 
 # ---------------------------------------------------------------- gra: pary
+<<<<<<< HEAD
 @app.get("/api/game/pairs")
 async def game_pairs(request: Request):
     who = current_user(request)
@@ -2064,6 +2094,115 @@ async def game_pairs(request: Request):
     random.shuffle(learned)
     sel = learned[:6] if len(learned) >= 6 else random.sample(pool, min(6, len(pool)))
     return {"pairs": [{"en": it["en"], "pl": it["pl"]} for it in sel]}
+=======
+# ---------------------------------------------------------------- GRY
+GAME_IDS = ("pairs", "rain")
+GAME_RANKS = [(0, "Nowicjusz"), (300, "Uczeń"), (900, "Bywalec"), (2000, "Znawca"),
+              (4000, "Mistrz"), (8000, "Legenda")]
+
+
+def _game_rank(points):
+    name = GAME_RANKS[0][1]
+    for need, label in GAME_RANKS:
+        if points >= need:
+            name = label
+    return name
+
+
+@app.get("/api/game/themes")
+async def game_themes(request: Request):
+    """Kategorie do wyboru w grach + ile słówek każda zawiera."""
+    who = current_user(request)
+    prof = storage.load_profile(who["username"])
+    pool = vocab_pool(prof)
+    agg = {}
+    for it in pool:
+        t = it.get("theme", "inne")
+        agg[t] = agg.get(t, 0) + 1
+    out = [{"theme": t, "name": THEME_NAMES.get(t, t.title()), "total": n}
+           for t, n in agg.items()]
+    out.sort(key=lambda x: -x["total"])
+    return {"themes": out, "total": len(pool)}
+
+
+@app.post("/api/game/words")
+async def game_words(request: Request):
+    """Słówka do gry: wybrane kategorie, po ile z każdej ('all' = wszystkie)."""
+    who = current_user(request)
+    body = await request.json()
+    prof = storage.load_profile(who["username"])
+    pool = vocab_pool(prof)
+    picks = body.get("picks") or {}          # {"praca": 10, "dom": "all"}
+    words = []
+    for theme, count in picks.items():
+        items = [it for it in pool if it.get("theme", "inne") == theme]
+        random.shuffle(items)
+        if count != "all":
+            try:
+                items = items[:max(1, int(count))]
+            except (TypeError, ValueError):
+                items = items[:10]
+        words += items
+    if not words:                            # nic nie wybrano -> losowo z całości
+        words = random.sample(pool, min(20, len(pool)))
+    # deduplikacja po angielskim haśle (gra z parami nie znosi duplikatów)
+    seen, uniq = set(), []
+    for it in words:
+        k = it["en"].lower()
+        if k not in seen:
+            seen.add(k)
+            uniq.append({"id": it["id"], "en": it["en"],
+                         "pl": it["pl"].split("/")[0].strip(),
+                         "theme": it.get("theme", "inne")})
+    random.shuffle(uniq)
+    return {"words": uniq, "count": len(uniq)}
+
+
+@app.post("/api/game/score")
+async def game_score(request: Request):
+    """Zapis wyniku gry: punkty, najdłuższa seria, ranga."""
+    who = current_user(request)
+    body = await request.json()
+    game = body.get("game")
+    if game not in GAME_IDS:
+        raise HTTPException(400, "Nieznana gra.")
+    st = storage.user_file(who["username"], "games.json", {})
+    g = st.setdefault(game, {"points": 0, "best_score": 0, "best_streak": 0,
+                             "plays": 0, "correct": 0, "wrong": 0})
+    pts = max(0, int(body.get("points", 0)))
+    g["points"] += pts
+    g["plays"] += 1
+    g["correct"] += int(body.get("correct", 0))
+    g["wrong"] += int(body.get("wrong", 0))
+    g["best_score"] = max(g["best_score"], pts)
+    g["best_streak"] = max(g["best_streak"], int(body.get("streak", 0)))
+    g["last"] = datetime.datetime.now().isoformat(timespec="seconds")
+    storage.save_user_file(who["username"], "games.json", st)
+
+    prof = storage.load_profile(who["username"])
+    xp = min(40, pts // 10)
+    sk.register_activity(prof, True, xp)
+    storage.save_profile(who["username"], prof)
+    storage.log_event(who["username"], {"type": "game_played", "game": game,
+                                        "points": pts, "correct": body.get("correct", 0),
+                                        "wrong": body.get("wrong", 0),
+                                        "streak": body.get("streak", 0)})
+    return {"ok": True, "total": g["points"], "rank": _game_rank(g["points"]),
+            "best_score": g["best_score"], "best_streak": g["best_streak"], "xp": xp}
+
+
+@app.get("/api/game/stats")
+async def game_stats(request: Request):
+    who = current_user(request)
+    st = storage.user_file(who["username"], "games.json", {})
+    out = {}
+    for gid in GAME_IDS:
+        g = st.get(gid, {"points": 0, "best_score": 0, "best_streak": 0,
+                         "plays": 0, "correct": 0, "wrong": 0})
+        acc = round(100 * g["correct"] / max(1, g["correct"] + g["wrong"]))
+        out[gid] = {**g, "rank": _game_rank(g["points"]), "accuracy": acc}
+    return {"games": out}
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
 
 
 @app.post("/api/game/result")
@@ -2414,7 +2553,11 @@ async def account_restore(request: Request):
 
 
 # ---------------------------------------------------------------- ADMINISTRATOR
+<<<<<<< HEAD
 ADMIN_PASSWORD = "administrator"
+=======
+ADMIN_PASSWORD = os.environ.get("LF_ADMIN_PASSWORD", "administrator")
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
 
 # Rejestr modułów treści: plik -> (etykieta, klucz listy, opis formatu)
 CONTENT_MODULES = [
@@ -3050,6 +3193,14 @@ def open_browser():
 
 if __name__ == "__main__":
     import uvicorn
+<<<<<<< HEAD
+=======
+    # Tryb chmurowy: hosting ustawia PORT i oczekuje nasłuchu na 0.0.0.0
+    if os.environ.get("LF_CLOUD") == "1" or os.environ.get("PORT"):
+        print(f"LinguaForge v{APP_VERSION} — tryb serwerowy, port {PORT}")
+        uvicorn.run(app, host="0.0.0.0", port=PORT, log_level="info")
+        raise SystemExit
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
     phone = on_android()
     host = "0.0.0.0" if (LAN_MODE and not phone) else "127.0.0.1"
     ip = local_ip()

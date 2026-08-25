@@ -51,6 +51,7 @@ class NativeTtsBridge(private val context: Context, private val webView: WebView
         val run: () -> Unit = {
             val locale = if (lang == "pl") Locale("pl", "PL") else Locale.US
             val result = tts?.setLanguage(locale)
+<<<<<<< HEAD
             // brak danych głosowych dla danego języka -> spróbuj wariantu ogólnego
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 tts?.setLanguage(if (lang == "pl") Locale("pl") else Locale.ENGLISH)
@@ -58,11 +59,41 @@ class NativeTtsBridge(private val context: Context, private val webView: WebView
             tts?.setSpeechRate(rate.coerceIn(0.5f, 1.5f))
             tts?.stop()
             tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "lf_" + System.currentTimeMillis())
+=======
+            val missing = result == TextToSpeech.LANG_MISSING_DATA ||
+                          result == TextToSpeech.LANG_NOT_SUPPORTED
+            if (missing && lang == "pl") {
+                // Bez polskich danych głosowych silnik przeczytałby polski tekst
+                // angielską wymową (bełkot). Zamiast tego informujemy stronę.
+                webView.post {
+                    webView.evaluateJavascript(
+                        "window.onNativeTtsMissing && window.onNativeTtsMissing('pl')", null)
+                }
+            } else {
+                if (missing) tts?.setLanguage(Locale.ENGLISH)
+                tts?.setSpeechRate(rate.coerceIn(0.5f, 1.5f))
+                tts?.stop()
+                tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "lf_" + System.currentTimeMillis())
+            }
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
             Unit
         }
         if (ready) run() else synchronized(pending) { pending.add(run) }
     }
 
+<<<<<<< HEAD
+=======
+    /** Czy telefon ma dane głosowe dla danego języka. */
+    @JavascriptInterface
+    fun canSpeak(lang: String): Boolean {
+        val locale = if (lang == "pl") Locale("pl", "PL") else Locale.US
+        val r = tts?.isLanguageAvailable(locale) ?: return false
+        return r == TextToSpeech.LANG_AVAILABLE ||
+               r == TextToSpeech.LANG_COUNTRY_AVAILABLE ||
+               r == TextToSpeech.LANG_COUNTRY_VAR_AVAILABLE
+    }
+
+>>>>>>> 8f567b6 (LinguaForge v1.6.0 update)
     @JavascriptInterface
     fun stop() {
         tts?.stop()
