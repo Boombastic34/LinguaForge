@@ -1,0 +1,1132 @@
+{
+ "units": [
+  {
+   "id": "u1",
+   "name": "Fundamenty — poziom A1",
+   "level": "A1",
+   "desc": "Podręcznikowy kurs od zera: być, przedstawiać się, opowiadać o codzienności, pytać i przeczyć. Każdy rozdział: wprowadzenie → lekcja → ćwiczenia → praca domowa → quiz. Na końcu sprawdzian z oceną.",
+   "chapters": [
+    {
+     "id": "c1",
+     "name": "Rozdział 1 · Być albo nie być — „to be” i zaimki",
+     "intro": "Czego się nauczysz: przedstawiać siebie i innych, mówić skąd jesteś i kim jesteś. Poznasz zaimki (I, you, he…) i najważniejszy czasownik świata: BE (jestem/jesteś/jest).",
+     "pages": [
+      "<h4>Zaimki osobowe</h4><p><b>I</b> – ja · <b>you</b> – ty/wy · <b>he</b> – on · <b>she</b> – ona · <b>it</b> – ono (rzecz/zwierzę) · <b>we</b> – my · <b>they</b> – oni/one</p><p>Po polsku mówimy „jestem” i zaimek znika. Po angielsku zaimek jest OBOWIĄZKOWY: nie ~~am tired~~, tylko <b>I am tired</b>.</p>",
+      "<h4>Odmiana „to be”</h4><p><b>I am</b> (I'm) · <b>you are</b> (you're) · <b>he/she/it is</b> (he's) · <b>we are</b> · <b>they are</b></p><p>Przeczenie: <b>I am not</b>, <b>he isn't</b>, <b>they aren't</b>.<br>Pytanie = zamiana miejsc: <b>Are you tired? Is she from Poland?</b></p><p>🗣️ Dialog:<br>— Hi, I'm Marek. I'm from Poland.<br>— Nice to meet you! Are you new here?<br>— Yes, I am. It's my first day.</p>"
+     ],
+     "exercises": [
+      {
+       "id": "u1c1e1",
+       "type": "choice",
+       "text": "___ am from Poland.",
+       "options": [
+        "I",
+        "He",
+        "You",
+        "It"
+       ],
+       "answer": 0,
+       "pl": "JA jestem z Polski.",
+       "explain": "am łączy się tylko z I.",
+       "nr": 1
+      },
+      {
+       "id": "u1c1e2",
+       "type": "choice",
+       "text": "She ___ my team leader.",
+       "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+       ],
+       "answer": 1,
+       "pl": "Ona jest moim liderem zespołu.",
+       "explain": "she → is.",
+       "nr": 2
+      },
+      {
+       "id": "u1c1e3",
+       "type": "gap",
+       "text": "They ___ from the Netherlands.",
+       "accept": [
+        "are"
+       ],
+       "pl": "Oni są z Holandii.",
+       "explain": "they → are.",
+       "nr": 3
+      },
+      {
+       "id": "u1c1e4",
+       "type": "choice",
+       "text": "___ you tired?",
+       "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Do"
+       ],
+       "answer": 1,
+       "pl": "Czy jesteś zmęczony?",
+       "explain": "Pytanie: Are you…?",
+       "nr": 4
+      },
+      {
+       "id": "u1c1e5",
+       "type": "gap",
+       "text": "It ___ (nie jest) my box.",
+       "accept": [
+        "isn't",
+        "is not"
+       ],
+       "pl": "To nie jest moje pudło.",
+       "explain": "it → isn't.",
+       "nr": 5
+      },
+      {
+       "id": "u1c1e6",
+       "type": "choice",
+       "text": "„On jest nowy” to:",
+       "options": [
+        "He are new.",
+        "He is new.",
+        "He am new.",
+        "Is he new."
+       ],
+       "answer": 1,
+       "pl": "He is new.",
+       "explain": "he → is; zdanie oznajmujące.",
+       "nr": 6
+      },
+      {
+       "id": "u1c1e7",
+       "type": "gap",
+       "text": "I ___ a picker, and we ___ a good team.",
+       "accept": [
+        "am are",
+        "am, are"
+       ],
+       "pl": "Jestem pickerem, a my jesteśmy dobrym zespołem.",
+       "explain": "am — bo podmiot to I (ja); are — bo podmiot to we (my). „To be” zmienia formę zależnie od osoby: I am / you are / he is / we are / they are.",
+       "nr": 7
+      },
+      {
+       "id": "u1c1e8",
+       "type": "order",
+       "text": "Ułóż pytanie:",
+       "words": [
+        "she",
+        "Is",
+        "Poland",
+        "from",
+        "?"
+       ],
+       "accept": [
+        "is she from poland ?",
+        "is she from poland?"
+       ],
+       "pl": "Czy ona jest z Polski?",
+       "explain": "Pytanie: Is + podmiot + reszta.",
+       "nr": 8
+      }
+     ],
+     "homework": [
+      {
+       "id": "u1c1h1",
+       "type": "translate",
+       "pl": "Jestem z Polski.",
+       "en_ref": "I am from Poland.",
+       "keywords": [
+        [
+         "i am",
+         "i'm"
+        ],
+        [
+         "poland"
+        ]
+       ],
+       "tense_name": "to be",
+       "tense_patterns": [
+        " i am ",
+        " i'm "
+       ],
+       "forbidden": [],
+       "nr": 1
+      },
+      {
+       "id": "u1c1h2",
+       "type": "translate",
+       "pl": "Ona jest zmęczona.",
+       "en_ref": "She is tired.",
+       "keywords": [
+        [
+         "she"
+        ],
+        [
+         "tired"
+        ]
+       ],
+       "tense_name": "to be",
+       "tense_patterns": [
+        " she is ",
+        " she's "
+       ],
+       "forbidden": [],
+       "nr": 2
+      },
+      {
+       "id": "u1c1h3",
+       "type": "translate",
+       "pl": "Czy oni są nowi?",
+       "en_ref": "Are they new?",
+       "keywords": [
+        [
+         "they"
+        ],
+        [
+         "new"
+        ]
+       ],
+       "tense_name": "pytanie z to be",
+       "tense_patterns": [
+        "are they"
+       ],
+       "forbidden": [],
+       "nr": 3
+      }
+     ],
+     "quiz": [
+      {
+       "id": "u1c1q1",
+       "type": "choice",
+       "text": "We ___ ready.",
+       "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+       ],
+       "answer": 1,
+       "pl": "Jesteśmy gotowi.",
+       "nr": 1
+      },
+      {
+       "id": "u1c1q2",
+       "type": "gap",
+       "text": "___ he your friend?",
+       "accept": [
+        "is"
+       ],
+       "pl": "Czy on jest twoim kolegą?",
+       "nr": 2
+      },
+      {
+       "id": "u1c1q3",
+       "type": "choice",
+       "text": "I ___ not hungry.",
+       "options": [
+        "is",
+        "are",
+        "am",
+        "do"
+       ],
+       "answer": 2,
+       "pl": "Nie jestem głodny.",
+       "nr": 3
+      },
+      {
+       "id": "u1c1q4",
+       "type": "gap",
+       "text": "You ___ (nie jesteś) late.",
+       "accept": [
+        "aren't",
+        "are not"
+       ],
+       "pl": "Nie jesteś spóźniony.",
+       "nr": 4
+      },
+      {
+       "id": "u1c1q5",
+       "type": "choice",
+       "text": "„To jest ciężkie” to:",
+       "options": [
+        "It is heavy.",
+        "He is heavy.",
+        "It are heavy.",
+        "Is it heavy."
+       ],
+       "answer": 0,
+       "pl": "It is heavy.",
+       "nr": 5
+      }
+     ]
+    },
+    {
+     "id": "c2",
+     "name": "Rozdział 2 · Mój dzień — Present Simple",
+     "intro": "Czego się nauczysz: opowiadać o rutynie — o pracy, godzinach, zwyczajach. Poznasz najważniejszą regułę angielskiego: końcówkę -s dla he/she/it.",
+     "pages": [
+      "<h4>Kiedy Present Simple?</h4><p>Rzeczy stałe i powtarzalne: <b>I work in a warehouse. The shift starts at 6. She lives in Utrecht.</b></p><p>Sygnały: every day, usually, always, never, on Mondays.</p>",
+      "<h4>Złota reguła -s</h4><p>he / she / it → czasownik dostaje <b>-s</b>: I work → <b>he works</b>; I finish → <b>she finishes</b>; I go → <b>it goes</b>.</p><p>🗣️ Tekst:<br>Marek works in Rotterdam. He starts at six and finishes at two. After work he goes to the gym. He usually cooks dinner at home.</p>"
+     ],
+     "exercises": [
+      {
+       "id": "u1c2e1",
+       "type": "gap",
+       "text": "My shift ___ (start) at 6 a.m.",
+       "accept": [
+        "starts"
+       ],
+       "pl": "Moja zmiana zaczyna się o 6 rano.",
+       "explain": "shift = it → starts.",
+       "nr": 1
+      },
+      {
+       "id": "u1c2e2",
+       "type": "choice",
+       "text": "I ___ in a warehouse.",
+       "options": [
+        "works",
+        "work",
+        "working",
+        "is work"
+       ],
+       "answer": 1,
+       "pl": "Pracuję w magazynie.",
+       "explain": "I → bez -s.",
+       "nr": 2
+      },
+      {
+       "id": "u1c2e3",
+       "type": "gap",
+       "text": "She ___ (finish) at two.",
+       "accept": [
+        "finishes"
+       ],
+       "pl": "Ona kończy o drugiej.",
+       "explain": "she → finishes (+es po -sh).",
+       "nr": 3
+      },
+      {
+       "id": "u1c2e4",
+       "type": "choice",
+       "text": "They ___ to work by bus.",
+       "options": [
+        "goes",
+        "go",
+        "going",
+        "gos"
+       ],
+       "answer": 1,
+       "pl": "Oni jeżdżą do pracy autobusem.",
+       "explain": "they → bez -s.",
+       "nr": 4
+      },
+      {
+       "id": "u1c2e5",
+       "type": "gap",
+       "text": "He ___ (live) in Utrecht.",
+       "accept": [
+        "lives"
+       ],
+       "pl": "On mieszka w Utrechcie.",
+       "explain": "he → lives.",
+       "nr": 5
+      },
+      {
+       "id": "u1c2e6",
+       "type": "choice",
+       "text": "„Ona zawsze pomaga” to:",
+       "options": [
+        "She always helps.",
+        "She always help.",
+        "Always she helps.",
+        "She helps always."
+       ],
+       "answer": 0,
+       "pl": "She always helps.",
+       "explain": "always przed czasownikiem; she → helps.",
+       "nr": 6
+      },
+      {
+       "id": "u1c2e7",
+       "type": "order",
+       "text": "Ułóż zdanie:",
+       "words": [
+        "every",
+        "We",
+        "day",
+        "English",
+        "learn"
+       ],
+       "accept": [
+        "we learn english every day"
+       ],
+       "pl": "Uczymy się angielskiego codziennie.",
+       "explain": "Podmiot + czasownik + reszta.",
+       "nr": 7
+      }
+     ],
+     "homework": [
+      {
+       "id": "u1c2h1",
+       "type": "translate",
+       "pl": "Pracuję pięć dni w tygodniu.",
+       "en_ref": "I work five days a week.",
+       "keywords": [
+        [
+         "work"
+        ],
+        [
+         "five days",
+         "5 days"
+        ],
+        [
+         "week"
+        ]
+       ],
+       "tense_name": "Present Simple",
+       "tense_patterns": [
+        " i work "
+       ],
+       "forbidden": [
+        [
+         "Present Continuous",
+         " am working "
+        ]
+       ],
+       "nr": 1
+      },
+      {
+       "id": "u1c2h2",
+       "type": "translate",
+       "pl": "On zaczyna o szóstej.",
+       "en_ref": "He starts at six.",
+       "keywords": [
+        [
+         "starts",
+         "start"
+        ],
+        [
+         "six",
+         "6"
+        ]
+       ],
+       "tense_name": "Present Simple (+s)",
+       "tense_patterns": [
+        " starts "
+       ],
+       "forbidden": [],
+       "nr": 2
+      },
+      {
+       "id": "u1c2h3",
+       "type": "translate",
+       "pl": "Ona mieszka w Amsterdamie.",
+       "en_ref": "She lives in Amsterdam.",
+       "keywords": [
+        [
+         "lives",
+         "live"
+        ],
+        [
+         "amsterdam"
+        ]
+       ],
+       "tense_name": "Present Simple (+s)",
+       "tense_patterns": [
+        " lives "
+       ],
+       "forbidden": [],
+       "nr": 3
+      }
+     ],
+     "quiz": [
+      {
+       "id": "u1c2q1",
+       "type": "gap",
+       "text": "The warehouse ___ (open) at five.",
+       "accept": [
+        "opens"
+       ],
+       "pl": "Magazyn otwiera się o piątej.",
+       "nr": 1
+      },
+      {
+       "id": "u1c2q2",
+       "type": "choice",
+       "text": "We ___ at six.",
+       "options": [
+        "starts",
+        "start",
+        "starting",
+        "are start"
+       ],
+       "answer": 1,
+       "pl": "Zaczynamy o szóstej.",
+       "nr": 2
+      },
+      {
+       "id": "u1c2q3",
+       "type": "gap",
+       "text": "He ___ (go) to the gym after work.",
+       "accept": [
+        "goes"
+       ],
+       "pl": "On chodzi na siłownię po pracy.",
+       "nr": 3
+      },
+      {
+       "id": "u1c2q4",
+       "type": "choice",
+       "text": "„Ja kończę o drugiej” to:",
+       "options": [
+        "I finishes at two.",
+        "I finish at two.",
+        "I finishing at two.",
+        "Finish I at two."
+       ],
+       "answer": 1,
+       "pl": "I finish at two.",
+       "nr": 4
+      },
+      {
+       "id": "u1c2q5",
+       "type": "gap",
+       "text": "She usually ___ (cook) dinner.",
+       "accept": [
+        "cooks"
+       ],
+       "pl": "Ona zazwyczaj gotuje obiad.",
+       "nr": 5
+      }
+     ]
+    },
+    {
+     "id": "c3",
+     "name": "Rozdział 3 · a / an / the — przedimki bez magii",
+     "intro": "Czego się nauczysz: kiedy mówić „a box”, kiedy „the box”, a kiedy nic. Po polsku przedimków nie ma — dlatego to rozdział, który oszczędzi Ci setek małych błędów.",
+     "pages": [
+      "<h4>a / an — „jakiś, jeden z wielu”</h4><p><b>a</b> przed spółgłoską: a box, a pallet. <b>an</b> przed samogłoską: an apple, an order.</p><p>Używamy, gdy mówimy o czymś PIERWSZY RAZ albo o „jakimś”: <i>I need <b>a</b> scanner.</i> (jakikolwiek)</p>",
+      "<h4>the — „ten konkretny”</h4><p><b>the</b> = obaj wiemy, o który chodzi: <i>Where is <b>the</b> scanner?</i> (ten nasz). Drugi raz o tej samej rzeczy: <i>I see a truck. <b>The</b> truck is red.</i></p><p>Bez przedimka: liczba mnoga ogólnie (I like apples), posiłki, miasta, języki (English).</p>"
+     ],
+     "exercises": [
+      {
+       "id": "u1c3e1",
+       "type": "choice",
+       "text": "I need ___ new badge.",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 0,
+       "pl": "Potrzebuję (jakiegoś) nowego identyfikatora.",
+       "explain": "Pierwszy raz, spółgłoska → a.",
+       "nr": 1
+      },
+      {
+       "id": "u1c3e2",
+       "type": "choice",
+       "text": "Can I have ___ apple?",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 1,
+       "pl": "Mogę prosić jabłko?",
+       "explain": "Samogłoska → an.",
+       "nr": 2
+      },
+      {
+       "id": "u1c3e3",
+       "type": "choice",
+       "text": "Where is ___ forklift? We need it now!",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 2,
+       "pl": "Gdzie jest TEN wózek widłowy?",
+       "explain": "Konkretny, obaj wiemy który → the.",
+       "nr": 3
+      },
+      {
+       "id": "u1c3e4",
+       "type": "choice",
+       "text": "I like ___ apples.",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 3,
+       "pl": "Lubię jabłka (ogólnie).",
+       "explain": "Liczba mnoga ogólnie → bez przedimka.",
+       "nr": 4
+      },
+      {
+       "id": "u1c3e5",
+       "type": "gap",
+       "text": "There is ___ box on ___ floor. (jakieś pudło / ta podłoga)",
+       "accept": [
+        "a the",
+        "a, the"
+       ],
+       "pl": "Na podłodze jest pudło.",
+       "explain": "a box — pierwszy raz o jakimś pudle; the floor — podłoga jest jedna i konkretna, obaj wiemy która.",
+       "nr": 5
+      },
+      {
+       "id": "u1c3e6",
+       "type": "choice",
+       "text": "She speaks ___ English.",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 3,
+       "pl": "Ona mówi po angielsku.",
+       "explain": "Języki bez przedimka.",
+       "nr": 6
+      }
+     ],
+     "homework": [
+      {
+       "id": "u1c3h1",
+       "type": "translate",
+       "pl": "Potrzebuję skanera. (jakiegokolwiek)",
+       "en_ref": "I need a scanner.",
+       "keywords": [
+        [
+         "need"
+        ],
+        [
+         "a scanner"
+        ]
+       ],
+       "tense_name": "Present Simple + a",
+       "tense_patterns": [
+        " a scanner"
+       ],
+       "forbidden": [],
+       "nr": 1
+      },
+      {
+       "id": "u1c3h2",
+       "type": "translate",
+       "pl": "Gdzie jest ta paleta?",
+       "en_ref": "Where is the pallet?",
+       "keywords": [
+        [
+         "where"
+        ],
+        [
+         "the pallet"
+        ]
+       ],
+       "tense_name": "pytanie + the",
+       "tense_patterns": [
+        "the pallet"
+       ],
+       "forbidden": [],
+       "nr": 2
+      }
+     ],
+     "quiz": [
+      {
+       "id": "u1c3q1",
+       "type": "choice",
+       "text": "He is ___ team leader.",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 0,
+       "pl": "On jest liderem zespołu (jednym z).",
+       "nr": 1
+      },
+      {
+       "id": "u1c3q2",
+       "type": "choice",
+       "text": "Open ___ emergency exit!",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 2,
+       "pl": "Otwórz (to) wyjście ewakuacyjne!",
+       "nr": 2
+      },
+      {
+       "id": "u1c3q3",
+       "type": "choice",
+       "text": "It's ___ old label.",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 1,
+       "pl": "To stara etykieta.",
+       "nr": 3
+      },
+      {
+       "id": "u1c3q4",
+       "type": "choice",
+       "text": "I drink ___ coffee every day.",
+       "options": [
+        "a",
+        "an",
+        "the",
+        "—"
+       ],
+       "answer": 3,
+       "pl": "Piję kawę codziennie (ogólnie).",
+       "nr": 4
+      }
+     ]
+    },
+    {
+     "id": "c4",
+     "name": "Rozdział 4 · Pytam i przeczę — do / does / don't",
+     "intro": "Czego się nauczysz: zadawać pytania i mówić „nie” w Present Simple. To klucz do rozmowy: Do you…? Does she…? I don't…",
+     "pages": [
+      "<h4>Pytania</h4><p><b>Do</b> + I/you/we/they: <i>Do you work here?</i><br><b>Does</b> + he/she/it: <i>Does she like it?</i> — uwaga: czasownik wraca do formy podstawowej (bez -s)!</p>",
+      "<h4>Przeczenia</h4><p><b>don't</b> + I/you/we/they: <i>I don't understand.</i><br><b>doesn't</b> + he/she/it: <i>He doesn't work nights.</i> — znowu bez -s!</p><p>Krótkie odpowiedzi: <i>Yes, I do. / No, she doesn't.</i></p>"
+     ],
+     "exercises": [
+      {
+       "id": "u1c4e1",
+       "type": "choice",
+       "text": "___ you speak English?",
+       "options": [
+        "Does",
+        "Do",
+        "Are",
+        "Is"
+       ],
+       "answer": 1,
+       "pl": "Czy mówisz po angielsku?",
+       "explain": "you → Do.",
+       "nr": 1
+      },
+      {
+       "id": "u1c4e2",
+       "type": "choice",
+       "text": "___ she work here?",
+       "options": [
+        "Do",
+        "Does",
+        "Is",
+        "Are"
+       ],
+       "answer": 1,
+       "pl": "Czy ona tu pracuje?",
+       "explain": "she → Does + work (bez -s).",
+       "nr": 2
+      },
+      {
+       "id": "u1c4e3",
+       "type": "gap",
+       "text": "I ___ (nie rozumiem) this word.",
+       "accept": [
+        "don't understand",
+        "do not understand"
+       ],
+       "pl": "Nie rozumiem tego słowa.",
+       "explain": "I → don't + bezokolicznik.",
+       "nr": 3
+      },
+      {
+       "id": "u1c4e4",
+       "type": "gap",
+       "text": "He ___ (nie pracuje) on Sundays.",
+       "accept": [
+        "doesn't work",
+        "does not work"
+       ],
+       "pl": "On nie pracuje w niedziele.",
+       "explain": "he → doesn't + work (bez -s).",
+       "nr": 4
+      },
+      {
+       "id": "u1c4e5",
+       "type": "choice",
+       "text": "Wybierz poprawne:",
+       "options": [
+        "Does he likes coffee?",
+        "Does he like coffee?",
+        "Do he like coffee?",
+        "He does like coffee?"
+       ],
+       "answer": 1,
+       "pl": "Czy on lubi kawę?",
+       "explain": "Po does czasownik bez -s.",
+       "nr": 5
+      },
+      {
+       "id": "u1c4e6",
+       "type": "order",
+       "text": "Ułóż pytanie:",
+       "words": [
+        "you",
+        "Do",
+        "overtime",
+        "do",
+        "?"
+       ],
+       "accept": [
+        "do you do overtime ?",
+        "do you do overtime?"
+       ],
+       "pl": "Czy bierzesz nadgodziny?",
+       "explain": "Do you do…? — pierwsze do to operator, drugie to czasownik.",
+       "nr": 6
+      }
+     ],
+     "homework": [
+      {
+       "id": "u1c4h1",
+       "type": "translate",
+       "pl": "Czy ona mówi po angielsku?",
+       "en_ref": "Does she speak English?",
+       "keywords": [
+        [
+         "does she"
+        ],
+        [
+         "speak"
+        ],
+        [
+         "english"
+        ]
+       ],
+       "tense_name": "pytanie z does",
+       "tense_patterns": [
+        "does she speak"
+       ],
+       "forbidden": [
+        [
+         "do zamiast does",
+         "do she "
+        ]
+       ],
+       "nr": 1
+      },
+      {
+       "id": "u1c4h2",
+       "type": "translate",
+       "pl": "Nie pracuję w nocy.",
+       "en_ref": "I don't work at night.",
+       "keywords": [
+        [
+         "don't work",
+         "do not work"
+        ],
+        [
+         "night"
+        ]
+       ],
+       "tense_name": "przeczenie z don't",
+       "tense_patterns": [
+        "don't work",
+        "do not work"
+       ],
+       "forbidden": [],
+       "nr": 2
+      },
+      {
+       "id": "u1c4h3",
+       "type": "translate",
+       "pl": "On nie lubi kawy.",
+       "en_ref": "He doesn't like coffee.",
+       "keywords": [
+        [
+         "doesn't like",
+         "does not like"
+        ],
+        [
+         "coffee"
+        ]
+       ],
+       "tense_name": "przeczenie z doesn't",
+       "tense_patterns": [
+        "doesn't like",
+        "does not like"
+       ],
+       "forbidden": [
+        [
+         "don't zamiast doesn't",
+         "he don't"
+        ]
+       ],
+       "nr": 3
+      }
+     ],
+     "quiz": [
+      {
+       "id": "u1c4q1",
+       "type": "choice",
+       "text": "___ they live in Rotterdam?",
+       "options": [
+        "Does",
+        "Do",
+        "Are",
+        "Is"
+       ],
+       "answer": 1,
+       "pl": "Czy oni mieszkają w Rotterdamie?",
+       "nr": 1
+      },
+      {
+       "id": "u1c4q2",
+       "type": "gap",
+       "text": "She ___ (nie je) meat.",
+       "accept": [
+        "doesn't eat",
+        "does not eat"
+       ],
+       "pl": "Ona nie je mięsa.",
+       "nr": 2
+      },
+      {
+       "id": "u1c4q3",
+       "type": "choice",
+       "text": "Do you like your job? — Yes, I ___.",
+       "options": [
+        "like",
+        "do",
+        "does",
+        "am"
+       ],
+       "answer": 1,
+       "pl": "Tak, lubię (krótka odpowiedź).",
+       "nr": 3
+      },
+      {
+       "id": "u1c4q4",
+       "type": "choice",
+       "text": "Wybierz poprawne:",
+       "options": [
+        "He don't know.",
+        "He doesn't knows.",
+        "He doesn't know.",
+        "He not know."
+       ],
+       "answer": 2,
+       "pl": "On nie wie.",
+       "nr": 4
+      },
+      {
+       "id": "u1c4q5",
+       "type": "gap",
+       "text": "___ your friend work here?",
+       "accept": [
+        "does"
+       ],
+       "pl": "Czy twój kolega tu pracuje?",
+       "nr": 5
+      }
+     ]
+    }
+   ],
+   "exam": {
+    "pass_note": "Ocena: 6 (≥95%), 5 (≥85%), 4 (≥70%), 3 (≥55%), 2 (≥40%), 1 (<40%). Zaliczenie od 3.",
+    "questions": [
+     {
+      "id": "u1x1",
+      "type": "choice",
+      "text": "They ___ from Poland.",
+      "options": [
+       "is",
+       "are",
+       "am",
+       "be"
+      ],
+      "answer": 1,
+      "pl": "Oni są z Polski.",
+      "nr": 1
+     },
+     {
+      "id": "u1x2",
+      "type": "gap",
+      "text": "She ___ (work) in an office.",
+      "accept": [
+       "works"
+      ],
+      "pl": "Ona pracuje w biurze.",
+      "nr": 2
+     },
+     {
+      "id": "u1x3",
+      "type": "choice",
+      "text": "___ he your team leader?",
+      "options": [
+       "Are",
+       "Do",
+       "Is",
+       "Does"
+      ],
+      "answer": 2,
+      "pl": "Czy on jest twoim liderem?",
+      "nr": 3
+     },
+     {
+      "id": "u1x4",
+      "type": "choice",
+      "text": "I need ___ new vest.",
+      "options": [
+       "a",
+       "an",
+       "the",
+       "—"
+      ],
+      "answer": 0,
+      "pl": "Potrzebuję nowej kamizelki.",
+      "nr": 4
+     },
+     {
+      "id": "u1x5",
+      "type": "gap",
+      "text": "We ___ (nie zaczynamy) at eight.",
+      "accept": [
+       "don't start",
+       "do not start"
+      ],
+      "pl": "Nie zaczynamy o ósmej.",
+      "nr": 5
+     },
+     {
+      "id": "u1x6",
+      "type": "choice",
+      "text": "Where is ___ first aid kit?",
+      "options": [
+       "a",
+       "an",
+       "the",
+       "—"
+      ],
+      "answer": 2,
+      "pl": "Gdzie jest (ta) apteczka?",
+      "nr": 6
+     },
+     {
+      "id": "u1x7",
+      "type": "choice",
+      "text": "___ she like the night shift?",
+      "options": [
+       "Do",
+       "Is",
+       "Are",
+       "Does"
+      ],
+      "answer": 3,
+      "pl": "Czy ona lubi nocną zmianę?",
+      "nr": 7
+     },
+     {
+      "id": "u1x8",
+      "type": "gap",
+      "text": "He ___ (go) to work by bike.",
+      "accept": [
+       "goes"
+      ],
+      "pl": "On jeździ do pracy rowerem.",
+      "nr": 8
+     },
+     {
+      "id": "u1x9",
+      "type": "choice",
+      "text": "It ___ an old scanner.",
+      "options": [
+       "are",
+       "is",
+       "am",
+       "be"
+      ],
+      "answer": 1,
+      "pl": "To jest stary skaner.",
+      "nr": 9
+     },
+     {
+      "id": "u1x10",
+      "type": "gap",
+      "text": "I ___ (nie wiem).",
+      "accept": [
+       "don't know",
+       "do not know"
+      ],
+      "pl": "Nie wiem.",
+      "nr": 10
+     },
+     {
+      "id": "u1x11",
+      "type": "translate",
+      "pl": "Czy ty pracujesz w magazynie?",
+      "en_ref": "Do you work in a warehouse?",
+      "keywords": [
+       [
+        "do you"
+       ],
+       [
+        "work"
+       ],
+       [
+        "warehouse"
+       ]
+      ],
+      "tense_name": "pytanie z do",
+      "tense_patterns": [
+       "do you work"
+      ],
+      "forbidden": [],
+      "nr": 11
+     },
+     {
+      "id": "u1x12",
+      "type": "translate",
+      "pl": "Ona nie mieszka w Amsterdamie.",
+      "en_ref": "She doesn't live in Amsterdam.",
+      "keywords": [
+       [
+        "doesn't live",
+        "does not live"
+       ],
+       [
+        "amsterdam"
+       ]
+      ],
+      "tense_name": "przeczenie z doesn't",
+      "tense_patterns": [
+       "doesn't live",
+       "does not live"
+      ],
+      "forbidden": [
+       [
+        "don't zamiast doesn't",
+        "she don't"
+       ]
+      ],
+      "nr": 12
+     }
+    ]
+   }
+  }
+ ],
+ "name": "Lekcje — dział A1",
+ "etykieta": "Lekcje — dział A1"
+}

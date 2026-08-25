@@ -1,0 +1,812 @@
+{
+ "name": "Rozmowy — praca i codzienność",
+ "dialogs": [
+  {
+   "id": "dlg_first_day",
+   "name": "Pierwszy dzień — poznajesz lidera",
+   "level": "A1",
+   "desc": "Przedstawiasz się, mówisz skąd jesteś i pytasz o godziny pracy.",
+   "emoji": "👋",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Hi! You must be the new picker. I'm Kees, your team leader.",
+     "npc_pl": "Cześć! Ty pewnie jesteś nowym pickerem. Jestem Kees, twój lider zespołu.",
+     "mode": "choice",
+     "hint": "Przywitaj się i przedstaw.",
+     "options": [
+      {
+       "en": "Hello Kees, nice to meet you. I'm Marek.",
+       "pl": "Cześć Kees, miło mi. Jestem Marek.",
+       "good": true,
+       "feedback": "Idealnie — powitanie + imię. Naturalnie i uprzejmie.",
+       "next": "n2"
+      },
+      {
+       "en": "Yes. Me Marek.",
+       "pl": "Tak. Ja Marek.",
+       "good": false,
+       "feedback": "Zrozumiałe, ale brzmi bardzo łamanie. Zawsze: I'm + imię.",
+       "next": "n2"
+      },
+      {
+       "en": "I am new picker from the Poland.",
+       "pl": "Jestem nowy picker z tej Polski.",
+       "good": false,
+       "feedback": "Dwa drobiazgi: „a new picker” (przedimek) i „from Poland” bez „the”.",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "Great. Where are you from?",
+     "npc_pl": "Świetnie. Skąd jesteś?",
+     "mode": "write",
+     "hint": "Napisz, że jesteś z Polski (pełnym zdaniem).",
+     "write": {
+      "model": "I am from Poland.",
+      "keywords": [
+       [
+        "i am",
+        "i'm"
+       ],
+       [
+        "poland"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "Nice. Your shift starts at six. Do you have any questions?",
+     "npc_pl": "Miło. Twoja zmiana zaczyna się o szóstej. Masz jakieś pytania?",
+     "mode": "choice",
+     "hint": "Zapytaj, o której kończysz.",
+     "options": [
+      {
+       "en": "Yes — what time do I finish?",
+       "pl": "Tak — o której kończę?",
+       "good": true,
+       "feedback": "Wzorowe pytanie: what time + do I + czasownik.",
+       "next": "n4"
+      },
+      {
+       "en": "What time I finish?",
+       "pl": "O której ja kończę?",
+       "good": false,
+       "feedback": "Brakuje operatora: What time DO I finish?",
+       "next": "n4"
+      },
+      {
+       "en": "No, thank you.",
+       "pl": "Nie, dziękuję.",
+       "good": false,
+       "feedback": "Poprawne, ale szkoda — pierwszego dnia warto pytać.",
+       "next": "n4"
+      }
+     ]
+    },
+    {
+     "id": "n4",
+     "npc_en": "You finish at two. See you tomorrow at the gate!",
+     "npc_pl": "Kończysz o drugiej. Do zobaczenia jutro przy bramie!",
+     "mode": "choice",
+     "hint": "Pożegnaj się.",
+     "options": [
+      {
+       "en": "Thanks, see you tomorrow!",
+       "pl": "Dzięki, do zobaczenia jutro!",
+       "good": true,
+       "feedback": "Naturalne pożegnanie.",
+       "next": "END"
+      },
+      {
+       "en": "OK bye.",
+       "pl": "OK, cześć.",
+       "good": false,
+       "feedback": "Zrozumiałe, ale sucho — dodaj „thanks” albo „see you”.",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_damaged",
+   "name": "Zgłaszasz uszkodzoną paletę",
+   "level": "A2",
+   "desc": "Problem w pracy: meldujesz uszkodzenie i proponujesz rozwiązanie.",
+   "emoji": "📦",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Everything OK over there?",
+     "npc_pl": "Wszystko w porządku tam u ciebie?",
+     "mode": "choice",
+     "hint": "Zgłoś, że paleta jest uszkodzona.",
+     "options": [
+      {
+       "en": "No, there is a problem. This pallet is damaged.",
+       "pl": "Nie, jest problem. Ta paleta jest uszkodzona.",
+       "good": true,
+       "feedback": "Konkretnie i jasno — dokładnie tak się zgłasza problem.",
+       "next": "n2"
+      },
+      {
+       "en": "Pallet broken.",
+       "pl": "Paleta zepsuta.",
+       "good": false,
+       "feedback": "Zrozumieją, ale pełne zdanie brzmi profesjonalnie: The pallet IS broken.",
+       "next": "n2"
+      },
+      {
+       "en": "Yes, everything is fine.",
+       "pl": "Tak, wszystko dobrze.",
+       "good": false,
+       "feedback": "Ukrycie problemu zwykle kończy się gorzej — zgłaszaj od razu.",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "Damaged? What exactly happened?",
+     "npc_pl": "Uszkodzona? Co dokładnie się stało?",
+     "mode": "write",
+     "hint": "Napisz, że pudła spadły (czas przeszły).",
+     "write": {
+      "model": "The boxes fell down.",
+      "keywords": [
+       [
+        "boxes",
+        "box"
+       ],
+       [
+        "fell",
+        "fell down",
+        "dropped"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "OK. Are the products inside broken too?",
+     "npc_pl": "OK. Czy produkty w środku też są zniszczone?",
+     "mode": "choice",
+     "hint": "Powiedz, że dwa pudła są zniszczone, reszta jest w porządku.",
+     "options": [
+      {
+       "en": "Two boxes are broken, but the others are fine.",
+       "pl": "Dwa pudła są zniszczone, ale reszta jest w porządku.",
+       "good": true,
+       "feedback": "Świetnie — precyzyjna informacja pomaga liderowi zdecydować.",
+       "next": "n4"
+      },
+      {
+       "en": "I don't know, maybe.",
+       "pl": "Nie wiem, może.",
+       "good": false,
+       "feedback": "Lepiej sprawdzić i podać fakty niż zgadywać.",
+       "next": "n4"
+      }
+     ]
+    },
+    {
+     "id": "n4",
+     "npc_en": "Thanks. Can you put the damaged ones near the office?",
+     "npc_pl": "Dzięki. Możesz odłożyć uszkodzone przy biurze?",
+     "mode": "choice",
+     "hint": "Potwierdź i zapytaj, czy zrobić to teraz.",
+     "options": [
+      {
+       "en": "Sure. Should I do it now?",
+       "pl": "Jasne. Mam to zrobić teraz?",
+       "good": true,
+       "feedback": "„Should I…?” to bardzo przydatna konstrukcja w pracy.",
+       "next": "END"
+      },
+      {
+       "en": "OK, I do it now?",
+       "pl": "OK, ja robię to teraz?",
+       "good": false,
+       "feedback": "Pytanie wymaga operatora: Should I do it now? / Do you want me to do it now?",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_holiday",
+   "name": "Prosisz o urlop",
+   "level": "A2",
+   "desc": "Uprzejma prośba, podanie terminu i reakcja na odmowę.",
+   "emoji": "🌴",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "You wanted to talk to me?",
+     "npc_pl": "Chciałeś ze mną porozmawiać?",
+     "mode": "choice",
+     "hint": "Zapytaj uprzejmie o urlop.",
+     "options": [
+      {
+       "en": "Yes. Could I take a week off in July?",
+       "pl": "Tak. Czy mógłbym wziąć tydzień wolnego w lipcu?",
+       "good": true,
+       "feedback": "„Could I…?” to najbezpieczniejsza, uprzejma forma prośby.",
+       "next": "n2"
+      },
+      {
+       "en": "I want holiday in July.",
+       "pl": "Chcę urlop w lipcu.",
+       "good": false,
+       "feedback": "Zbyt bezpośrednio. W pracy: Could I / I would like to…",
+       "next": "n2"
+      },
+      {
+       "en": "Give me holiday.",
+       "pl": "Daj mi urlop.",
+       "good": false,
+       "feedback": "To brzmi jak rozkaz — użyj Could I…?",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "July is busy. Which dates exactly?",
+     "npc_pl": "Lipiec jest napięty. Które dokładnie dni?",
+     "mode": "write",
+     "hint": "Napisz: od 10 do 17 lipca.",
+     "write": {
+      "model": "From the 10th to the 17th of July.",
+      "keywords": [
+       [
+        "10",
+        "tenth"
+       ],
+       [
+        "17",
+        "seventeenth"
+       ],
+       [
+        "july"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "Sorry, two people are already off that week.",
+     "npc_pl": "Przykro mi, dwie osoby już mają wtedy wolne.",
+     "mode": "choice",
+     "hint": "Zareaguj spokojnie i zaproponuj inny termin.",
+     "options": [
+      {
+       "en": "I understand. Would August be possible?",
+       "pl": "Rozumiem. Czy sierpień byłby możliwy?",
+       "good": true,
+       "feedback": "Dojrzała reakcja: akceptacja + propozycja alternatywy.",
+       "next": "n4"
+      },
+      {
+       "en": "That's not fair!",
+       "pl": "To niesprawiedliwe!",
+       "good": false,
+       "feedback": "Emocje rzadko pomagają — lepiej zaproponować inny termin.",
+       "next": "n4"
+      }
+     ]
+    },
+    {
+     "id": "n4",
+     "npc_en": "August works. Please submit it in the portal before the end of April.",
+     "npc_pl": "Sierpień pasuje. Złóż wniosek w portalu przed końcem kwietnia.",
+     "mode": "choice",
+     "hint": "Podziękuj i potwierdź.",
+     "options": [
+      {
+       "en": "Great, thank you. I'll do it today.",
+       "pl": "Świetnie, dziękuję. Zrobię to dzisiaj.",
+       "good": true,
+       "feedback": "„I'll do it” — decyzja podjęta teraz, idealne użycie will.",
+       "next": "END"
+      },
+      {
+       "en": "OK I make it.",
+       "pl": "OK, ja to zrobię.",
+       "good": false,
+       "feedback": "Po angielsku: I'll DO it (nie „make”).",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_canteen",
+   "name": "Small talk w kantynie",
+   "level": "A1",
+   "desc": "Luźna rozmowa przy kawie — weekend, plany, uprzejmości.",
+   "emoji": "☕",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Hey! How was your weekend?",
+     "npc_pl": "Hej! Jak minął weekend?",
+     "mode": "choice",
+     "hint": "Odpowiedz i odbij pytanie.",
+     "options": [
+      {
+       "en": "It was good, thanks. And yours?",
+       "pl": "Był dobry, dzięki. A twój?",
+       "good": true,
+       "feedback": "Klasyk small talku: krótka odpowiedź + pytanie zwrotne.",
+       "next": "n2"
+      },
+      {
+       "en": "Good.",
+       "pl": "Dobry.",
+       "good": false,
+       "feedback": "Poprawne, ale rozmowa się urywa — dorzuć „And yours?”.",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "Busy — I painted the kitchen. Do you have any plans for tonight?",
+     "npc_pl": "Pracowicie — malowałem kuchnię. Masz jakieś plany na wieczór?",
+     "mode": "write",
+     "hint": "Napisz, że idziesz na siłownię po pracy.",
+     "write": {
+      "model": "I am going to the gym after work.",
+      "keywords": [
+       [
+        "gym"
+       ],
+       [
+        "after work",
+        "after my shift"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "Nice. Do you want a coffee? I'm making one.",
+     "npc_pl": "Fajnie. Chcesz kawę? Właśnie robię.",
+     "mode": "choice",
+     "hint": "Przyjmij uprzejmie.",
+     "options": [
+      {
+       "en": "Yes, please. That's very kind.",
+       "pl": "Tak, poproszę. To bardzo miłe.",
+       "good": true,
+       "feedback": "„Yes, please” to podstawa uprzejmości po angielsku.",
+       "next": "END"
+      },
+      {
+       "en": "Yes, I want.",
+       "pl": "Tak, chcę.",
+       "good": false,
+       "feedback": "„I want” brzmi szorstko — mów: Yes, please.",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_doctor",
+   "name": "U lekarza",
+   "level": "A2",
+   "desc": "Opisujesz objawy, odpowiadasz na pytania i rozumiesz zalecenia.",
+   "emoji": "🩺",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Good morning. What seems to be the problem?",
+     "npc_pl": "Dzień dobry. Co panu dolega?",
+     "mode": "choice",
+     "hint": "Powiedz, że boli cię plecy od trzech dni.",
+     "options": [
+      {
+       "en": "My back hurts. It started three days ago.",
+       "pl": "Bolą mnie plecy. Zaczęło się trzy dni temu.",
+       "good": true,
+       "feedback": "Objaw + kiedy się zaczęło — dokładnie tego oczekuje lekarz.",
+       "next": "n2"
+      },
+      {
+       "en": "I have pain in back.",
+       "pl": "Mam ból w plecach.",
+       "good": false,
+       "feedback": "Prawie dobrze: „in MY back”. Naturalniej: My back hurts.",
+       "next": "n2"
+      },
+      {
+       "en": "I am ill.",
+       "pl": "Jestem chory.",
+       "good": false,
+       "feedback": "Za ogólnie — lekarz potrzebuje konkretów.",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "Do you lift heavy things at work?",
+     "npc_pl": "Czy podnosi pan ciężkie rzeczy w pracy?",
+     "mode": "write",
+     "hint": "Napisz: tak, pracuję w magazynie.",
+     "write": {
+      "model": "Yes, I work in a warehouse.",
+      "keywords": [
+       [
+        "work"
+       ],
+       [
+        "warehouse"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "I see. Take these pills twice a day and avoid heavy lifting for a week.",
+     "npc_pl": "Rozumiem. Proszę brać te tabletki dwa razy dziennie i unikać dźwigania przez tydzień.",
+     "mode": "choice",
+     "hint": "Upewnij się, że dobrze rozumiesz zalecenie.",
+     "options": [
+      {
+       "en": "So, two pills every day for a week — is that right?",
+       "pl": "Czyli dwie tabletki dziennie przez tydzień — zgadza się?",
+       "good": true,
+       "feedback": "Powtórzenie własnymi słowami to najlepszy sposób na uniknięcie pomyłki.",
+       "next": "n4"
+      },
+      {
+       "en": "OK.",
+       "pl": "OK.",
+       "good": false,
+       "feedback": "Ryzykowne — przy zaleceniach lekarskich zawsze potwierdzaj.",
+       "next": "n4"
+      }
+     ]
+    },
+    {
+     "id": "n4",
+     "npc_en": "Exactly. Come back if the pain doesn't get better.",
+     "npc_pl": "Dokładnie. Proszę wrócić, jeśli ból się nie zmniejszy.",
+     "mode": "choice",
+     "hint": "Podziękuj i zapytaj o zwolnienie.",
+     "options": [
+      {
+       "en": "Thank you. Could I have a sick note for my employer?",
+       "pl": "Dziękuję. Czy mogę dostać zwolnienie dla pracodawcy?",
+       "good": true,
+       "feedback": "„sick note” to dokładnie to słowo, którego potrzebujesz w Holandii i UK.",
+       "next": "END"
+      },
+      {
+       "en": "Thanks, bye.",
+       "pl": "Dzięki, do widzenia.",
+       "good": false,
+       "feedback": "Uprzejme, ale bez zwolnienia możesz mieć problem w pracy.",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_phone",
+   "name": "Rozmowa telefoniczna z agencją",
+   "level": "A2",
+   "emoji": "📞",
+   "desc": "Dzwonisz w sprawie wypłaty — przedstawiasz się, opisujesz problem, ustalasz termin.",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Good morning, Flexi Agency, how can I help you?",
+     "npc_pl": "Dzień dobry, agencja Flexi, w czym mogę pomóc?",
+     "mode": "choice",
+     "hint": "Przedstaw się i powiedz, w jakiej sprawie dzwonisz.",
+     "options": [
+      {
+       "en": "Good morning, my name is Marek Nowak. I'm calling about my payslip.",
+       "pl": "Dzień dobry, nazywam się Marek Nowak. Dzwonię w sprawie paska wypłaty.",
+       "good": true,
+       "feedback": "Wzorowo: powitanie, imię, powód. „I'm calling about…” to standardowa formuła.",
+       "next": "n2"
+      },
+      {
+       "en": "Hello. Money problem.",
+       "pl": "Halo. Problem z pieniędzmi.",
+       "good": false,
+       "feedback": "Zbyt skrótowo — przez telefon zawsze podaj imię i powód rozmowy.",
+       "next": "n2"
+      },
+      {
+       "en": "I want speak about my money.",
+       "pl": "Chcę mówić o moich pieniądzach.",
+       "good": false,
+       "feedback": "Po „want” potrzebne jest „to”: I want TO speak. Naturalniej: I'm calling about my salary.",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "Of course. What exactly is the problem?",
+     "npc_pl": "Oczywiście. Na czym dokładnie polega problem?",
+     "mode": "write",
+     "hint": "Napisz, że nie dostałeś wypłaty za zeszły miesiąc.",
+     "write": {
+      "model": "I did not receive my salary for last month.",
+      "keywords": [
+       [
+        "receive",
+        "get",
+        "got"
+       ],
+       [
+        "salary",
+        "payment",
+        "money",
+        "wages"
+       ],
+       [
+        "last month",
+        "month"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "I see. Could you give me your employee number?",
+     "npc_pl": "Rozumiem. Czy mógłby pan podać numer pracownika?",
+     "mode": "choice",
+     "hint": "Podaj numer i zapytaj, kiedy problem zostanie rozwiązany.",
+     "options": [
+      {
+       "en": "Yes, it's 48312. When will it be fixed?",
+       "pl": "Tak, to 48312. Kiedy zostanie to naprawione?",
+       "good": true,
+       "feedback": "Świetnie — konkretna informacja plus pytanie o termin. Strona bierna „will it be fixed” brzmi profesjonalnie.",
+       "next": "n4"
+      },
+      {
+       "en": "48312. Fix it fast.",
+       "pl": "48312. Napraw to szybko.",
+       "good": false,
+       "feedback": "Zbyt rozkazująco. Lepiej: Could you tell me when it will be fixed?",
+       "next": "n4"
+      }
+     ]
+    },
+    {
+     "id": "n4",
+     "npc_en": "Thank you. I'll check with accounting and call you back today.",
+     "npc_pl": "Dziękuję. Sprawdzę to z księgowością i oddzwonię dzisiaj.",
+     "mode": "choice",
+     "hint": "Podziękuj i potwierdź numer telefonu.",
+     "options": [
+      {
+       "en": "Thank you very much. You have my mobile number, right?",
+       "pl": "Dziękuję bardzo. Ma pani mój numer komórkowy, prawda?",
+       "good": true,
+       "feedback": "Question tag „right?” to naturalne potwierdzenie w rozmowie telefonicznej.",
+       "next": "END"
+      },
+      {
+       "en": "OK. Bye.",
+       "pl": "OK. Do widzenia.",
+       "good": false,
+       "feedback": "Poprawne, ale warto upewnić się, że mają właściwy numer.",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_interview",
+   "name": "Rozmowa o pracę",
+   "level": "B1",
+   "emoji": "💼",
+   "desc": "Opowiadasz o doświadczeniu, mocnych stronach i pytasz o warunki.",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Thanks for coming. Tell me a little about your experience.",
+     "npc_pl": "Dziękuję za przybycie. Proszę opowiedzieć o swoim doświadczeniu.",
+     "mode": "write",
+     "hint": "Napisz, że pracujesz w magazynie od trzech lat (Present Perfect!).",
+     "write": {
+      "model": "I have worked in a warehouse for three years.",
+      "keywords": [
+       [
+        "have worked",
+        "have been working",
+        "worked"
+       ],
+       [
+        "warehouse"
+       ],
+       [
+        "three years",
+        "3 years"
+       ]
+      ],
+      "next": "n2"
+     }
+    },
+    {
+     "id": "n2",
+     "npc_en": "Good. What would you say is your biggest strength?",
+     "npc_pl": "Dobrze. Co uznałby pan za swoją największą zaletę?",
+     "mode": "choice",
+     "hint": "Podaj zaletę i poprzyj ją przykładem.",
+     "options": [
+      {
+       "en": "I'm reliable — in three years I was never late.",
+       "pl": "Jestem solidny — przez trzy lata ani razu się nie spóźniłem.",
+       "good": true,
+       "feedback": "Najlepsza odpowiedź: cecha + konkretny dowód. Tak odpowiada się na to pytanie.",
+       "next": "n3"
+      },
+      {
+       "en": "I am good worker.",
+       "pl": "Jestem dobry pracownik.",
+       "good": false,
+       "feedback": "Brakuje przedimka (a good worker) i konkretu. Ogólniki nie przekonują rekrutera.",
+       "next": "n3"
+      },
+      {
+       "en": "I don't know, everything.",
+       "pl": "Nie wiem, wszystko.",
+       "good": false,
+       "feedback": "To pytanie zawsze pada — warto przygotować jedną cechę z przykładem.",
+       "next": "n3"
+      }
+     ]
+    },
+    {
+     "id": "n3",
+     "npc_en": "We work in shifts, including nights. Is that a problem?",
+     "npc_pl": "Pracujemy zmianowo, także w nocy. Czy to problem?",
+     "mode": "choice",
+     "hint": "Odpowiedz szczerze i zapytaj o dodatek nocny.",
+     "options": [
+      {
+       "en": "No problem. Do you pay extra for night shifts?",
+       "pl": "Żaden problem. Czy płacicie dodatek za noce?",
+       "good": true,
+       "feedback": "Dobrze — zgoda plus konkretne pytanie o warunki. Pytanie o pieniądze na rozmowie jest normalne.",
+       "next": "n4"
+      },
+      {
+       "en": "Night is bad for me but OK.",
+       "pl": "Noce są dla mnie złe, ale OK.",
+       "good": false,
+       "feedback": "Sprzeczny komunikat. Lepiej: I prefer mornings, but I can work nights when needed.",
+       "next": "n4"
+      }
+     ]
+    },
+    {
+     "id": "n4",
+     "npc_en": "Yes, 25% extra. Do you have any other questions?",
+     "npc_pl": "Tak, 25% dodatku. Czy ma pan jeszcze jakieś pytania?",
+     "mode": "choice",
+     "hint": "Zapytaj o coś sensownego i podziękuj.",
+     "options": [
+      {
+       "en": "Yes — is there a chance to become a team leader later?",
+       "pl": "Tak — czy jest szansa zostać liderem zespołu w przyszłości?",
+       "good": true,
+       "feedback": "Pytanie o rozwój robi bardzo dobre wrażenie.",
+       "next": "END"
+      },
+      {
+       "en": "No questions. Thank you.",
+       "pl": "Brak pytań. Dziękuję.",
+       "good": false,
+       "feedback": "Poprawne, ale brak pytań bywa odbierany jako brak zainteresowania.",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dlg_shop",
+   "name": "W sklepie i urzędzie",
+   "level": "A2",
+   "emoji": "🛒",
+   "desc": "Reklamujesz zakup i pytasz o formalności — proste, przydatne zwroty.",
+   "nodes": [
+    {
+     "id": "n1",
+     "npc_en": "Hello, can I help you?",
+     "npc_pl": "Dzień dobry, w czym mogę pomóc?",
+     "mode": "choice",
+     "hint": "Powiedz, że chcesz zwrócić buty, bo są za małe.",
+     "options": [
+      {
+       "en": "Hello. I'd like to return these shoes — they're too small.",
+       "pl": "Dzień dobry. Chciałbym zwrócić te buty — są za małe.",
+       "good": true,
+       "feedback": "„I'd like to…” to najbezpieczniejsza forma w sklepie.",
+       "next": "n2"
+      },
+      {
+       "en": "These shoes bad. Give money.",
+       "pl": "Te buty złe. Dawaj pieniądze.",
+       "good": false,
+       "feedback": "Bardzo szorstko. Wystarczy: I'd like to return these, please.",
+       "next": "n2"
+      }
+     ]
+    },
+    {
+     "id": "n2",
+     "npc_en": "Do you have the receipt?",
+     "npc_pl": "Czy ma pan paragon?",
+     "mode": "write",
+     "hint": "Napisz, że tak, masz go tutaj. (Uwaga: receipt to paragon, nie recepta!)",
+     "write": {
+      "model": "Yes, I have it here.",
+      "keywords": [
+       [
+        "yes"
+       ],
+       [
+        "have",
+        "here",
+        "got"
+       ]
+      ],
+      "next": "n3"
+     }
+    },
+    {
+     "id": "n3",
+     "npc_en": "Perfect. Would you like a refund or an exchange?",
+     "npc_pl": "Świetnie. Woli pan zwrot pieniędzy czy wymianę?",
+     "mode": "choice",
+     "hint": "Poproś o większy rozmiar.",
+     "options": [
+      {
+       "en": "An exchange, please — one size bigger.",
+       "pl": "Wymianę poproszę — o jeden rozmiar większe.",
+       "good": true,
+       "feedback": "Konkretnie i uprzejmie. „One size bigger” to dokładnie ten zwrot.",
+       "next": "END"
+      },
+      {
+       "en": "Money back.",
+       "pl": "Zwrot pieniędzy.",
+       "good": false,
+       "feedback": "Zrozumiałe, ale dodaj „please”: A refund, please.",
+       "next": "END"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "etykieta": "Rozmowy — praca i codzienność"
+}

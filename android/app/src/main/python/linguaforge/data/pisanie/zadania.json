@@ -1,0 +1,249 @@
+{
+ "name": "Zadania pisemne",
+ "tasks": [
+  {
+   "id": "w_day",
+   "level": "A2",
+   "title": "Opisz swój typowy dzień pracy",
+   "emoji": "🗓",
+   "brief": "Napisz po angielsku 5–8 zdań o swoim dniu pracy. Użyj Present Simple.",
+   "must": [
+    [
+     "get up",
+     "wake up",
+     "start"
+    ],
+    [
+     "work",
+     "job",
+     "warehouse",
+     "office"
+    ],
+    [
+     "finish",
+     "end",
+     "after work"
+    ],
+    [
+     "hour",
+     "clock",
+     "am",
+     "pm",
+     "o'clock",
+     ":"
+    ],
+    [
+     "usually",
+     "every day",
+     "always",
+     "often",
+     "sometimes"
+    ]
+   ],
+   "must_pl": [
+    "o której wstajesz",
+    "gdzie pracujesz",
+    "kiedy kończysz",
+    "konkretne godziny",
+    "słowo częstotliwości (usually/always…)"
+   ],
+   "min_words": 40,
+   "tense_hint": "Present Simple — rutyna: I start at six, she finishes at two.",
+   "model": "I usually get up at four o'clock. I have a quick breakfast and go to work by bike. My shift starts at six in the morning. I work in a big warehouse near Rotterdam. I pick orders and scan boxes. We have a short break at ten. I finish at two and then I go home. In the evening I sometimes study English."
+  },
+  {
+   "id": "w_late",
+   "level": "A2",
+   "title": "Wiadomość do lidera o spóźnieniu",
+   "emoji": "⏰",
+   "brief": "Napisz krótką wiadomość (4–6 zdań): spóźnisz się do pracy, podaj powód, godzinę przyjazdu i przeproś.",
+   "must": [
+    [
+     "sorry",
+     "apologise",
+     "apologize",
+     "afraid"
+    ],
+    [
+     "late",
+     "delay",
+     "delayed"
+    ],
+    [
+     "because",
+     "my bike",
+     "train",
+     "bus",
+     "traffic",
+     "ill"
+    ],
+    [
+     "at",
+     "around",
+     "by"
+    ],
+    [
+     "thank",
+     "thanks",
+     "see you"
+    ]
+   ],
+   "must_pl": [
+    "przeprosiny",
+    "informacja o spóźnieniu",
+    "powód",
+    "godzina przyjazdu",
+    "uprzejme zakończenie"
+   ],
+   "min_words": 30,
+   "tense_hint": "Przyszłość: I will be there at… / I am going to be late.",
+   "model": "Hi Kees, I am sorry but I will be late today. My bike has a flat tyre and I have to take the bus. I think I will be at the gate at about seven o'clock. I will start immediately when I arrive. Thanks for your understanding."
+  },
+  {
+   "id": "w_holiday",
+   "level": "B1",
+   "title": "E-mail z prośbą o urlop",
+   "emoji": "🌴",
+   "brief": "Napisz e-mail do przełożonego (6–10 zdań): poproś o urlop, podaj dokładne daty, powód i propozycję zastępstwa.",
+   "must": [
+    [
+     "would like",
+     "could i",
+     "i am writing",
+     "request"
+    ],
+    [
+     "holiday",
+     "days off",
+     "leave",
+     "vacation"
+    ],
+    [
+     "from",
+     "to",
+     "between",
+     "until"
+    ],
+    [
+     "because",
+     "reason",
+     "family",
+     "wedding",
+     "visit"
+    ],
+    [
+     "cover",
+     "replace",
+     "colleague",
+     "team"
+    ],
+    [
+     "thank",
+     "regards",
+     "best"
+    ]
+   ],
+   "must_pl": [
+    "uprzejma prośba",
+    "słowo „urlop”",
+    "daty od–do",
+    "powód",
+    "kto Cię zastąpi",
+    "grzeczne zakończenie"
+   ],
+   "min_words": 60,
+   "tense_hint": "Uprzejme formy: I would like to…, Could I…, I will make sure…",
+   "model": "Dear Kees, I am writing to ask for a few days off in July. I would like to take holiday from the 10th to the 17th because my sister is getting married and my whole family will be there. I have already spoken to Anna and she is willing to cover my shifts that week. I will finish all my current tasks before I leave. Please let me know if this is possible. Thank you very much. Best regards, Marek"
+  },
+  {
+   "id": "w_problem",
+   "level": "B1",
+   "title": "Zgłoszenie problemu na hali",
+   "emoji": "⚠️",
+   "brief": "Opisz na piśmie problem, który zdarzył się w pracy (6–10 zdań): co się stało, kiedy, jakie były skutki i co proponujesz.",
+   "must": [
+    [
+     "happened",
+     "was",
+     "were",
+     "fell",
+     "broke",
+     "found"
+    ],
+    [
+     "yesterday",
+     "this morning",
+     "when",
+     "at"
+    ],
+    [
+     "because",
+     "the reason",
+     "due to"
+    ],
+    [
+     "damaged",
+     "broken",
+     "problem",
+     "mistake",
+     "wrong"
+    ],
+    [
+     "i think",
+     "we should",
+     "maybe",
+     "suggest",
+     "propose"
+    ]
+   ],
+   "must_pl": [
+    "co się stało (czas przeszły)",
+    "kiedy",
+    "przyczyna",
+    "jakie szkody",
+    "propozycja rozwiązania"
+   ],
+   "min_words": 55,
+   "tense_hint": "Past Simple do zdarzeń, should/could do propozycji.",
+   "model": "Yesterday morning two pallets fell down in aisle seven. The reason was that the boxes on top were too heavy and the pallet was already damaged. Nobody was hurt, but about ten products were broken and we lost thirty minutes of work. I reported it to my team leader immediately. I think we should check old pallets before we load them and put heavy boxes at the bottom."
+  },
+  {
+   "id": "w_intro",
+   "level": "A1",
+   "title": "Przedstaw się nowemu zespołowi",
+   "emoji": "👋",
+   "brief": "Napisz 4–6 zdań o sobie: imię, skąd jesteś, gdzie pracujesz, co lubisz robić.",
+   "must": [
+    [
+     "my name",
+     "i am",
+     "i'm"
+    ],
+    [
+     "from",
+     "poland",
+     "live"
+    ],
+    [
+     "work",
+     "job"
+    ],
+    [
+     "like",
+     "enjoy",
+     "love"
+    ]
+   ],
+   "must_pl": [
+    "imię",
+    "skąd jesteś / gdzie mieszkasz",
+    "czym się zajmujesz",
+    "co lubisz"
+   ],
+   "min_words": 25,
+   "tense_hint": "to be + Present Simple: I am…, I work…, I like…",
+   "model": "Hello, my name is Marek. I am from Poland and I live in Rotterdam now. I work in a warehouse as a picker. In my free time I like cycling and watching films. I am learning English because I want to talk with my colleagues."
+  }
+ ],
+ "etykieta": "Zadania pisemne"
+}

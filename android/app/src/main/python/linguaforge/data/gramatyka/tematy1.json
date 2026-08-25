@@ -1,0 +1,551 @@
+{
+ "topics": [
+  {
+   "id": "present_simple",
+   "name": "Present Simple",
+   "level": "A1",
+   "theory": "<b>Kiedy?</b> Rutyny, fakty, rzeczy stałe: <i>I work in a warehouse. The shift starts at 6.</i><br><b>Budowa:</b> podmiot + czasownik (he/she/it → +s). Pytania: <i>Do/Does…?</i> Przeczenia: <i>don't / doesn't</i> + bezokolicznik.<br><b>Sygnały:</b> every day, usually, always, never, on Mondays.<br><b>Typowy błąd Polaków:</b> gubienie -s: ~~she work~~ → <b>she works</b>.",
+   "exercises": [
+    {
+     "id": "ps1",
+     "type": "gap",
+     "text": "My brother ___ (work) in Rotterdam.",
+     "accept": [
+      "works"
+     ],
+     "explain": "he/she/it → +s.",
+     "nr": 1
+    },
+    {
+     "id": "ps2",
+     "type": "choice",
+     "text": "___ she like her job?",
+     "options": [
+      "Do",
+      "Does",
+      "Is",
+      "Are"
+     ],
+     "answer": 1,
+     "explain": "she → Does.",
+     "nr": 2
+    },
+    {
+     "id": "ps3",
+     "type": "gap",
+     "text": "We ___ (not / start) work at 8. We start at 6.",
+     "accept": [
+      "don't start",
+      "do not start"
+     ],
+     "explain": "Przeczenie: don't + bezokolicznik.",
+     "nr": 3
+    },
+    {
+     "id": "ps4",
+     "type": "choice",
+     "text": "The warehouse ___ at 5 a.m.",
+     "options": [
+      "open",
+      "opens",
+      "opening",
+      "is open at"
+     ],
+     "answer": 1,
+     "explain": "Fakt/harmonogram → Present Simple z -s.",
+     "nr": 4
+    },
+    {
+     "id": "ps5",
+     "type": "gap",
+     "text": "How often ___ you ___ (do) overtime?",
+     "accept": [
+      "do do",
+      "do you do"
+     ],
+     "explain": "Pytanie: How often do you do…?",
+     "nr": 5
+    },
+    {
+     "id": "ps6",
+     "type": "order",
+     "text": "Ułóż zdanie:",
+     "words": [
+      "always",
+      "She",
+      "early",
+      "gets up"
+     ],
+     "accept": [
+      "she always gets up early"
+     ],
+     "explain": "Przysłówek częstotliwości przed czasownikiem głównym.",
+     "nr": 6
+    },
+    {
+     "id": "ps7",
+     "type": "gap",
+     "text": "He ___ (not / speak) Dutch.",
+     "accept": [
+      "doesn't speak",
+      "does not speak"
+     ],
+     "explain": "he → doesn't + bezokolicznik (bez -s!).",
+     "nr": 7
+    },
+    {
+     "id": "ps8",
+     "type": "choice",
+     "text": "Water ___ at 100 degrees.",
+     "options": [
+      "boil",
+      "boils",
+      "is boiling",
+      "boiled"
+     ],
+     "answer": 1,
+     "explain": "Fakt naukowy → Present Simple.",
+     "nr": 8
+    }
+   ],
+   "rule": "Present Simple: podmiot + czasownik; he/she/it → +s. Pytania i przeczenia przez do/does + forma podstawowa (bez -s)."
+  },
+  {
+   "id": "present_continuous",
+   "name": "Present Continuous",
+   "level": "A1",
+   "theory": "<b>Kiedy?</b> Teraz, w tym momencie albo tymczasowo: <i>I am loading the truck. She is working nights this month.</i><br><b>Budowa:</b> am/is/are + czasownik-ing.<br><b>Sygnały:</b> now, at the moment, look!, listen!, this week.<br><b>Uwaga:</b> czasowniki stanu (know, want, like, need) zwykle NIE występują w continuous: ~~I am knowing~~ → <b>I know</b>.",
+   "exercises": [
+    {
+     "id": "pc1",
+     "type": "gap",
+     "text": "Listen! Someone ___ (knock) on the door.",
+     "accept": [
+      "is knocking"
+     ],
+     "explain": "Dzieje się teraz → is + -ing.",
+     "nr": 1
+    },
+    {
+     "id": "pc2",
+     "type": "choice",
+     "text": "I can't help you now, I ___ lunch.",
+     "options": [
+      "have",
+      "am having",
+      "has",
+      "having"
+     ],
+     "answer": 1,
+     "explain": "have lunch = jeść lunch — tu czynność, więc continuous jest OK.",
+     "nr": 2
+    },
+    {
+     "id": "pc3",
+     "type": "gap",
+     "text": "They ___ (not / work) today, it's Sunday.",
+     "accept": [
+      "aren't working",
+      "are not working"
+     ],
+     "explain": "Przeczenie: aren't + -ing.",
+     "nr": 3
+    },
+    {
+     "id": "pc4",
+     "type": "choice",
+     "text": "Wybierz poprawne zdanie:",
+     "options": [
+      "I am wanting a break.",
+      "I want a break.",
+      "I wanting a break.",
+      "I am want a break."
+     ],
+     "answer": 1,
+     "explain": "want = czasownik stanu, bez continuous.",
+     "nr": 4
+    },
+    {
+     "id": "pc5",
+     "type": "gap",
+     "text": "What ___ you ___ (do) right now?",
+     "accept": [
+      "are doing",
+      "are you doing"
+     ],
+     "explain": "Pytanie: What are you doing?",
+     "nr": 5
+    },
+    {
+     "id": "pc6",
+     "type": "choice",
+     "text": "This week Marek ___ the night shift.",
+     "options": [
+      "works",
+      "is working",
+      "work",
+      "worked"
+     ],
+     "answer": 1,
+     "explain": "Sytuacja tymczasowa → continuous.",
+     "nr": 6
+    }
+   ],
+   "rule": "Present Continuous: am/is/are + czasownik-ing. Używamy o tym, co dzieje się TERAZ lub tymczasowo."
+  },
+  {
+   "id": "past_simple",
+   "name": "Past Simple",
+   "level": "A2",
+   "theory": "<b>Kiedy?</b> Zakończona przeszłość z określonym momentem: <i>Yesterday I finished at 2. Last week we unloaded ten trucks.</i><br><b>Budowa:</b> czasownik+ed lub 2. forma nieregularna (go→went, buy→bought, take→took). Pytania i przeczenia z <i>did/didn't</i> + bezokolicznik.<br><b>Sygnały:</b> yesterday, last week, ago, in 2020.<br><b>Typowy błąd:</b> podwójna przeszłość: ~~Did you went?~~ → <b>Did you go?</b>",
+   "exercises": [
+    {
+     "id": "pt1",
+     "type": "gap",
+     "text": "Yesterday I ___ (go) to work by bus.",
+     "accept": [
+      "went"
+     ],
+     "explain": "go → went.",
+     "nr": 1
+    },
+    {
+     "id": "pt2",
+     "type": "gap",
+     "text": "She ___ (buy) new safety shoes last week.",
+     "accept": [
+      "bought"
+     ],
+     "explain": "buy → bought.",
+     "nr": 2
+    },
+    {
+     "id": "pt3",
+     "type": "choice",
+     "text": "___ you see the team leader this morning?",
+     "options": [
+      "Did",
+      "Do",
+      "Have",
+      "Was"
+     ],
+     "answer": 0,
+     "explain": "Pytanie o przeszłość: Did + bezokolicznik.",
+     "nr": 3
+    },
+    {
+     "id": "pt4",
+     "type": "gap",
+     "text": "We ___ (not / finish) the order on time.",
+     "accept": [
+      "didn't finish",
+      "did not finish"
+     ],
+     "explain": "didn't + bezokolicznik.",
+     "nr": 4
+    },
+    {
+     "id": "pt5",
+     "type": "choice",
+     "text": "Wybierz poprawne zdanie:",
+     "options": [
+      "Did you went home?",
+      "Did you go home?",
+      "You did go home?",
+      "Did you gone home?"
+     ],
+     "answer": 1,
+     "explain": "Po did zawsze bezokolicznik.",
+     "nr": 5
+    },
+    {
+     "id": "pt6",
+     "type": "gap",
+     "text": "The truck ___ (arrive) two hours ago.",
+     "accept": [
+      "arrived"
+     ],
+     "explain": "ago → Past Simple, arrive+d.",
+     "nr": 6
+    },
+    {
+     "id": "pt7",
+     "type": "order",
+     "text": "Ułóż zdanie:",
+     "words": [
+      "yesterday",
+      "break",
+      "We",
+      "a",
+      "took",
+      "short"
+     ],
+     "accept": [
+      "we took a short break yesterday"
+     ],
+     "explain": "take → took.",
+     "nr": 7
+    }
+   ],
+   "rule": "Past Simple: 2. forma czasownika (-ed lub nieregularna). Pytania i przeczenia: did/didn't + forma PODSTAWOWA."
+  },
+  {
+   "id": "present_perfect",
+   "name": "Present Perfect",
+   "level": "B1",
+   "theory": "<b>Kiedy?</b> Przeszłość połączona z TERAZ: skutek widoczny teraz, doświadczenia życiowe, czynności od jakiegoś czasu. <i>I have lost my badge (nie mam go teraz). I have worked here for 3 years (nadal pracuję).</i><br><b>Budowa:</b> have/has + 3. forma (gone, bought, done).<br><b>Sygnały:</b> just, already, yet, ever, never, since, for.<br><b>Kluczowa różnica z Past Simple:</b> <i>I lost my keys yesterday</i> (kiedy? wczoraj → Past Simple) vs <i>I have lost my keys</i> (skutek: nie mogę wejść → Perfect). Po polsku oba to „zgubiłem” — dlatego to najtrudniejszy czas dla Polaków.",
+   "exercises": [
+    {
+     "id": "pp1",
+     "type": "gap",
+     "text": "I ___ just ___ (finish) my shift.",
+     "accept": [
+      "have finished",
+      "have just finished"
+     ],
+     "explain": "just → Present Perfect: have + finished.",
+     "nr": 1
+    },
+    {
+     "id": "pp2",
+     "type": "choice",
+     "text": "She ___ here since 2019.",
+     "options": [
+      "works",
+      "worked",
+      "has worked",
+      "is working"
+     ],
+     "answer": 2,
+     "explain": "since → Present Perfect.",
+     "nr": 2
+    },
+    {
+     "id": "pp3",
+     "type": "choice",
+     "text": "___ you ever ___ a forklift?",
+     "options": [
+      "Did / drive",
+      "Have / driven",
+      "Do / drive",
+      "Had / drove"
+     ],
+     "answer": 1,
+     "explain": "Doświadczenie życiowe: Have you ever driven…?",
+     "nr": 3
+    },
+    {
+     "id": "pp4",
+     "type": "choice",
+     "text": "Wybierz poprawne zdanie:",
+     "options": [
+      "I have seen him yesterday.",
+      "I saw him yesterday.",
+      "I have see him yesterday.",
+      "I seen him yesterday."
+     ],
+     "answer": 1,
+     "explain": "yesterday = konkretny moment → Past Simple, nie Perfect!",
+     "nr": 4
+    },
+    {
+     "id": "pp5",
+     "type": "gap",
+     "text": "We ___ (not / receive) the delivery yet.",
+     "accept": [
+      "haven't received",
+      "have not received"
+     ],
+     "explain": "yet w przeczeniu → Present Perfect.",
+     "nr": 5
+    },
+    {
+     "id": "pp6",
+     "type": "choice",
+     "text": "How long ___ you ___ in the Netherlands?",
+     "options": [
+      "do / live",
+      "did / live",
+      "have / lived",
+      "are / living"
+     ],
+     "answer": 2,
+     "explain": "How long + sytuacja trwająca do teraz → Perfect.",
+     "nr": 6
+    },
+    {
+     "id": "pp7",
+     "type": "gap",
+     "text": "He has worked here ___ three years.",
+     "accept": [
+      "for"
+     ],
+     "explain": "for + okres czasu; since + punkt startowy.",
+     "nr": 7
+    },
+    {
+     "id": "pp8",
+     "type": "choice",
+     "text": "The manager ___ already ___ the report.",
+     "options": [
+      "has / read",
+      "have / read",
+      "did / read",
+      "has / readed"
+     ],
+     "answer": 0,
+     "explain": "already → Perfect; read-read-read (wym. /red/).",
+     "nr": 8
+    }
+   ],
+   "rule": "Present Perfect: have/has + 3. forma. Skutek widoczny teraz lub doświadczenie — nigdy z konkretną datą."
+  },
+  {
+   "id": "future_forms",
+   "name": "Przyszłość: will / going to",
+   "level": "A2",
+   "theory": "<b>will</b> — decyzja w chwili mówienia, obietnica, przewidywanie: <i>I'll help you with that pallet.</i><br><b>be going to</b> — plan/zamiar podjęty wcześniej albo przewidywanie z dowodów: <i>I'm going to ask for a day off. Look at the clouds — it's going to rain.</i><br><b>Present Continuous</b> — ustalone spotkania: <i>I'm meeting the agency tomorrow.</i>",
+   "exercises": [
+    {
+     "id": "fu1",
+     "type": "choice",
+     "text": "The phone is ringing. — Don't worry, I ___ answer it.",
+     "options": [
+      "am going to",
+      "will",
+      "going to",
+      "would"
+     ],
+     "answer": 1,
+     "explain": "Decyzja w tej chwili → will.",
+     "nr": 1
+    },
+    {
+     "id": "fu2",
+     "type": "choice",
+     "text": "We ___ move to a bigger flat next month. Everything is planned.",
+     "options": [
+      "will",
+      "are going to",
+      "going",
+      "would"
+     ],
+     "answer": 1,
+     "explain": "Wcześniejszy plan → going to.",
+     "nr": 2
+    },
+    {
+     "id": "fu3",
+     "type": "gap",
+     "text": "Look at those boxes! They ___ (fall)!",
+     "accept": [
+      "are going to fall"
+     ],
+     "explain": "Przewidywanie z dowodów → going to.",
+     "nr": 3
+    },
+    {
+     "id": "fu4",
+     "type": "choice",
+     "text": "I promise I ___ be late again.",
+     "options": [
+      "won't",
+      "don't",
+      "am not going",
+      "not will"
+     ],
+     "answer": 0,
+     "explain": "Obietnica → will (won't = will not).",
+     "nr": 4
+    },
+    {
+     "id": "fu5",
+     "type": "gap",
+     "text": "___ you help me with this order? (uprzejma prośba)",
+     "accept": [
+      "will",
+      "will you",
+      "could",
+      "can"
+     ],
+     "explain": "Will you…? = prośba.",
+     "nr": 5
+    }
+   ],
+   "rule": "Przyszłość: will + bezokolicznik (decyzja teraz, przewidywanie) albo be going to + bezokolicznik (plan, zamiar, widoczna zapowiedź)."
+  },
+  {
+   "id": "comparatives",
+   "name": "Stopniowanie przymiotników",
+   "level": "A2",
+   "theory": "<b>Krótkie przymiotniki:</b> +er / the +est: <i>heavy → heavier → the heaviest</i>.<br><b>Długie:</b> more / the most: <i>more difficult, the most important</i>.<br><b>Nieregularne:</b> good→better→best, bad→worse→worst, far→further→furthest.<br><b>Porównania:</b> as…as (tak samo), than (niż).",
+   "exercises": [
+    {
+     "id": "cp1",
+     "type": "gap",
+     "text": "This pallet is ___ (heavy) than that one.",
+     "accept": [
+      "heavier"
+     ],
+     "explain": "heavy → heavier (y→i).",
+     "nr": 1
+    },
+    {
+     "id": "cp2",
+     "type": "choice",
+     "text": "It's the ___ warehouse in the region.",
+     "options": [
+      "bigger",
+      "biggest",
+      "most big",
+      "big"
+     ],
+     "answer": 1,
+     "explain": "Stopień najwyższy: the biggest.",
+     "nr": 2
+    },
+    {
+     "id": "cp3",
+     "type": "gap",
+     "text": "My English is getting ___ (good).",
+     "accept": [
+      "better"
+     ],
+     "explain": "good → better.",
+     "nr": 3
+    },
+    {
+     "id": "cp4",
+     "type": "choice",
+     "text": "The night shift is ___ than the day shift.",
+     "options": [
+      "more quiet",
+      "quieter",
+      "most quiet",
+      "quiet"
+     ],
+     "answer": 1,
+     "explain": "quiet → quieter.",
+     "nr": 4
+    },
+    {
+     "id": "cp5",
+     "type": "choice",
+     "text": "This job is not as hard ___ my old one.",
+     "options": [
+      "than",
+      "as",
+      "like",
+      "that"
+     ],
+     "answer": 1,
+     "explain": "as … as.",
+     "nr": 5
+    }
+   ],
+   "rule": "Stopniowanie: krótkie przymiotniki +er/-est (heavier), dłuższe more/most (more expensive). Po stopniu wyższym: than."
+  }
+ ],
+ "name": "Gramatyka — czasy",
+ "etykieta": "Gramatyka — czasy"
+}

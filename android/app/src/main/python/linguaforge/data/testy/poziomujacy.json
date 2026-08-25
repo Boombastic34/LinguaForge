@@ -1,0 +1,2155 @@
+{
+ "grammar": [
+  {
+   "id": "g1",
+   "level": "A1",
+   "topic": "present_simple",
+   "text": "She ___ to work every day.",
+   "options": [
+    "go",
+    "goes",
+    "going",
+    "is go"
+   ],
+   "answer": 1,
+   "pl": "Ona chodzi do pracy codziennie.",
+   "explain": "3. osoba (she) w Present Simple: goes.",
+   "nr": 1
+  },
+  {
+   "id": "g2",
+   "level": "A1",
+   "topic": "to_be",
+   "text": "They ___ from Poland.",
+   "options": [
+    "is",
+    "am",
+    "are",
+    "be"
+   ],
+   "answer": 2,
+   "pl": "Oni są z Polski.",
+   "explain": "They → are.",
+   "nr": 2
+  },
+  {
+   "id": "g3",
+   "level": "A1",
+   "topic": "present_simple",
+   "text": "___ you like coffee?",
+   "options": [
+    "Does",
+    "Do",
+    "Are",
+    "Is"
+   ],
+   "answer": 1,
+   "pl": "Czy lubisz kawę?",
+   "explain": "Pytanie z 'you': Do.",
+   "nr": 3
+  },
+  {
+   "id": "g4",
+   "level": "A1",
+   "topic": "articles",
+   "text": "I have ___ apple.",
+   "options": [
+    "a",
+    "an",
+    "the",
+    "-"
+   ],
+   "answer": 1,
+   "pl": "Mam jabłko.",
+   "explain": "Przed samogłoską: an.",
+   "nr": 4
+  },
+  {
+   "id": "g5",
+   "level": "A1",
+   "topic": "possessive",
+   "text": "This is ___ book.",
+   "options": [
+    "me",
+    "my",
+    "I",
+    "mine book"
+   ],
+   "answer": 1,
+   "pl": "To jest moja książka.",
+   "explain": "Przymiotnik dzierżawczy: my.",
+   "nr": 5
+  },
+  {
+   "id": "g6",
+   "level": "A1",
+   "topic": "present_continuous",
+   "text": "Look! It ___ raining.",
+   "options": [
+    "is",
+    "are",
+    "do",
+    "does"
+   ],
+   "answer": 0,
+   "pl": "Patrz! Pada deszcz (właśnie teraz).",
+   "explain": "„Look!” sygnalizuje, że coś dzieje się w tej chwili → Present Continuous: it IS raining (is + -ing). Present Simple „it rains” znaczyłoby: pada zwykle, np. w listopadzie.",
+   "nr": 6
+  },
+  {
+   "id": "g31",
+   "level": "A1",
+   "topic": "to_be",
+   "text": "I ___ tired after work.",
+   "options": [
+    "is",
+    "am",
+    "are",
+    "be"
+   ],
+   "answer": 1,
+   "pl": "Jestem zmęczony po pracy.",
+   "explain": "I → am.",
+   "nr": 7
+  },
+  {
+   "id": "g32",
+   "level": "A1",
+   "topic": "plural",
+   "text": "Two ___ are on the pallet.",
+   "options": [
+    "box",
+    "boxs",
+    "boxes",
+    "boxies"
+   ],
+   "answer": 2,
+   "pl": "Dwa pudła są na palecie.",
+   "explain": "box → boxes (+es po x).",
+   "nr": 8
+  },
+  {
+   "id": "g7",
+   "level": "A2",
+   "topic": "past_simple",
+   "text": "Yesterday I ___ to the cinema.",
+   "options": [
+    "go",
+    "goed",
+    "went",
+    "gone"
+   ],
+   "answer": 2,
+   "pl": "Wczoraj poszedłem do kina.",
+   "explain": "go → went (nieregularny).",
+   "nr": 9
+  },
+  {
+   "id": "g8",
+   "level": "A2",
+   "topic": "past_simple",
+   "text": "She ___ watch TV last night.",
+   "options": [
+    "didn't",
+    "doesn't",
+    "wasn't",
+    "don't"
+   ],
+   "answer": 0,
+   "pl": "Ona nie oglądała wczoraj telewizji.",
+   "explain": "Przeczenie w przeszłości: didn't + forma PODSTAWOWA. Dlatego „didn't watch”, a nie „didn't watched” — czas przeszły niesie już operator did.",
+   "nr": 10
+  },
+  {
+   "id": "g9",
+   "level": "A2",
+   "topic": "comparatives",
+   "text": "This box is ___ than that one.",
+   "options": [
+    "heavy",
+    "heavier",
+    "more heavy",
+    "heaviest"
+   ],
+   "answer": 1,
+   "pl": "To pudło jest cięższe niż tamto.",
+   "explain": "Krótkie przymiotniki: +er.",
+   "nr": 11
+  },
+  {
+   "id": "g10",
+   "level": "A2",
+   "topic": "future_going_to",
+   "text": "We ___ visit our grandma next week.",
+   "options": [
+    "are going to",
+    "will going",
+    "go to",
+    "are go to"
+   ],
+   "answer": 0,
+   "pl": "Zamierzamy odwiedzić babcię w przyszłym tygodniu.",
+   "explain": "Plan ustalony wcześniej → be going to. Konstrukcja: am/is/are + going to + bezokolicznik. „are go to” jest błędne, bo brakuje formy -ing od „go”: we ARE GOING TO visit. Gdyby to była decyzja podjęta w tej chwili, powiedzielibyśmy: We WILL visit.",
+   "nr": 12
+  },
+  {
+   "id": "g11",
+   "level": "A2",
+   "topic": "countable",
+   "text": "How ___ sugar do you need?",
+   "options": [
+    "many",
+    "much",
+    "a lot",
+    "few"
+   ],
+   "answer": 1,
+   "pl": "Ile cukru potrzebujesz?",
+   "explain": "Cukier niepoliczalny → much.",
+   "nr": 13
+  },
+  {
+   "id": "g12",
+   "level": "A2",
+   "topic": "present_continuous",
+   "text": "I can't talk now, I ___ dinner.",
+   "options": [
+    "cook",
+    "am cooking",
+    "cooks",
+    "cooked"
+   ],
+   "answer": 1,
+   "pl": "Nie mogę teraz rozmawiać, gotuję obiad.",
+   "explain": "Czynność w tej chwili → am cooking.",
+   "nr": 14
+  },
+  {
+   "id": "g33",
+   "level": "A2",
+   "topic": "past_simple",
+   "text": "We ___ at the new warehouse two weeks ago.",
+   "options": [
+    "work",
+    "worked",
+    "working",
+    "works"
+   ],
+   "answer": 1,
+   "pl": "Pracowaliśmy w nowym magazynie dwa tygodnie temu.",
+   "explain": "ago → Past Simple.",
+   "nr": 15
+  },
+  {
+   "id": "g34",
+   "level": "A2",
+   "topic": "modals",
+   "text": "You ___ smoke here. It's forbidden.",
+   "options": [
+    "mustn't",
+    "must",
+    "can",
+    "should"
+   ],
+   "answer": 0,
+   "pl": "Nie wolno tu palić. To zabronione.",
+   "explain": "Zakaz → mustn't.",
+   "nr": 16
+  },
+  {
+   "id": "g13",
+   "level": "B1",
+   "topic": "present_perfect",
+   "text": "I ___ my keys. I can't open the door.",
+   "options": [
+    "lost",
+    "have lost",
+    "lose",
+    "was losing"
+   ],
+   "answer": 1,
+   "pl": "Zgubiłem klucze. Nie mogę otworzyć drzwi.",
+   "explain": "Klucz to skutek TERAZ: nie mogę otworzyć drzwi, bo kluczy nadal nie mam → Present Perfect (have + 3. forma: lost). „I lost my keys” byłoby poprawne tylko z konkretną przeszłością, np. „I lost them yesterday”.",
+   "nr": 17
+  },
+  {
+   "id": "g14",
+   "level": "B1",
+   "topic": "present_perfect",
+   "text": "She has lived here ___ 2015.",
+   "options": [
+    "for",
+    "since",
+    "from",
+    "during"
+   ],
+   "answer": 1,
+   "pl": "Ona mieszka tu od 2015 roku.",
+   "explain": "Punkt startowy → since.",
+   "nr": 18
+  },
+  {
+   "id": "g15",
+   "level": "B1",
+   "topic": "first_conditional",
+   "text": "If it rains, we ___ at home.",
+   "options": [
+    "stay",
+    "will stay",
+    "would stay",
+    "stayed"
+   ],
+   "answer": 1,
+   "pl": "Jeśli będzie padać, zostaniemy w domu.",
+   "explain": "Pierwszy tryb warunkowy (realna przyszłość): if + Present Simple, will + bezokolicznik. Po „if” NIGDY nie stawiamy will — przyszłość niesie druga część zdania.",
+   "nr": 19
+  },
+  {
+   "id": "g16",
+   "level": "B1",
+   "topic": "past_continuous",
+   "text": "I ___ TV when the phone rang.",
+   "options": [
+    "watched",
+    "was watching",
+    "have watched",
+    "watch"
+   ],
+   "answer": 1,
+   "pl": "Oglądałem telewizję, kiedy zadzwonił telefon.",
+   "explain": "Czynność w trakcie przerwana inną → Past Continuous.",
+   "nr": 20
+  },
+  {
+   "id": "g17",
+   "level": "B1",
+   "topic": "passive",
+   "text": "This bridge ___ in 1930.",
+   "options": [
+    "built",
+    "was built",
+    "is build",
+    "has built"
+   ],
+   "answer": 1,
+   "pl": "Ten most zbudowano w 1930 roku.",
+   "explain": "Strona bierna: was built.",
+   "nr": 21
+  },
+  {
+   "id": "g18",
+   "level": "B1",
+   "topic": "modals",
+   "text": "You ___ wear a helmet in this area. It's the law.",
+   "options": [
+    "must",
+    "might",
+    "could",
+    "would"
+   ],
+   "answer": 0,
+   "pl": "Musisz nosić kask w tej strefie. Takie jest prawo.",
+   "explain": "Obowiązek → must.",
+   "nr": 22
+  },
+  {
+   "id": "g35",
+   "level": "B1",
+   "topic": "present_perfect",
+   "text": "___ you ever ___ to England?",
+   "options": [
+    "Did / go",
+    "Have / been",
+    "Do / go",
+    "Were / been"
+   ],
+   "answer": 1,
+   "pl": "Czy byłeś kiedykolwiek w Anglii?",
+   "explain": "Doświadczenie życiowe → Have you ever been…?",
+   "nr": 23
+  },
+  {
+   "id": "g36",
+   "level": "B1",
+   "topic": "quantifiers",
+   "text": "There are ___ pallets left — maybe three or four.",
+   "options": [
+    "a few",
+    "a little",
+    "much",
+    "any"
+   ],
+   "answer": 0,
+   "pl": "Zostało kilka palet — może trzy albo cztery.",
+   "explain": "Policzalne → a few.",
+   "nr": 24
+  },
+  {
+   "id": "g19",
+   "level": "B2",
+   "topic": "second_conditional",
+   "text": "If I ___ you, I would take that job.",
+   "options": [
+    "am",
+    "was",
+    "were",
+    "be"
+   ],
+   "answer": 2,
+   "pl": "Na twoim miejscu wziąłbym tę pracę.",
+   "explain": "Drugi tryb warunkowy (hipoteza): If + Past Simple, would + bezokolicznik. W tej konstrukcji dla „I” używa się were (If I were you) — to utarta forma dobrej rady.",
+   "nr": 25
+  },
+  {
+   "id": "g20",
+   "level": "B2",
+   "topic": "present_perfect_continuous",
+   "text": "I'm tired because I ___ all day.",
+   "options": [
+    "worked",
+    "have been working",
+    "am working",
+    "work"
+   ],
+   "answer": 1,
+   "pl": "Jestem zmęczony, bo pracuję cały dzień (do teraz).",
+   "explain": "Czynność trwająca do teraz ze skutkiem → Perfect Continuous.",
+   "nr": 26
+  },
+  {
+   "id": "g21",
+   "level": "B2",
+   "topic": "reported_speech",
+   "text": "He said he ___ the report the day before.",
+   "options": [
+    "finished",
+    "has finished",
+    "had finished",
+    "finishes"
+   ],
+   "answer": 2,
+   "pl": "Powiedział, że skończył raport dzień wcześniej.",
+   "explain": "Mowa zależna: cofamy czas → Past Perfect.",
+   "nr": 27
+  },
+  {
+   "id": "g22",
+   "level": "B2",
+   "topic": "wish",
+   "text": "I wish I ___ more free time.",
+   "options": [
+    "have",
+    "had",
+    "would have",
+    "has"
+   ],
+   "answer": 1,
+   "pl": "Szkoda, że nie mam więcej wolnego czasu.",
+   "explain": "wish + Past Simple = żal o teraźniejszość.",
+   "nr": 28
+  },
+  {
+   "id": "g23",
+   "level": "B2",
+   "topic": "passive",
+   "text": "The parcels ___ right now.",
+   "options": [
+    "are being loaded",
+    "are loading",
+    "load",
+    "have loaded"
+   ],
+   "answer": 0,
+   "pl": "Paczki są właśnie ładowane.",
+   "explain": "Strona bierna w Present Continuous.",
+   "nr": 29
+  },
+  {
+   "id": "g24",
+   "level": "B2",
+   "topic": "used_to",
+   "text": "He ___ smoke, but he quit two years ago.",
+   "options": [
+    "used to",
+    "is used to",
+    "use to",
+    "was used to"
+   ],
+   "answer": 0,
+   "pl": "Kiedyś palił, ale rzucił dwa lata temu.",
+   "explain": "Dawny nawyk → used to.",
+   "nr": 30
+  },
+  {
+   "id": "g37",
+   "level": "B2",
+   "topic": "relative",
+   "text": "The man ___ drives the forklift is my neighbour.",
+   "options": [
+    "which",
+    "who",
+    "whose",
+    "whom"
+   ],
+   "answer": 1,
+   "pl": "Mężczyzna, który jeździ wózkiem, to mój sąsiad.",
+   "explain": "Osoba jako podmiot → who.",
+   "nr": 31
+  },
+  {
+   "id": "g38",
+   "level": "B2",
+   "topic": "gerund",
+   "text": "She suggested ___ the meeting.",
+   "options": [
+    "to postpone",
+    "postponing",
+    "postpone",
+    "postponed"
+   ],
+   "answer": 1,
+   "pl": "Zaproponowała przełożenie spotkania.",
+   "explain": "suggest + gerund (-ing).",
+   "nr": 32
+  },
+  {
+   "id": "g25",
+   "level": "C1",
+   "topic": "third_conditional",
+   "text": "If you ___ me, I would have helped you.",
+   "options": [
+    "asked",
+    "had asked",
+    "would ask",
+    "have asked"
+   ],
+   "answer": 1,
+   "pl": "Gdybyś mnie (wtedy) poprosił, pomógłbym ci.",
+   "explain": "3. tryb: if + Past Perfect.",
+   "nr": 33
+  },
+  {
+   "id": "g26",
+   "level": "C1",
+   "topic": "inversion",
+   "text": "___ had I arrived when the meeting started.",
+   "options": [
+    "Hardly",
+    "Never",
+    "Rarely",
+    "Only"
+   ],
+   "answer": 0,
+   "pl": "Ledwie przyjechałem, a spotkanie się zaczęło.",
+   "explain": "Inwersja: Hardly had I arrived when…",
+   "nr": 34
+  },
+  {
+   "id": "g27",
+   "level": "C1",
+   "topic": "mixed_conditional",
+   "text": "If she had studied medicine, she ___ a doctor now.",
+   "options": [
+    "would be",
+    "would have been",
+    "will be",
+    "were"
+   ],
+   "answer": 0,
+   "pl": "Gdyby (wtedy) studiowała medycynę, byłaby teraz lekarzem.",
+   "explain": "Warunek przeszły, skutek teraźniejszy.",
+   "nr": 35
+  },
+  {
+   "id": "g28",
+   "level": "C1",
+   "topic": "subjunctive",
+   "text": "The manager insisted that every worker ___ the training.",
+   "options": [
+    "attends",
+    "attend",
+    "attended",
+    "will attend"
+   ],
+   "answer": 1,
+   "pl": "Kierownik nalegał, aby każdy pracownik odbył szkolenie.",
+   "explain": "Subjunctive po insist that: forma podstawowa.",
+   "nr": 36
+  },
+  {
+   "id": "g29",
+   "level": "C1",
+   "topic": "cleft",
+   "text": "___ was the delay that annoyed the customers most.",
+   "options": [
+    "It",
+    "There",
+    "What",
+    "That"
+   ],
+   "answer": 0,
+   "pl": "To właśnie opóźnienie najbardziej zdenerwowało klientów.",
+   "explain": "It was X that… (zdanie rozszczepione).",
+   "nr": 37
+  },
+  {
+   "id": "g30",
+   "level": "C1",
+   "topic": "future_perfect",
+   "text": "By 6 p.m. we ___ all the orders.",
+   "options": [
+    "will pack",
+    "will have packed",
+    "are packing",
+    "packed"
+   ],
+   "answer": 1,
+   "pl": "Do 18:00 spakujemy (zdążymy spakować) wszystkie zamówienia.",
+   "explain": "Zakończone przed punktem w przyszłości → Future Perfect.",
+   "nr": 38
+  }
+ ],
+ "vocab": [
+  {
+   "id": "v1",
+   "band": 1000,
+   "text": "„Zmęczony” to po angielsku:",
+   "options": [
+    "tired",
+    "angry",
+    "hungry",
+    "busy"
+   ],
+   "answer": 0,
+   "pl": "tired = zmęczony (angry-zły, hungry-głodny, busy-zajęty)",
+   "options_pl": [
+    "zmęczony",
+    "zły",
+    "głodny",
+    "zajęty"
+   ],
+   "nr": 1
+  },
+  {
+   "id": "v2",
+   "band": 1000,
+   "text": "What is the opposite of „cheap”?",
+   "options": [
+    "small",
+    "expensive",
+    "easy",
+    "old"
+   ],
+   "answer": 1,
+   "pl": "Przeciwieństwo „taniego” to expensive — drogi.",
+   "options_pl": [
+    "mały",
+    "drogi",
+    "łatwy",
+    "stary"
+   ],
+   "nr": 2
+  },
+  {
+   "id": "v3",
+   "band": 1000,
+   "text": "„Kupować” to:",
+   "options": [
+    "sell",
+    "bring",
+    "buy",
+    "take"
+   ],
+   "answer": 2,
+   "pl": "buy = kupować (sell-sprzedawać, bring-przynosić, take-brać)",
+   "options_pl": [
+    "sprzedawać",
+    "przynosić",
+    "kupować",
+    "brać"
+   ],
+   "nr": 3
+  },
+  {
+   "id": "v4",
+   "band": 1000,
+   "text": "You cook food in a…",
+   "options": [
+    "bathroom",
+    "kitchen",
+    "garden",
+    "office"
+   ],
+   "answer": 1,
+   "pl": "Jedzenie gotujesz w kuchni — kitchen.",
+   "options_pl": [
+    "łazienka",
+    "kuchnia",
+    "ogród",
+    "biuro"
+   ],
+   "nr": 4
+  },
+  {
+   "id": "v19",
+   "band": 1000,
+   "text": "„Praca” to:",
+   "options": [
+    "walk",
+    "work",
+    "word",
+    "world"
+   ],
+   "answer": 1,
+   "pl": "work = praca (uwaga na podobne: word-słowo, world-świat)",
+   "options_pl": [
+    "spacer",
+    "praca",
+    "słowo",
+    "świat"
+   ],
+   "nr": 5
+  },
+  {
+   "id": "v20",
+   "band": 1000,
+   "text": "The opposite of „open” is…",
+   "options": [
+    "start",
+    "close",
+    "stop",
+    "end"
+   ],
+   "answer": 1,
+   "pl": "Przeciwieństwo „otwierać” to close — zamykać.",
+   "options_pl": [
+    "zaczynać",
+    "zamykać",
+    "zatrzymywać",
+    "kończyć"
+   ],
+   "nr": 6
+  },
+  {
+   "id": "v5",
+   "band": 2000,
+   "text": "„Doświadczenie (zawodowe)” to:",
+   "options": [
+    "experiment",
+    "experience",
+    "expertise trial",
+    "exposure"
+   ],
+   "answer": 1,
+   "pl": "experience = doświadczenie; experiment to eksperyment!",
+   "options_pl": [
+    "eksperyment",
+    "doświadczenie",
+    "próba biegłości",
+    "ekspozycja"
+   ],
+   "nr": 7
+  },
+  {
+   "id": "v6",
+   "band": 2000,
+   "text": "To „improve” means to…",
+   "options": [
+    "make worse",
+    "make better",
+    "forget",
+    "repeat"
+   ],
+   "answer": 1,
+   "pl": "improve = ulepszać, poprawiać.",
+   "options_pl": [
+    "pogarszać",
+    "ulepszać",
+    "zapominać",
+    "powtarzać"
+   ],
+   "nr": 8
+  },
+  {
+   "id": "v7",
+   "band": 2000,
+   "text": "„Dostawa” to:",
+   "options": [
+    "delivery",
+    "deliverance",
+    "delivering man",
+    "deliver"
+   ],
+   "answer": 0,
+   "pl": "delivery = dostawa (deliver to czasownik: dostarczać).",
+   "options_pl": [
+    "dostawa",
+    "wybawienie",
+    "doręczyciel",
+    "dostarczać (czasownik)"
+   ],
+   "nr": 9
+  },
+  {
+   "id": "v8",
+   "band": 2000,
+   "text": "A person you work with is your…",
+   "options": [
+    "neighbour",
+    "colleague",
+    "customer",
+    "boss only"
+   ],
+   "answer": 1,
+   "pl": "colleague = współpracownik (neighbour-sąsiad, customer-klient).",
+   "options_pl": [
+    "sąsiad",
+    "współpracownik",
+    "klient",
+    "tylko szef"
+   ],
+   "nr": 10
+  },
+  {
+   "id": "v21",
+   "band": 2000,
+   "text": "„Bezpieczeństwo” to:",
+   "options": [
+    "safety",
+    "save",
+    "safely",
+    "safe place"
+   ],
+   "answer": 0,
+   "pl": "safety = bezpieczeństwo (safe = bezpieczny).",
+   "options_pl": [
+    "bezpieczeństwo",
+    "ratować (czasownik)",
+    "bezpiecznie",
+    "bezpieczne miejsce"
+   ],
+   "nr": 11
+  },
+  {
+   "id": "v22",
+   "band": 2000,
+   "text": "To „hire” someone means to…",
+   "options": [
+    "fire them",
+    "give them a job",
+    "pay them less",
+    "train them"
+   ],
+   "answer": 1,
+   "pl": "hire = zatrudnić (fire = zwolnić!).",
+   "options_pl": [
+    "zwolnić go",
+    "dać mu pracę",
+    "płacić mu mniej",
+    "przeszkolić go"
+   ],
+   "nr": 12
+  },
+  {
+   "id": "v9",
+   "band": 3000,
+   "text": "To „postpone” a meeting means to…",
+   "options": [
+    "cancel it",
+    "move it to later",
+    "start it early",
+    "join it"
+   ],
+   "answer": 1,
+   "pl": "postpone = przełożyć na później (nie odwołać!).",
+   "options_pl": [
+    "odwołać je",
+    "przełożyć na później",
+    "zacząć wcześniej",
+    "dołączyć do niego"
+   ],
+   "nr": 13
+  },
+  {
+   "id": "v10",
+   "band": 3000,
+   "text": "„Wydajny” to:",
+   "options": [
+    "efficient",
+    "sufficient",
+    "deficient",
+    "proficient tools"
+   ],
+   "answer": 0,
+   "pl": "efficient = wydajny (sufficient-wystarczający).",
+   "options_pl": [
+    "wydajny",
+    "wystarczający",
+    "niedostateczny",
+    "biegłe narzędzia"
+   ],
+   "nr": 14
+  },
+  {
+   "id": "v11",
+   "band": 3000,
+   "text": "If something is „fragile”, it…",
+   "options": [
+    "smells bad",
+    "breaks easily",
+    "is heavy",
+    "is cheap"
+   ],
+   "answer": 1,
+   "pl": "fragile = kruchy, delikatny — łatwo się tłucze.",
+   "options_pl": [
+    "brzydko pachnie",
+    "łatwo się tłucze",
+    "jest ciężki",
+    "jest tani"
+   ],
+   "nr": 15
+  },
+  {
+   "id": "v12",
+   "band": 3000,
+   "text": "„Zapasy / stan magazynowy” to:",
+   "options": [
+    "stockings",
+    "stock",
+    "stack",
+    "storage man"
+   ],
+   "answer": 1,
+   "pl": "stock = zapas/stan (stack = stos, stockings = pończochy!).",
+   "options_pl": [
+    "pończochy",
+    "zapas / stan",
+    "stos",
+    "człowiek z magazynu"
+   ],
+   "nr": 16
+  },
+  {
+   "id": "v23",
+   "band": 3000,
+   "text": "An „urgent” order is…",
+   "options": [
+    "cancelled",
+    "very important and fast",
+    "cheap",
+    "damaged"
+   ],
+   "answer": 1,
+   "pl": "urgent = pilny.",
+   "options_pl": [
+    "anulowane",
+    "bardzo ważne i szybkie",
+    "tanie",
+    "uszkodzone"
+   ],
+   "nr": 17
+  },
+  {
+   "id": "v24",
+   "band": 3000,
+   "text": "„Umiejętność” to:",
+   "options": [
+    "skill",
+    "skull",
+    "still",
+    "skell"
+   ],
+   "answer": 0,
+   "pl": "skill = umiejętność (skull to czaszka!).",
+   "options_pl": [
+    "umiejętność",
+    "czaszka",
+    "nadal",
+    "(nie istnieje)"
+   ],
+   "nr": 18
+  },
+  {
+   "id": "v13",
+   "band": 5000,
+   "text": "To „comply with” rules means to…",
+   "options": [
+    "break them",
+    "follow them",
+    "write them",
+    "discuss them"
+   ],
+   "answer": 1,
+   "pl": "comply with = przestrzegać, stosować się do.",
+   "options_pl": [
+    "łamać je",
+    "przestrzegać ich",
+    "pisać je",
+    "omawiać je"
+   ],
+   "nr": 19
+  },
+  {
+   "id": "v14",
+   "band": 5000,
+   "text": "A „discrepancy” in numbers is…",
+   "options": [
+    "a perfect match",
+    "a difference that should not be there",
+    "a large profit",
+    "a rounding style"
+   ],
+   "answer": 1,
+   "pl": "discrepancy = rozbieżność, niezgodność.",
+   "options_pl": [
+    "idealna zgodność",
+    "różnica, której nie powinno być",
+    "duży zysk",
+    "styl zaokrąglania"
+   ],
+   "nr": 20
+  },
+  {
+   "id": "v15",
+   "band": 5000,
+   "text": "„Niedobór (np. pracowników)” to:",
+   "options": [
+    "shortage",
+    "shortness",
+    "shorting",
+    "shortcut"
+   ],
+   "answer": 0,
+   "pl": "shortage = niedobór (shortcut = skrót).",
+   "options_pl": [
+    "niedobór",
+    "niskość",
+    "zwarcie",
+    "skrót"
+   ],
+   "nr": 21
+  },
+  {
+   "id": "v16",
+   "band": 5000,
+   "text": "To „allocate” resources means to…",
+   "options": [
+    "waste them",
+    "assign them for a purpose",
+    "hide them",
+    "sell them"
+   ],
+   "answer": 1,
+   "pl": "allocate = przydzielić.",
+   "options_pl": [
+    "marnować je",
+    "przydzielić je do celu",
+    "ukryć je",
+    "sprzedać je"
+   ],
+   "nr": 22
+  },
+  {
+   "id": "v25",
+   "band": 5000,
+   "text": "„Feasible” plan is a plan that is…",
+   "options": [
+    "impossible",
+    "possible to do",
+    "expensive",
+    "secret"
+   ],
+   "answer": 1,
+   "pl": "feasible = wykonalny.",
+   "options_pl": [
+    "niemożliwy",
+    "możliwy do wykonania",
+    "drogi",
+    "tajny"
+   ],
+   "nr": 23
+  },
+  {
+   "id": "v26",
+   "band": 5000,
+   "text": "„Zaległości (w pracy)” to:",
+   "options": [
+    "backlog",
+    "backpack",
+    "background",
+    "backup"
+   ],
+   "answer": 0,
+   "pl": "backlog = zaległości, kolejka rzeczy do zrobienia.",
+   "options_pl": [
+    "zaległości",
+    "plecak",
+    "tło",
+    "kopia zapasowa"
+   ],
+   "nr": 24
+  }
+ ],
+ "vocab_produce": [
+  {
+   "id": "p1",
+   "band": 1000,
+   "cat": "noun",
+   "pl": "dom (budynek)",
+   "accept": [
+    "house"
+   ],
+   "hint": "h_____",
+   "nr": 1
+  },
+  {
+   "id": "p2",
+   "band": 1000,
+   "cat": "noun",
+   "pl": "woda",
+   "accept": [
+    "water"
+   ],
+   "hint": "w____",
+   "nr": 2
+  },
+  {
+   "id": "p3",
+   "band": 1000,
+   "cat": "verb",
+   "pl": "jeść",
+   "accept": [
+    "eat",
+    "to eat"
+   ],
+   "hint": "e__",
+   "nr": 3
+  },
+  {
+   "id": "p4",
+   "band": 1000,
+   "cat": "verb",
+   "pl": "spać",
+   "accept": [
+    "sleep",
+    "to sleep"
+   ],
+   "hint": "s____",
+   "nr": 4
+  },
+  {
+   "id": "p5",
+   "band": 1000,
+   "cat": "noun",
+   "pl": "pieniądze",
+   "accept": [
+    "money"
+   ],
+   "hint": "m____",
+   "nr": 5
+  },
+  {
+   "id": "p6",
+   "band": 1000,
+   "cat": "verb",
+   "pl": "kupować",
+   "accept": [
+    "buy",
+    "to buy"
+   ],
+   "hint": "b__",
+   "nr": 6
+  },
+  {
+   "id": "p7",
+   "band": 1000,
+   "cat": "noun",
+   "pl": "przyjaciel",
+   "accept": [
+    "friend"
+   ],
+   "hint": "f_____",
+   "nr": 7
+  },
+  {
+   "id": "p8",
+   "band": 1000,
+   "cat": "verb",
+   "pl": "pomagać",
+   "accept": [
+    "help",
+    "to help"
+   ],
+   "hint": "h___",
+   "nr": 8
+  },
+  {
+   "id": "p9",
+   "band": 2000,
+   "cat": "noun",
+   "pl": "tydzień",
+   "accept": [
+    "week"
+   ],
+   "hint": "w___",
+   "nr": 9
+  },
+  {
+   "id": "p10",
+   "band": 2000,
+   "cat": "verb",
+   "pl": "rozumieć",
+   "accept": [
+    "understand",
+    "to understand"
+   ],
+   "hint": "u_________",
+   "nr": 10
+  },
+  {
+   "id": "p11",
+   "band": 2000,
+   "cat": "noun",
+   "pl": "zamówienie",
+   "accept": [
+    "order"
+   ],
+   "hint": "o____",
+   "nr": 11
+  },
+  {
+   "id": "p12",
+   "band": 2000,
+   "cat": "verb",
+   "pl": "czekać",
+   "accept": [
+    "wait",
+    "to wait"
+   ],
+   "hint": "w___",
+   "nr": 12
+  },
+  {
+   "id": "p13",
+   "band": 2000,
+   "cat": "noun",
+   "pl": "przerwa (w pracy)",
+   "accept": [
+    "break"
+   ],
+   "hint": "b____",
+   "nr": 13
+  },
+  {
+   "id": "p14",
+   "band": 2000,
+   "cat": "verb",
+   "pl": "wysyłać",
+   "accept": [
+    "send",
+    "to send"
+   ],
+   "hint": "s___",
+   "nr": 14
+  },
+  {
+   "id": "p15",
+   "band": 3000,
+   "cat": "noun",
+   "pl": "dostawa",
+   "accept": [
+    "delivery"
+   ],
+   "hint": "d_______",
+   "nr": 15
+  },
+  {
+   "id": "p16",
+   "band": 3000,
+   "cat": "verb",
+   "pl": "zgłaszać / raportować",
+   "accept": [
+    "report",
+    "to report"
+   ],
+   "hint": "r_____",
+   "nr": 16
+  },
+  {
+   "id": "p17",
+   "band": 3000,
+   "cat": "noun",
+   "pl": "magazyn",
+   "accept": [
+    "warehouse"
+   ],
+   "hint": "w________",
+   "nr": 17
+  },
+  {
+   "id": "p18",
+   "band": 3000,
+   "cat": "verb",
+   "pl": "liczyć",
+   "accept": [
+    "count",
+    "to count"
+   ],
+   "hint": "c____",
+   "nr": 18
+  },
+  {
+   "id": "p19",
+   "band": 3000,
+   "cat": "noun",
+   "pl": "nadgodziny",
+   "accept": [
+    "overtime"
+   ],
+   "hint": "o_______",
+   "nr": 19
+  },
+  {
+   "id": "p20",
+   "band": 3000,
+   "cat": "verb",
+   "pl": "nosić / przenosić",
+   "accept": [
+    "carry",
+    "to carry"
+   ],
+   "hint": "c____",
+   "nr": 20
+  }
+ ],
+ "reading": [
+  {
+   "level": "A1",
+   "title": "My morning",
+   "text": "My name is Tomek. I get up at five o'clock. I drink coffee and eat bread with cheese. Then I go to work by bike. It takes twenty minutes. I start work at six. My work is in a big building. I like my team.",
+   "text_pl": "Mam na imię Tomek. Wstaję o piątej. Piję kawę i jem chleb z serem. Potem jadę do pracy rowerem. Zajmuje to dwadzieścia minut. Zaczynam pracę o szóstej. Moja praca jest w dużym budynku. Lubię swój zespół.",
+   "questions": [
+    {
+     "text": "How does Tomek travel to work?",
+     "options": [
+      "On foot",
+      "By bicycle",
+      "By bus",
+      "By car"
+     ],
+     "answer": 1,
+     "pl": "Jak Tomek dojeżdża do pracy? — Rowerem (by bike = by bicycle).",
+     "options_pl": [
+      "Pieszo",
+      "Rowerem",
+      "Autobusem",
+      "Samochodem"
+     ]
+    },
+    {
+     "text": "What does he have for breakfast?",
+     "options": [
+      "Only coffee",
+      "Bread with cheese and coffee",
+      "Eggs and tea",
+      "Nothing"
+     ],
+     "answer": 1,
+     "pl": "Co je na śniadanie? — Chleb z serem i kawę.",
+     "options_pl": [
+      "Tylko kawę",
+      "Chleb z serem i kawę",
+      "Jajka i herbatę",
+      "Nic"
+     ]
+    },
+    {
+     "text": "How long is his trip to work?",
+     "options": [
+      "Five minutes",
+      "About twenty minutes",
+      "One hour",
+      "Six minutes"
+     ],
+     "answer": 1,
+     "pl": "Ile trwa droga do pracy? — Około dwudziestu minut.",
+     "options_pl": [
+      "Pięć minut",
+      "Około dwudziestu minut",
+      "Godzinę",
+      "Sześć minut"
+     ]
+    }
+   ],
+   "nr": 1
+  },
+  {
+   "level": "A2",
+   "title": "A note from the team leader",
+   "text": "Hi team! Tomorrow the trucks come at 7, not at 9. Please be at the gate before 6:45. Wear your safety vests and shoes. After the trucks, we have a short break with free pizza. If you are sick, call me before 6. Thanks! — Kees",
+   "text_pl": "Cześć zespole! Jutro ciężarówki przyjeżdżają o 7, nie o 9. Bądźcie proszę przy bramie przed 6:45. Załóżcie kamizelki i buty ochronne. Po ciężarówkach mamy krótką przerwę z darmową pizzą. Jeśli jesteś chory, zadzwoń do mnie przed 6. Dzięki! — Kees",
+   "questions": [
+    {
+     "text": "What is different about tomorrow?",
+     "options": [
+      "The trucks arrive earlier than usual",
+      "There is no work",
+      "The break is longer",
+      "The gate is closed"
+     ],
+     "answer": 0,
+     "pl": "Co jest inne jutro? — Ciężarówki przyjadą wcześniej niż zwykle (o 7 zamiast 9).",
+     "options_pl": [
+      "Ciężarówki przyjadą wcześniej niż zwykle",
+      "Nie ma pracy",
+      "Przerwa jest dłuższa",
+      "Brama jest zamknięta"
+     ]
+    },
+    {
+     "text": "What should workers do if they cannot come?",
+     "options": [
+      "Send an e-mail after work",
+      "Phone Kees before six o'clock",
+      "Tell a colleague",
+      "Nothing"
+     ],
+     "answer": 1,
+     "pl": "Co zrobić, gdy nie możesz przyjść? — Zadzwonić do Keesa przed szóstą.",
+     "options_pl": [
+      "Wysłać e-mail po pracy",
+      "Zadzwonić do Keesa przed szóstą",
+      "Powiedzieć koledze",
+      "Nic"
+     ]
+    },
+    {
+     "text": "What happens after the trucks?",
+     "options": [
+      "Everyone goes home",
+      "There is a break with food",
+      "A long meeting starts",
+      "Training begins"
+     ],
+     "answer": 1,
+     "pl": "Co po ciężarówkach? — Przerwa z jedzeniem (darmowa pizza).",
+     "options_pl": [
+      "Wszyscy idą do domu",
+      "Jest przerwa z jedzeniem",
+      "Zaczyna się długie zebranie",
+      "Zaczyna się szkolenie"
+     ]
+    }
+   ],
+   "nr": 2
+  },
+  {
+   "level": "A2",
+   "title": "A new job",
+   "text": "Marek is from Poland. He works in a big warehouse in Rotterdam. He starts work at 6 a.m. and finishes at 2 p.m. Every morning there is a short meeting. The team leader tells the workers about the plan for the day. Marek likes his job, but the boxes are sometimes very heavy. After work he goes to the gym with his friend Piotr.",
+   "questions": [
+    {
+     "text": "What kind of place does Marek work in?",
+     "options": [
+      "A sports centre",
+      "A large building where goods are stored",
+      "A small shop",
+      "A restaurant"
+     ],
+     "answer": 1,
+     "pl": "Gdzie pracuje Marek? — W dużym budynku, gdzie przechowuje się towary (magazyn).",
+     "options_pl": [
+      "Ośrodek sportowy",
+      "Duży budynek, gdzie przechowuje się towary",
+      "Mały sklep",
+      "Restauracja"
+     ]
+    },
+    {
+     "text": "What do the workers do at the start of each day?",
+     "options": [
+      "They gather to hear the daily plan",
+      "They go to the gym",
+      "They take a long break",
+      "They finish their shift"
+     ],
+     "answer": 0,
+     "pl": "Co robią pracownicy na początku dnia? — Zbierają się, by usłyszeć plan dnia (odprawa).",
+     "options_pl": [
+      "Zbierają się, by usłyszeć plan dnia",
+      "Idą na siłownię",
+      "Robią długą przerwę",
+      "Kończą zmianę"
+     ]
+    },
+    {
+     "text": "What makes the job difficult for Marek at times?",
+     "options": [
+      "His boss is unfriendly",
+      "Some loads are hard to lift",
+      "He starts too late",
+      "He has no time for sport"
+     ],
+     "answer": 1,
+     "pl": "Co bywa trudne? — Niektóre ładunki są ciężkie do podniesienia (w tekście: pudła bywają bardzo ciężkie).",
+     "options_pl": [
+      "Jego szef jest nieprzyjemny",
+      "Niektóre ładunki trudno podnieść",
+      "Zaczyna za późno",
+      "Nie ma czasu na sport"
+     ]
+    }
+   ],
+   "text_pl": "Marek jest z Polski. Pracuje w dużym magazynie w Rotterdamie. Zaczyna pracę o 6 rano, a kończy o 14. Każdego ranka jest krótkie zebranie. Lider zespołu mówi pracownikom o planie na dzień. Marek lubi swoją pracę, ale pudła są czasem bardzo ciężkie. Po pracy chodzi na siłownię z kolegą Piotrem.",
+   "nr": 3
+  },
+  {
+   "level": "B1",
+   "title": "Scanners in the warehouse",
+   "text": "Last month the company introduced new hand scanners for all pickers. At first, many workers complained because the menu was only in English and the training took just twenty minutes. However, after two weeks most employees admitted that the devices made their work faster. The number of picking mistakes fell by thirty percent, and the night shift, which used to be the slowest, is now as productive as the morning one. The management has promised to add Polish and Romanian language options by the end of the year.",
+   "questions": [
+    {
+     "text": "Why were the workers unhappy at the beginning?",
+     "options": [
+      "The devices were too heavy to hold",
+      "They understood little of the interface and got very short instruction",
+      "Their salaries were reduced",
+      "The scanners often broke down"
+     ],
+     "answer": 1,
+     "pl": "Czemu byli niezadowoleni? — Interfejs był tylko po angielsku, a szkolenie bardzo krótkie.",
+     "options_pl": [
+      "Urządzenia były za ciężkie",
+      "Mało rozumieli z interfejsu i dostali krótkie szkolenie",
+      "Obniżono im pensje",
+      "Skanery często się psuły"
+     ]
+    },
+    {
+     "text": "What changed after two weeks?",
+     "options": [
+      "Most staff agreed the tools sped up their work",
+      "The company removed the scanners",
+      "Errors became more frequent",
+      "Night work was cancelled"
+     ],
+     "answer": 0,
+     "pl": "Co się zmieniło po dwóch tygodniach? — Większość przyznała, że urządzenia przyspieszyły pracę.",
+     "options_pl": [
+      "Większość przyznała, że narzędzia przyspieszyły pracę",
+      "Firma zabrała skanery",
+      "Błędy stały się częstsze",
+      "Odwołano pracę nocną"
+     ]
+    },
+    {
+     "text": "What can we say about the night shift now?",
+     "options": [
+      "It is still the slowest",
+      "It performs as well as the morning shift",
+      "It was closed down",
+      "It works without scanners"
+     ],
+     "answer": 1,
+     "pl": "Co z nocną zmianą? — Pracuje teraz tak samo wydajnie jak poranna.",
+     "options_pl": [
+      "Nadal jest najwolniejsza",
+      "Pracuje tak dobrze jak poranna",
+      "Została zamknięta",
+      "Pracuje bez skanerów"
+     ]
+    }
+   ],
+   "text_pl": "W zeszłym miesiącu firma wprowadziła nowe skanery ręczne dla wszystkich pickerów. Na początku wielu pracowników narzekało, bo menu było tylko po angielsku, a szkolenie trwało zaledwie dwadzieścia minut. Jednak po dwóch tygodniach większość przyznała, że urządzenia przyspieszyły pracę. Liczba błędów przy zbieraniu spadła o trzydzieści procent, a nocna zmiana, kiedyś najwolniejsza, jest teraz tak wydajna jak poranna. Kierownictwo obiecało dodać polski i rumuński do końca roku.",
+   "nr": 4
+  },
+  {
+   "level": "B1",
+   "title": "The e-mail",
+   "text": "From: HR department. Subject: Holiday requests. Dear colleagues, please remember that all holiday requests for the summer period must be submitted through the online portal before 30 April. Requests sent by e-mail or given verbally to team leaders will not be accepted this year. If two employees from the same team choose the same dates, the person with longer service in the company will have priority. Anyone who has problems with the portal can visit the HR office on Tuesdays and Thursdays between 10 and 12.",
+   "questions": [
+    {
+     "text": "How should employees ask for summer holidays?",
+     "options": [
+      "By telling their team leader",
+      "By sending an e-mail to HR",
+      "By using the company's website system",
+      "By visiting the office on Monday"
+     ],
+     "answer": 2,
+     "pl": "Jak złożyć wniosek urlopowy? — Przez system internetowy firmy (portal online).",
+     "options_pl": [
+      "Mówiąc liderowi zespołu",
+      "Wysyłając e-mail do HR",
+      "Przez system na stronie firmy",
+      "Przychodząc do biura w poniedziałek"
+     ]
+    },
+    {
+     "text": "Who wins if two people from one team pick the same dates?",
+     "options": [
+      "The younger employee",
+      "The one who has worked there longer",
+      "The one who asked first",
+      "The team leader decides freely"
+     ],
+     "answer": 1,
+     "pl": "Kto ma pierwszeństwo przy tych samych terminach? — Osoba z dłuższym stażem w firmie.",
+     "options_pl": [
+      "Młodszy pracownik",
+      "Ten, kto pracuje tam dłużej",
+      "Ten, kto poprosił pierwszy",
+      "Lider decyduje dowolnie"
+     ]
+    },
+    {
+     "text": "When can you get help with the portal?",
+     "options": [
+      "Every day before noon",
+      "Twice a week in the late morning",
+      "Only by e-mail",
+      "On weekends"
+     ],
+     "answer": 1,
+     "pl": "Kiedy można dostać pomoc? — Dwa razy w tygodniu przed południem (wt. i czw. 10–12).",
+     "options_pl": [
+      "Codziennie przed południem",
+      "Dwa razy w tygodniu późnym rankiem",
+      "Tylko e-mailem",
+      "W weekendy"
+     ]
+    }
+   ],
+   "text_pl": "Od: dział HR. Temat: Wnioski urlopowe. Drodzy współpracownicy, przypominamy, że wszystkie wnioski urlopowe na okres letni należy złożyć przez portal internetowy przed 30 kwietnia. Wnioski wysłane e-mailem lub zgłoszone ustnie liderom nie będą w tym roku przyjmowane. Jeśli dwie osoby z tego samego zespołu wybiorą te same terminy, pierwszeństwo ma osoba z dłuższym stażem. Kto ma problem z portalem, może przyjść do biura HR we wtorki i czwartki między 10 a 12.",
+   "nr": 5
+  },
+  {
+   "level": "B2",
+   "title": "The future of logistics",
+   "text": "Automation is often presented as a threat to warehouse employment, yet the reality is more nuanced. While robots increasingly handle repetitive transport tasks, the demand for staff who can supervise automated systems, resolve exceptions and communicate across international teams has actually risen. In other words, the job is not disappearing — it is shifting. Employers now value problem-solving and language skills more than physical strength. Analysts point out that companies which invested heavily in automation without retraining their workforce experienced higher error rates than those which treated technology as a tool supporting, rather than replacing, human judgement.",
+   "questions": [
+    {
+     "text": "What is the author's main point?",
+     "options": [
+      "Machines will soon take every warehouse job",
+      "Warehouse work is changing its character, not vanishing",
+      "Automation always lowers mistakes",
+      "Muscle power is still the most wanted skill"
+     ],
+     "answer": 1,
+     "pl": "Główna myśl: praca magazynowa zmienia charakter, a nie znika.",
+     "options_pl": [
+      "Maszyny wkrótce zabiorą każdą pracę w magazynie",
+      "Praca magazynowa zmienia charakter, a nie znika",
+      "Automatyzacja zawsze zmniejsza błędy",
+      "Siła mięśni to wciąż najbardziej pożądana umiejętność"
+     ]
+    },
+    {
+     "text": "Which companies had more errors?",
+     "options": [
+      "Those that taught their staff new skills",
+      "Those that avoided any technology",
+      "Those that automated but did not retrain people",
+      "Small family businesses"
+     ],
+     "answer": 2,
+     "pl": "Więcej błędów miały firmy, które zautomatyzowały się BEZ przeszkolenia załogi.",
+     "options_pl": [
+      "Te, które nauczyły załogę nowych umiejętności",
+      "Te, które unikały technologii",
+      "Te, które zautomatyzowały się bez przeszkolenia ludzi",
+      "Małe firmy rodzinne"
+     ]
+    },
+    {
+     "text": "According to the text, what do employers appreciate most today?",
+     "options": [
+      "The ability to solve problems and communicate",
+      "Working overtime",
+      "Being physically strong",
+      "Long experience only"
+     ],
+     "answer": 0,
+     "pl": "Pracodawcy cenią dziś najbardziej rozwiązywanie problemów i umiejętności językowe.",
+     "options_pl": [
+      "Umiejętność rozwiązywania problemów i komunikacji",
+      "Praca w nadgodzinach",
+      "Siłę fizyczną",
+      "Tylko długi staż"
+     ]
+    }
+   ],
+   "text_pl": "Automatyzacja bywa przedstawiana jako zagrożenie dla pracy w magazynach, ale rzeczywistość jest bardziej złożona. Choć roboty coraz częściej wykonują powtarzalny transport, wzrósł popyt na ludzi, którzy nadzorują systemy, rozwiązują wyjątki i komunikują się w międzynarodowych zespołach. Innymi słowy: praca nie znika — zmienia charakter. Pracodawcy cenią dziś rozwiązywanie problemów i języki bardziej niż siłę fizyczną. Analitycy zauważają, że firmy, które zautomatyzowały się bez przeszkolenia załogi, miały więcej błędów niż te, które traktowały technologię jako wsparcie, a nie zastępstwo człowieka.",
+   "nr": 6
+  }
+ ],
+ "translation": [
+  {
+   "id": "t1",
+   "level": "A1",
+   "pl": "Pracuję w magazynie.",
+   "en_ref": "I work in a warehouse.",
+   "tense_name": "Present Simple",
+   "tense_patterns": [
+    " i work "
+   ],
+   "forbidden": [
+    [
+     "Present Continuous",
+     " i am working "
+    ]
+   ],
+   "keywords": [
+    [
+     "work"
+    ],
+    [
+     "warehouse"
+    ]
+   ],
+   "tense_hint": "Stała sytuacja → Present Simple.",
+   "nr": 1
+  },
+  {
+   "id": "t2",
+   "level": "A2",
+   "pl": "Wczoraj kupiłem nowe buty.",
+   "en_ref": "Yesterday I bought new shoes.",
+   "tense_name": "Past Simple",
+   "tense_patterns": [
+    " bought "
+   ],
+   "forbidden": [
+    [
+     "Present Perfect",
+     " have bought "
+    ],
+    [
+     "Present Simple",
+     " i buy "
+    ]
+   ],
+   "keywords": [
+    [
+     "bought",
+     "purchased"
+    ],
+    [
+     "yesterday"
+    ],
+    [
+     "shoes",
+     "boots"
+    ],
+    [
+     "new"
+    ]
+   ],
+   "tense_hint": "„Wczoraj” = zamknięta przeszłość → Past Simple.",
+   "nr": 2
+  },
+  {
+   "id": "t3",
+   "level": "B1",
+   "pl": "Właśnie skończyłem swoją zmianę.",
+   "en_ref": "I have just finished my shift.",
+   "tense_name": "Present Perfect",
+   "tense_patterns": [
+    " have just finished ",
+    " 've just finished ",
+    " have finished "
+   ],
+   "forbidden": [
+    [
+     "Past Simple",
+     " i just finished ",
+     " i finished "
+    ]
+   ],
+   "keywords": [
+    [
+     "finished",
+     "completed"
+    ],
+    [
+     "shift"
+    ],
+    [
+     "just"
+    ]
+   ],
+   "tense_hint": "„Właśnie” (just) + skutek teraz → Present Perfect.",
+   "nr": 3
+  },
+  {
+   "id": "t4",
+   "level": "B2",
+   "pl": "Gdybym miał więcej czasu, nauczyłbym się hiszpańskiego.",
+   "en_ref": "If I had more time, I would learn Spanish.",
+   "tense_name": "Second Conditional",
+   "tense_patterns": [
+    "if i had ",
+    "would learn"
+   ],
+   "forbidden": [
+    [
+     "First Conditional",
+     "if i have ",
+     "will learn"
+    ]
+   ],
+   "keywords": [
+    [
+     "had"
+    ],
+    [
+     "more time",
+     "more free time"
+    ],
+    [
+     "would"
+    ],
+    [
+     "learn",
+     "study"
+    ],
+    [
+     "spanish"
+    ]
+   ],
+   "tense_hint": "Hipoteza → 2. tryb warunkowy.",
+   "nr": 4
+  },
+  {
+   "id": "t5",
+   "level": "A1",
+   "pl": "Ona jest moją koleżanką z pracy.",
+   "en_ref": "She is my colleague.",
+   "tense_name": "to be",
+   "tense_patterns": [
+    " she is ",
+    " she's "
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "she"
+    ],
+    [
+     "colleague",
+     "workmate",
+     "coworker",
+     "co-worker"
+    ]
+   ],
+   "tense_hint": "Stan → she is.",
+   "nr": 5
+  },
+  {
+   "id": "t6",
+   "level": "A2",
+   "pl": "Czy możesz mi pomóc z tym pudłem?",
+   "en_ref": "Can you help me with this box?",
+   "tense_name": "pytanie z can",
+   "tense_patterns": [
+    "can you help",
+    "could you help"
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "help"
+    ],
+    [
+     "box"
+    ]
+   ],
+   "tense_hint": "Prośba → Can/Could you…?",
+   "nr": 6
+  },
+  {
+   "id": "t7",
+   "level": "B1",
+   "pl": "Nigdy nie jeździłem wózkiem widłowym.",
+   "en_ref": "I have never driven a forklift.",
+   "tense_name": "Present Perfect (doświadczenie)",
+   "tense_patterns": [
+    "have never driven",
+    "'ve never driven",
+    "have not driven",
+    "haven't driven"
+   ],
+   "forbidden": [
+    [
+     "Past Simple",
+     " i never drove "
+    ]
+   ],
+   "keywords": [
+    [
+     "never"
+    ],
+    [
+     "driven",
+     "drove"
+    ],
+    [
+     "forklift"
+    ]
+   ],
+   "tense_hint": "Doświadczenie życiowe (nigdy) → Present Perfect.",
+   "nr": 7
+  },
+  {
+   "id": "t8",
+   "level": "B2",
+   "pl": "Ten problem zostanie rozwiązany jutro.",
+   "en_ref": "This problem will be solved tomorrow.",
+   "tense_name": "strona bierna (Future)",
+   "tense_patterns": [
+    "will be solved",
+    "will be fixed"
+   ],
+   "forbidden": [
+    [
+     "strona czynna",
+     "we will solve"
+    ]
+   ],
+   "keywords": [
+    [
+     "problem"
+    ],
+    [
+     "solved",
+     "fixed"
+    ],
+    [
+     "tomorrow"
+    ]
+   ],
+   "tense_hint": "Strona bierna w przyszłości: will be + 3. forma.",
+   "nr": 8
+  }
+ ],
+ "listening": [
+  {
+   "id": "l1",
+   "level": "A1",
+   "en": "My name is Anna and I live in Amsterdam.",
+   "pl": "Nazywam się Anna i mieszkam w Amsterdamie.",
+   "nr": 1
+  },
+  {
+   "id": "l2",
+   "level": "A2",
+   "en": "The next train to the city centre leaves at half past nine.",
+   "pl": "Następny pociąg do centrum odjeżdża o wpół do dziesiątej.",
+   "nr": 2
+  },
+  {
+   "id": "l3",
+   "level": "B1",
+   "en": "Please put the damaged boxes on the pallet near the exit.",
+   "pl": "Proszę położyć uszkodzone pudła na palecie przy wyjściu.",
+   "nr": 3
+  },
+  {
+   "id": "l4",
+   "level": "B1",
+   "en": "I have been working here for almost three years.",
+   "pl": "Pracuję tutaj od prawie trzech lat.",
+   "nr": 4
+  },
+  {
+   "id": "l5",
+   "level": "B2",
+   "en": "Unless the shipment arrives before noon, we will have to reschedule the delivery.",
+   "pl": "Jeśli przesyłka nie dotrze przed południem, będziemy musieli przełożyć dostawę.",
+   "nr": 5
+  },
+  {
+   "id": "l6",
+   "level": "A1",
+   "en": "Where is the coffee machine?",
+   "pl": "Gdzie jest ekspres do kawy?",
+   "nr": 6
+  },
+  {
+   "id": "l7",
+   "level": "A2",
+   "en": "Don't forget to wear your safety shoes.",
+   "pl": "Nie zapomnij założyć butów ochronnych.",
+   "nr": 7
+  },
+  {
+   "id": "l8",
+   "level": "B2",
+   "en": "The manager wants to know why the order was sent to the wrong address.",
+   "pl": "Kierownik chce wiedzieć, dlaczego zamówienie wysłano pod zły adres.",
+   "nr": 8
+  }
+ ],
+ "listening_pl": [
+  {
+   "id": "lp1",
+   "level": "A1",
+   "pl": "Jestem głodny.",
+   "en_ref": "I am hungry.",
+   "tense_name": "to be",
+   "tense_patterns": [
+    " i am ",
+    " i'm "
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "hungry"
+    ]
+   ],
+   "nr": 1
+  },
+  {
+   "id": "lp2",
+   "level": "A2",
+   "pl": "Lubię swoją pracę.",
+   "en_ref": "I like my job.",
+   "tense_name": "Present Simple",
+   "tense_patterns": [
+    " i like "
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "like"
+    ],
+    [
+     "job",
+     "work"
+    ]
+   ],
+   "nr": 2
+  },
+  {
+   "id": "lp3",
+   "level": "A2",
+   "pl": "Ona nie pije kawy.",
+   "en_ref": "She doesn't drink coffee.",
+   "tense_name": "przeczenie z doesn't",
+   "tense_patterns": [
+    "doesn't drink",
+    "does not drink"
+   ],
+   "forbidden": [
+    [
+     "don't zamiast doesn't",
+     "she don't"
+    ]
+   ],
+   "keywords": [
+    [
+     "drink"
+    ],
+    [
+     "coffee"
+    ]
+   ],
+   "nr": 3
+  },
+  {
+   "id": "lp4",
+   "level": "B1",
+   "pl": "Pracuję tu od dwóch lat.",
+   "en_ref": "I have worked here for two years.",
+   "tense_name": "Present Perfect",
+   "tense_patterns": [
+    "have worked",
+    "'ve worked",
+    "have been working"
+   ],
+   "forbidden": [
+    [
+     "Present Simple",
+     " i work here for "
+    ]
+   ],
+   "keywords": [
+    [
+     "worked",
+     "working"
+    ],
+    [
+     "two years",
+     "2 years"
+    ]
+   ],
+   "nr": 4
+  },
+  {
+   "id": "lp5",
+   "level": "B1",
+   "pl": "Jutro zadzwonię do agencji.",
+   "en_ref": "I will call the agency tomorrow.",
+   "tense_name": "will (decyzja/przyszłość)",
+   "tense_patterns": [
+    "will call",
+    "'ll call"
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "call",
+     "phone"
+    ],
+    [
+     "agency"
+    ],
+    [
+     "tomorrow"
+    ]
+   ],
+   "nr": 5
+  },
+  {
+   "id": "lp6",
+   "level": "B2",
+   "pl": "Gdybym znał angielski, dostałbym lepszą pracę.",
+   "en_ref": "If I knew English, I would get a better job.",
+   "tense_name": "Second Conditional",
+   "tense_patterns": [
+    "if i knew",
+    "would get",
+    "would find"
+   ],
+   "forbidden": [
+    [
+     "First Conditional",
+     "if i know",
+     "will get"
+    ]
+   ],
+   "keywords": [
+    [
+     "knew"
+    ],
+    [
+     "english"
+    ],
+    [
+     "would"
+    ],
+    [
+     "better"
+    ],
+    [
+     "job"
+    ]
+   ],
+   "nr": 6
+  }
+ ],
+ "name": "Test poziomujący",
+ "etykieta": "Test poziomujący"
+}

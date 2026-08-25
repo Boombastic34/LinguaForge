@@ -1,0 +1,1089 @@
+{
+ "categories": [
+  {
+   "id": "tenses",
+   "name": "Czasy",
+   "emoji": "⏱"
+  },
+  {
+   "id": "basics",
+   "name": "Podstawy zdania",
+   "emoji": "🧱"
+  },
+  {
+   "id": "slowa",
+   "name": "Pułapki słownictwa",
+   "emoji": "🪤"
+  }
+ ],
+ "articles": [
+  {
+   "id": "kb_present_simple",
+   "cat": "tenses",
+   "name": "Present Simple",
+   "level": "A1",
+   "what": "Czas teraźniejszy prosty — do rzeczy STAŁYCH i POWTARZALNYCH: rutyna, fakty, rozkłady, przyzwyczajenia.",
+   "when": [
+    "codzienne czynności: I work in a warehouse (pracuję tam na stałe)",
+    "fakty zawsze prawdziwe: Water boils at 100°C",
+    "rozkłady i harmonogramy: The shift starts at 6",
+    "przyzwyczajenia z always/usually/never: She never drinks coffee"
+   ],
+   "form": {
+    "plus": "podmiot + czasownik (he/she/it: +s) — I work / She works",
+    "minus": "don't / doesn't + czasownik BEZ -s — I don't work / He doesn't work",
+    "question": "Do / Does + podmiot + czasownik BEZ -s — Do you work? / Does she work?"
+   },
+   "signals": [
+    "every day",
+    "usually",
+    "always",
+    "never",
+    "often",
+    "sometimes",
+    "on Mondays"
+   ],
+   "examples": [
+    [
+     "I start at six every day.",
+     "Zaczynam o szóstej codziennie."
+    ],
+    [
+     "He doesn't work on Sundays.",
+     "On nie pracuje w niedziele."
+    ],
+    [
+     "Does the bus stop here?",
+     "Czy autobus się tu zatrzymuje?"
+    ]
+   ],
+   "mistakes": [
+    "Zgubienie -s w 3. osobie: ~~she work~~ → she workS",
+    "Podwójne -s po does: ~~Does he works?~~ → Does he work?",
+    "Użycie do zamiast does: ~~Do she like…~~ → Does she like…"
+   ],
+   "quiz": [
+    {
+     "q": "Kiedy używamy Present Simple? Opisz własnymi słowami.",
+     "keywords": [
+      [
+       "stał",
+       "rutyn",
+       "powtarza",
+       "codzien",
+       "zwycza",
+       "regularn"
+      ],
+      [
+       "fakt",
+       "zawsze",
+       "harmonogram",
+       "rozkład"
+      ]
+     ],
+     "model": "Do czynności stałych i powtarzalnych (rutyna, przyzwyczajenia) oraz faktów i rozkładów — rzeczy, które są prawdą ogólnie, nie tylko teraz."
+    },
+    {
+     "q": "Jak budujemy zdanie twierdzące i co dzieje się w 3. osobie (he/she/it)?",
+     "keywords": [
+      [
+       "podmiot",
+       "osoba"
+      ],
+      [
+       "czasownik"
+      ],
+      [
+       "-s",
+       "s na końcu",
+       "końcówk"
+      ]
+     ],
+     "model": "Podmiot + czasownik w formie podstawowej; przy he/she/it czasownik dostaje końcówkę -s (work → works)."
+    },
+    {
+     "q": "Jak tworzymy pytanie i przeczenie w Present Simple?",
+     "keywords": [
+      [
+       "do",
+       "does"
+      ],
+      [
+       "don't",
+       "doesn't",
+       "not"
+      ],
+      [
+       "bez -s",
+       "forma podstawow",
+       "bezokolicznik"
+      ]
+     ],
+     "model": "Pytanie: Do/Does + podmiot + czasownik bez -s. Przeczenie: don't/doesn't + czasownik bez -s."
+    },
+    {
+     "q": "Wymień przynajmniej trzy słowa-sygnały tego czasu.",
+     "keywords": [
+      [
+       "every",
+       "usually",
+       "always",
+       "never",
+       "often",
+       "sometimes",
+       "codzien",
+       "zawsze",
+       "zwykle",
+       "nigdy",
+       "często",
+       "czasami"
+      ]
+     ],
+     "model": "every day, usually, always, never, often, sometimes, on Mondays."
+    }
+   ],
+   "nr": 1
+  },
+  {
+   "id": "kb_present_continuous",
+   "cat": "tenses",
+   "name": "Present Continuous",
+   "level": "A1",
+   "what": "Czas teraźniejszy ciągły — do czynności dziejących się TERAZ albo tymczasowo, oraz do zaplanowanych ustaleń.",
+   "when": [
+    "dzieje się w tej chwili: I am loading the truck (właśnie teraz)",
+    "sytuacja tymczasowa: She is staying with her sister this month",
+    "ustalone plany: We are meeting at nine tomorrow"
+   ],
+   "form": {
+    "plus": "am / is / are + czasownik-ing — I am working / He is working",
+    "minus": "am not / isn't / aren't + -ing — They aren't working",
+    "question": "Am / Is / Are + podmiot + -ing — Are you working?"
+   },
+   "signals": [
+    "now",
+    "right now",
+    "at the moment",
+    "Look!",
+    "today",
+    "this week"
+   ],
+   "examples": [
+    [
+     "Look! It is raining.",
+     "Patrz! Pada (właśnie teraz)."
+    ],
+    [
+     "I can't talk, I'm driving.",
+     "Nie mogę rozmawiać, prowadzę."
+    ],
+    [
+     "We are meeting the manager tomorrow.",
+     "Spotykamy się jutro z kierownikiem (ustalone)."
+    ]
+   ],
+   "mistakes": [
+    "Zgubienie „be”: ~~I working~~ → I AM working",
+    "Czasowniki stanu bez continuous: ~~I am knowing~~ → I know (know, like, want, need)",
+    "Mylenie z Present Simple: „teraz” ≠ „zawsze”"
+   ],
+   "quiz": [
+    {
+     "q": "Czym różni się Present Continuous od Present Simple?",
+     "keywords": [
+      [
+       "teraz",
+       "w tej chwili",
+       "momenc",
+       "trwa",
+       "tymczasow"
+      ],
+      [
+       "stał",
+       "rutyn",
+       "zawsze",
+       "powtarza",
+       "ogóln"
+      ]
+     ],
+     "model": "Continuous opisuje to, co dzieje się teraz / tymczasowo, a Simple to, co stałe i powtarzalne."
+    },
+    {
+     "q": "Podaj konstrukcję (wzór) zdania twierdzącego w Present Continuous.",
+     "keywords": [
+      [
+       "am",
+       "is",
+       "are",
+       "be"
+      ],
+      [
+       "ing"
+      ]
+     ],
+     "model": "Podmiot + am/is/are + czasownik z końcówką -ing (I am working)."
+    },
+    {
+     "q": "Które czasowniki zwykle NIE występują w continuous? Podaj przykład.",
+     "keywords": [
+      [
+       "stan",
+       "know",
+       "like",
+       "want",
+       "need",
+       "love",
+       "hate",
+       "wiedzieć",
+       "lubić",
+       "chcieć",
+       "potrzebować"
+      ]
+     ],
+     "model": "Czasowniki stanu: know, like, love, want, need — mówimy I know, nie „I am knowing”."
+    }
+   ],
+   "nr": 2
+  },
+  {
+   "id": "kb_past_simple",
+   "cat": "tenses",
+   "name": "Past Simple",
+   "level": "A2",
+   "what": "Czas przeszły prosty — do czynności ZAKOŃCZONYCH w konkretnym momencie przeszłości. Wiadomo KIEDY.",
+   "when": [
+    "zamknięta przeszłość: Yesterday I worked ten hours",
+    "sekwencja zdarzeń: I came, I saw, I finished the order",
+    "kiedyś, ale już nie: I lived in Poland (już nie mieszkam)"
+   ],
+   "form": {
+    "plus": "czasownik + -ed (regularne) albo 2. forma (nieregularne: go→went, buy→bought)",
+    "minus": "didn't + forma PODSTAWOWA — I didn't work / She didn't go",
+    "question": "Did + podmiot + forma PODSTAWOWA — Did you work? / Did she go?"
+   },
+   "signals": [
+    "yesterday",
+    "ago (two days ago)",
+    "last week / month / year",
+    "in 2020",
+    "when I was young"
+   ],
+   "examples": [
+    [
+     "Yesterday I bought new shoes.",
+     "Wczoraj kupiłem nowe buty."
+    ],
+    [
+     "She didn't come to work last Friday.",
+     "Nie przyszła do pracy w zeszły piątek."
+    ],
+    [
+     "Did you see the e-mail?",
+     "Widziałeś tego e-maila?"
+    ]
+   ],
+   "mistakes": [
+    "2. forma po did: ~~Did you went?~~ → Did you GO?",
+    "-ed przy nieregularnych: ~~I buyed~~ → I bought",
+    "Present zamiast Past przy „yesterday”: ~~Yesterday I buy~~ → I bought"
+   ],
+   "quiz": [
+    {
+     "q": "Kiedy używamy Past Simple? Co jest kluczowe w tym czasie?",
+     "keywords": [
+      [
+       "przeszł",
+       "zakończ",
+       "skończ"
+      ],
+      [
+       "konkret",
+       "kiedy",
+       "wczoraj",
+       "moment",
+       "punk"
+      ]
+     ],
+     "model": "Do czynności zakończonych w konkretnym, znanym momencie przeszłości (yesterday, ago, last…). Kluczowe: wiadomo KIEDY i sprawa jest zamknięta."
+    },
+    {
+     "q": "Jak tworzymy pytanie i przeczenie w Past Simple i co dzieje się z czasownikiem?",
+     "keywords": [
+      [
+       "did"
+      ],
+      [
+       "didn't",
+       "did not",
+       "not"
+      ],
+      [
+       "podstawow",
+       "bezokolicznik",
+       "bez ed",
+       "pierwsz"
+      ]
+     ],
+     "model": "Did/didn't + czasownik w formie PODSTAWOWEJ — druga forma zostaje tylko w twierdzeniu (I went, ale Did you go?)."
+    },
+    {
+     "q": "Wymień słowa-sygnały Past Simple.",
+     "keywords": [
+      [
+       "yesterday",
+       "ago",
+       "last",
+       "wczoraj",
+       "temu",
+       "zeszł",
+       "in 19",
+       "in 20"
+      ]
+     ],
+     "model": "yesterday, ago, last week/month/year, in 2020."
+    }
+   ],
+   "nr": 3
+  },
+  {
+   "id": "kb_present_perfect",
+   "cat": "tenses",
+   "name": "Present Perfect",
+   "level": "B1",
+   "what": "Czas łączący przeszłość z TERAZ: skutek jest widoczny teraz albo mówimy o doświadczeniu życiowym — bez podawania kiedy.",
+   "when": [
+    "skutek teraz: I have lost my keys (nie mogę wejść — teraz)",
+    "doświadczenie życiowe: Have you ever driven a forklift?",
+    "coś trwa do teraz: I have worked here for two years",
+    "świeża wiadomość z just: She has just left"
+   ],
+   "form": {
+    "plus": "have / has + 3. forma (Past Participle) — I have finished / He has gone",
+    "minus": "haven't / hasn't + 3. forma — I haven't seen it",
+    "question": "Have / Has + podmiot + 3. forma — Have you finished?"
+   },
+   "signals": [
+    "just",
+    "already",
+    "yet",
+    "ever / never",
+    "since (od punktu)",
+    "for (przez okres)"
+   ],
+   "examples": [
+    [
+     "I have just finished my shift.",
+     "Właśnie skończyłem zmianę."
+    ],
+    [
+     "She has worked here since 2020.",
+     "Pracuje tu od 2020 roku (nadal)."
+    ],
+    [
+     "Have you ever been to England?",
+     "Byłeś kiedyś w Anglii?"
+    ]
+   ],
+   "mistakes": [
+    "Perfect z konkretną datą: ~~I have seen him yesterday~~ → I saw him yesterday",
+    "since vs for: since 2020 (punkt), for 2 years (okres)",
+    "2. forma zamiast 3.: ~~have went~~ → have GONE"
+   ],
+   "quiz": [
+    {
+     "q": "Czym Present Perfect różni się od Past Simple? Kiedy wybieramy Perfect?",
+     "keywords": [
+      [
+       "teraz",
+       "skutek",
+       "związek",
+       "łączy",
+       "do teraz",
+       "nadal"
+      ],
+      [
+       "nie wiadomo kiedy",
+       "bez daty",
+       "doświadczen",
+       "kiedykolwiek"
+      ]
+     ],
+     "model": "Perfect łączy przeszłość z teraźniejszością: skutek widać teraz, coś trwa do teraz albo mówimy o doświadczeniu — bez konkretnej daty. Z datą (yesterday, ago) używamy Past Simple."
+    },
+    {
+     "q": "Podaj konstrukcję Present Perfect.",
+     "keywords": [
+      [
+       "have",
+       "has"
+      ],
+      [
+       "3",
+       "trzeci",
+       "participle",
+       "past participle"
+      ]
+     ],
+     "model": "have/has + trzecia forma czasownika (Past Participle): I have done, she has gone."
+    },
+    {
+     "q": "Wyjaśnij różnicę między since i for.",
+     "keywords": [
+      [
+       "since"
+      ],
+      [
+       "for"
+      ],
+      [
+       "punkt",
+       "od",
+       "moment"
+      ],
+      [
+       "okres",
+       "przez",
+       "jak długo"
+      ]
+     ],
+     "model": "since = punkt startowy (since 2020, since Monday); for = długość okresu (for two years, for an hour)."
+    }
+   ],
+   "nr": 4
+  },
+  {
+   "id": "kb_future",
+   "cat": "tenses",
+   "name": "Przyszłość: will i going to",
+   "level": "A2",
+   "what": "Dwa główne sposoby mówienia o przyszłości: will (decyzja teraz, przewidywanie) i be going to (plan, zamiar, coś się na coś zanosi).",
+   "when": [
+    "will — decyzja w tej chwili: OK, I'll help you",
+    "will — przewidywanie/obietnica: It will be fine. I'll call you",
+    "going to — plan/zamiar sprzed rozmowy: We are going to visit grandma",
+    "going to — widać, że zaraz się stanie: Look at the clouds — it's going to rain"
+   ],
+   "form": {
+    "plus": "will + bezokolicznik / am-is-are going to + bezokolicznik",
+    "minus": "won't + bezokolicznik / isn't going to…",
+    "question": "Will you…? / Are you going to…?"
+   },
+   "signals": [
+    "tomorrow",
+    "next week",
+    "soon",
+    "in an hour",
+    "tonight"
+   ],
+   "examples": [
+    [
+     "I'll take this box.",
+     "Wezmę to pudło (decyduję teraz)."
+    ],
+    [
+     "We are going to move next month.",
+     "Zamierzamy się przeprowadzić (plan)."
+    ],
+    [
+     "It's going to fall!",
+     "Zaraz spadnie! (widać to)"
+    ]
+   ],
+   "mistakes": [
+    "~~will going~~ → will GO albo am going to go",
+    "Plan ≠ decyzja teraz: o planach mów going to",
+    "~~I will to help~~ → will + bezokolicznik BEZ to"
+   ],
+   "quiz": [
+    {
+     "q": "Kiedy wybieramy will, a kiedy going to?",
+     "keywords": [
+      [
+       "decyzj",
+       "teraz",
+       "w tej chwili",
+       "obietnic",
+       "przewidywan"
+      ],
+      [
+       "plan",
+       "zamiar",
+       "wcześniej",
+       "zanosi"
+      ]
+     ],
+     "model": "will — decyzja podjęta w chwili mówienia, obietnice, przewidywania; going to — plan/zamiar sprzed rozmowy albo coś, co widać, że zaraz się stanie."
+    },
+    {
+     "q": "Podaj konstrukcje obu form.",
+     "keywords": [
+      [
+       "will"
+      ],
+      [
+       "going to"
+      ],
+      [
+       "bezokolicznik",
+       "podstawow",
+       "be",
+       "am",
+       "is",
+       "are"
+      ]
+     ],
+     "model": "will + bezokolicznik (I will help); am/is/are + going to + bezokolicznik (I am going to help)."
+    }
+   ],
+   "nr": 5
+  },
+  {
+   "id": "kb_pronouns",
+   "cat": "basics",
+   "name": "Zaimki (I / me / my / mine)",
+   "level": "A1",
+   "what": "Cztery rodziny zaimków: kto robi (I), komu/kogo (me), czyj + rzeczownik (my), czyj bez rzeczownika (mine).",
+   "when": [
+    "podmiot — kto robi: SHE works here",
+    "dopełnienie — komu/kogo: Help ME, tell HIM",
+    "dzierżawczy + rzeczownik: MY badge, THEIR boxes",
+    "dzierżawczy samodzielny: this badge is MINE"
+   ],
+   "form": {
+    "plus": "I→me→my→mine · you→you→your→yours · he→him→his→his · she→her→her→hers · we→us→our→ours · they→them→their→theirs",
+    "minus": "—",
+    "question": "—"
+   },
+   "signals": [],
+   "examples": [
+    [
+     "Give me the scanner.",
+     "Podaj mi skaner."
+    ],
+    [
+     "Tom and I work together.",
+     "Tom i ja pracujemy razem (podmiot → I, nie me)."
+    ],
+    [
+     "This vest is hers, not mine.",
+     "Ta kamizelka jest jej, nie moja."
+    ]
+   ],
+   "mistakes": [
+    "~~Me and Tom work…~~ → Tom and I work…",
+    "my vs mine: my + rzeczownik, mine samo",
+    "it's (to jest) ≠ its (jego — rzeczy)"
+   ],
+   "quiz": [
+    {
+     "q": "Wymień cztery rodziny zaimków i powiedz, do czego służy każda.",
+     "keywords": [
+      [
+       "podmiot",
+       "kto"
+      ],
+      [
+       "dopełnien",
+       "komu",
+       "kogo"
+      ],
+      [
+       "dzierżawcz",
+       "czyj",
+       "mój"
+      ],
+      [
+       "rzeczownik",
+       "samodzieln",
+       "bez rzeczownika"
+      ]
+     ],
+     "model": "Podmiotowe (I, she — kto robi), dopełnieniowe (me, him — komu/kogo), dzierżawcze przymiotne (my, their — przed rzeczownikiem), dzierżawcze samodzielne (mine, theirs — bez rzeczownika)."
+    },
+    {
+     "q": "Jaka jest różnica między my a mine? Podaj przykład.",
+     "keywords": [
+      [
+       "my"
+      ],
+      [
+       "mine"
+      ],
+      [
+       "rzeczownik"
+      ],
+      [
+       "bez",
+       "samo",
+       "samodzieln"
+      ]
+     ],
+     "model": "my stoi przed rzeczownikiem (my badge), mine występuje samodzielnie (this badge is mine)."
+    }
+   ],
+   "nr": 6
+  },
+  {
+   "id": "kb_articles",
+   "cat": "basics",
+   "name": "Przedimki a / an / the",
+   "level": "A1",
+   "what": "a/an = „jakiś, jeden z wielu” (pierwsza wzmianka). the = „ten konkretny, obaj wiemy który”. Czasem nic.",
+   "when": [
+    "a/an — pierwszy raz, dowolny egzemplarz: I need a scanner",
+    "an — przed dźwiękiem samogłoski: an apple, an hour",
+    "the — konkret znany obu stronom: Where is the scanner?",
+    "the — druga wzmianka: I saw a truck. The truck was red.",
+    "bez przedimka: liczba mnoga ogólnie, języki, posiłki, miasta"
+   ],
+   "form": {
+    "plus": "a + spółgłoska / an + samogłoska / the + wszystko",
+    "minus": "—",
+    "question": "—"
+   },
+   "signals": [],
+   "examples": [
+    [
+     "There's a new worker in our team.",
+     "W zespole jest (jakiś) nowy pracownik."
+    ],
+    [
+     "The manager wants to see you.",
+     "Kierownik (nasz, konkretny) chce cię widzieć."
+    ],
+    [
+     "I like apples.",
+     "Lubię jabłka (ogólnie — bez przedimka)."
+    ]
+   ],
+   "mistakes": [
+    "Pomijanie przedimków w ogóle (po polsku ich nie ma!)",
+    "a hour → AN hour (h nieme)",
+    "the przy ogólnikach: ~~I like the apples~~ (gdy chodzi o jabłka w ogóle)"
+   ],
+   "quiz": [
+    {
+     "q": "Jakie pytanie warto sobie zadać, wybierając między a/an i the?",
+     "keywords": [
+      [
+       "wie",
+       "który",
+       "konkret",
+       "znan",
+       "obaj",
+       "słuchacz"
+      ],
+      [
+       "pierwsz",
+       "jakiś",
+       "dowoln",
+       "jeden z"
+      ]
+     ],
+     "model": "Czy słuchacz wie, o KTÓRĄ rzecz chodzi? Tak → the (konkret). Nie / pierwszy raz / dowolny → a/an."
+    },
+    {
+     "q": "Kiedy używamy an zamiast a?",
+     "keywords": [
+      [
+       "samogłos",
+       "dźwięk",
+       "a e i o u",
+       "hour",
+       "nieme"
+      ]
+     ],
+     "model": "Przed dźwiękiem samogłoski: an apple, an order, an hour (h jest nieme)."
+    }
+   ],
+   "nr": 7
+  },
+  {
+   "id": "kb_past_continuous",
+   "cat": "tenses",
+   "name": "Past Continuous",
+   "level": "B1",
+   "what": "Czynność, która TRWAŁA w danym momencie przeszłości — często tło przerwane innym zdarzeniem (Past Simple).",
+   "when": [
+    "w trakcie w konkretnym momencie: At 6 p.m. I was driving home",
+    "tło + zdarzenie: I was loading the truck when the alarm rang",
+    "dwie czynności równolegle: While I was scanning, he was counting"
+   ],
+   "form": {
+    "plus": "was / were + -ing — I was working / They were working",
+    "minus": "wasn't / weren't + -ing",
+    "question": "Was / Were + podmiot + -ing — Were you working?"
+   },
+   "signals": [
+    "when (+ Past Simple)",
+    "while",
+    "at 6 p.m. yesterday",
+    "all evening"
+   ],
+   "examples": [
+    [
+     "I was watching TV when the phone rang.",
+     "Oglądałem telewizję, kiedy zadzwonił telefon."
+    ],
+    [
+     "While we were waiting, it started to rain.",
+     "Kiedy czekaliśmy, zaczęło padać."
+    ]
+   ],
+   "mistakes": [
+    "Oba czasy w continuous: zdarzenie przerywające → Past Simple (…when the alarm RANG)",
+    "~~I was work~~ → was workING"
+   ],
+   "quiz": [
+    {
+     "q": "Do czego służy Past Continuous i jak współpracuje z Past Simple?",
+     "keywords": [
+      [
+       "trwał",
+       "w trakcie",
+       "tło",
+       "dział się"
+      ],
+      [
+       "przerwan",
+       "zdarzen",
+       "when",
+       "simple"
+      ]
+     ],
+     "model": "Opisuje czynność trwającą w danym momencie przeszłości (tło); zdarzenie, które ją przerywa, jest w Past Simple: I was working when he came."
+    },
+    {
+     "q": "Podaj konstrukcję tego czasu.",
+     "keywords": [
+      [
+       "was",
+       "were"
+      ],
+      [
+       "ing"
+      ]
+     ],
+     "model": "was/were + czasownik z -ing (I was driving, they were waiting)."
+    }
+   ],
+   "nr": 8
+  },
+  {
+   "nr": 9,
+   "id": "kb_countable",
+   "cat": "basics",
+   "name": "Policzalne i niepoliczalne (much / many)",
+   "level": "A2",
+   "what": "Rzeczowniki dzielą się na policzalne (sztuki: box, apple) i niepoliczalne (masa i pojęcia: water, money, information). Od tego zależy, czy powiesz much czy many, a few czy a little.",
+   "when": [
+    "pytanie o ilość: How many boxes? / How much water?",
+    "określanie ilości: a few pallets (kilka) vs a little time (trochę)",
+    "propozycje i prośby: Would you like some coffee?",
+    "przeczenia i pytania: I don't have any time. Do you have any questions?"
+   ],
+   "form": {
+    "plus": "policzalne: many / a few / a number of · niepoliczalne: much / a little / an amount of · oba: a lot of, some, plenty of",
+    "minus": "przeczenia zwykle z any albo much: I don't have any money / much time",
+    "question": "How many + liczba mnoga · How much + niepoliczalny"
+   },
+   "signals": [
+    "how many",
+    "how much",
+    "a few",
+    "a little",
+    "some",
+    "any",
+    "a lot of"
+   ],
+   "examples": [
+    [
+     "How many pallets do we have?",
+     "Ile mamy palet? (policzalne)"
+    ],
+    [
+     "How much time do we have?",
+     "Ile mamy czasu? (niepoliczalne)"
+    ],
+    [
+     "I need some advice.",
+     "Potrzebuję rady — advice nigdy nie ma liczby mnogiej."
+    ],
+    [
+     "The money is on the table.",
+     "Pieniądze są na stole — money jest pojedyncze."
+    ]
+   ],
+   "mistakes": [
+    "~~informations, advices, furnitures~~ — te słowa nie mają liczby mnogiej",
+    "~~many money~~ → much money (albo a lot of money)",
+    "~~The money are~~ → The money IS",
+    "Mylenie „a little” (trochę, wystarczy) z „little” (mało, za mało)"
+   ],
+   "quiz": [
+    {
+     "q": "Czym różni się rzeczownik policzalny od niepoliczalnego? Podaj po przykładzie.",
+     "keywords": [
+      [
+       "policz",
+       "sztuk",
+       "mnog",
+       "liczyc",
+       "liczyć"
+      ],
+      [
+       "niepolicz",
+       "masa",
+       "pojec",
+       "pojęc",
+       "substancj"
+      ]
+     ],
+     "model": "Policzalne można policzyć na sztuki i mają liczbę mnogą (box → boxes). Niepoliczalne to masa lub pojęcie, nie mają liczby mnogiej i nie stawiamy przed nimi „a” (water, money, information)."
+    },
+    {
+     "q": "Kiedy używamy much, a kiedy many?",
+     "keywords": [
+      [
+       "many"
+      ],
+      [
+       "much"
+      ],
+      [
+       "policz",
+       "mnog"
+      ],
+      [
+       "niepolicz",
+       "masa"
+      ]
+     ],
+     "model": "many z rzeczownikami policzalnymi w liczbie mnogiej (how many boxes), much z niepoliczalnymi (how much water)."
+    },
+    {
+     "q": "Jaka jest różnica między some a any?",
+     "keywords": [
+      [
+       "some"
+      ],
+      [
+       "any"
+      ],
+      [
+       "twierdz",
+       "propozycj",
+       "prośb",
+       "prosb"
+      ],
+      [
+       "przecze",
+       "pytan"
+      ]
+     ],
+     "model": "some w zdaniach twierdzących oraz w propozycjach i prośbach (I need some help, Would you like some tea?), any w przeczeniach i pytaniach (I don't have any time, Do you have any questions?)."
+    },
+    {
+     "q": "Wymień dwa angielskie słowa, które Polacy błędnie odmieniają w liczbie mnogiej.",
+     "keywords": [
+      [
+       "information",
+       "advice",
+       "furniture",
+       "luggage",
+       "money",
+       "news",
+       "bread",
+       "work"
+      ]
+     ],
+     "model": "Na przykład information i advice — po angielsku zawsze pojedyncze: some information, a piece of advice. Podobnie furniture, luggage, money."
+    }
+   ]
+  },
+  {
+   "nr": 10,
+   "id": "kb_phrasal",
+   "cat": "slowa",
+   "name": "Phrasal verbs — czasowniki złożone",
+   "level": "A2",
+   "what": "Czasownik + krótkie słówko (up, off, in, out…), które CAŁKOWICIE zmienia znaczenie. „Look” to patrzeć, ale „look after” to opiekować się, a „look for” to szukać.",
+   "when": [
+    "codzienna angielszczyzna mówiona — Anglicy używają ich stale zamiast „oficjalnych” czasowników",
+    "praca: pick up, fill in, hand in, sort out, break down",
+    "rozdzielność: krótkie dopełnienie idzie w środek — „turn it off”, nie „turn off it”"
+   ],
+   "form": {
+    "plus": "czasownik + partykuła: pick up, turn off, fill in",
+    "minus": "—",
+    "question": "—"
+   },
+   "signals": [
+    "up",
+    "off",
+    "in",
+    "out",
+    "on",
+    "back",
+    "away",
+    "down"
+   ],
+   "examples": [
+    [
+     "Can you pick up the box?",
+     "Możesz podnieść to pudło?"
+    ],
+    [
+     "Turn it off, please.",
+     "Wyłącz to, proszę. (zaimek ZAWSZE w środku)"
+    ],
+    [
+     "We ran out of labels.",
+     "Skończyły nam się etykiety."
+    ],
+    [
+     "The forklift broke down.",
+     "Wózek widłowy się zepsuł."
+    ]
+   ],
+   "mistakes": [
+    "~~turn off it~~ → turn IT off (zaimek w środku)",
+    "Tłumaczenie dosłowne: „give up” to nie „dać w górę”, tylko poddać się",
+    "Mylenie look for (szukać), look after (opiekować się) i look forward to (nie móc się doczekać)"
+   ],
+   "quiz": [
+    {
+     "q": "Czym jest phrasal verb i dlaczego nie da się go tłumaczyć dosłownie?",
+     "keywords": [
+      [
+       "czasownik"
+      ],
+      [
+       "partykul",
+       "przyimek",
+       "slowk",
+       "słówk",
+       "up",
+       "off"
+      ],
+      [
+       "znaczen",
+       "zmienia",
+       "inne"
+      ]
+     ],
+     "model": "To czasownik połączony z krótkim słówkiem (up, off, in…), które zmienia całe znaczenie — „look” to patrzeć, ale „look after” to opiekować się."
+    },
+    {
+     "q": "Gdzie stawiamy zaimek (it, them) w phrasal verbie rozdzielnym?",
+     "keywords": [
+      [
+       "srodk",
+       "środk",
+       "miedzy",
+       "między",
+       "przed"
+      ],
+      [
+       "it",
+       "them",
+       "zaimek"
+      ]
+     ],
+     "model": "Zaimek wchodzi między czasownik a partykułę: turn it off, pick them up — nigdy „turn off it”."
+    }
+   ]
+  },
+  {
+   "nr": 11,
+   "id": "kb_false_friends",
+   "cat": "slowa",
+   "name": "False friends — fałszywi przyjaciele",
+   "level": "B1",
+   "what": "Słowa, które brzmią jak polskie, ale znaczą coś zupełnie innego. To najczęstsze źródło żenujących pomyłek Polaków mówiących po angielsku.",
+   "when": [
+    "gdy słowo brzmi „zbyt znajomo” — to sygnał ostrzegawczy",
+    "w pracy: pension to emerytura, a pensja to salary",
+    "w sklepie i u lekarza: receipt to paragon, recepta to prescription"
+   ],
+   "form": {
+    "plus": "actually = tak naprawdę · currently = aktualnie",
+    "minus": "—",
+    "question": "—"
+   },
+   "signals": [
+    "actually",
+    "eventually",
+    "sympathetic",
+    "pension",
+    "receipt",
+    "fabric",
+    "dress"
+   ],
+   "examples": [
+    [
+     "Actually, I work in a warehouse.",
+     "Tak naprawdę pracuję w magazynie (NIE: aktualnie)."
+    ],
+    [
+     "I currently work in Rotterdam.",
+     "Aktualnie pracuję w Rotterdamie."
+    ],
+    [
+     "He eventually agreed.",
+     "W końcu się zgodził (NIE: ewentualnie)."
+    ],
+    [
+     "My salary is paid monthly.",
+     "Moja pensja jest wypłacana miesięcznie (pension = emerytura)."
+    ]
+   ],
+   "mistakes": [
+    "actually ≠ aktualnie (to currently)",
+    "eventually ≠ ewentualnie (to possibly)",
+    "sympathetic ≠ sympatyczny (to nice/friendly)",
+    "pension ≠ pensja (to salary)",
+    "receipt ≠ recepta (to prescription)"
+   ],
+   "quiz": [
+    {
+     "q": "Co znaczy „actually” i jak powiedzieć po angielsku „aktualnie”?",
+     "keywords": [
+      [
+       "tak naprawde",
+       "naprawde",
+       "wlasciwie",
+       "właściwie"
+      ],
+      [
+       "currently",
+       "at the moment",
+       "obecnie"
+      ]
+     ],
+     "model": "„Actually” znaczy tak naprawdę / właściwie, a „aktualnie” to currently albo at the moment."
+    },
+    {
+     "q": "Podaj dwa inne przykłady fałszywych przyjaciół i ich prawdziwe znaczenia.",
+     "keywords": [
+      [
+       "eventually",
+       "pension",
+       "receipt",
+       "sympathetic",
+       "fabric",
+       "dress",
+       "ordinary",
+       "chef",
+       "rent",
+       "desert"
+      ]
+     ],
+     "model": "Na przykład: pension to emerytura (pensja to salary), receipt to paragon (recepta to prescription), eventually to w końcu (ewentualnie to possibly)."
+    }
+   ]
+  }
+ ],
+ "name": "Baza wiedzy — artykuły",
+ "etykieta": "Baza wiedzy — artykuły"
+}

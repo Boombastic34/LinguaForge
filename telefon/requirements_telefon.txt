@@ -1,0 +1,12 @@
+# Zestaw bibliotek działający na Androidzie (bez modułów kompilowanych)
+# Używany przez aplikację APK oraz zalecany w Termuksie/Pydroidzie.
+fastapi==0.99.1
+pydantic==1.10.13
+starlette==0.27.0
+uvicorn==0.22.0
+anyio==3.7.1
+sniffio==1.3.1
+h11==0.14.0
+click==8.1.7
+idna==3.7
+typing-extensions==4.12.2

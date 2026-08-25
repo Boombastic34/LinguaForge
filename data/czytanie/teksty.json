@@ -1,0 +1,189 @@
+{
+ "name": "Teksty do czytania",
+ "texts": [
+  {
+   "id": "r_a1_shift",
+   "level": "A1",
+   "title": "My first shift",
+   "emoji": "📦",
+   "text": "My name is Marek. Today is my first day at the warehouse. I get up at four o'clock. It is very early and dark outside. I drink coffee and eat two sandwiches. My bike is old but it works. The ride takes twenty minutes.\n\nAt the gate I meet Kees. He is my team leader. He gives me a scanner and a yellow vest. The vest is too big, but it is fine. We walk to aisle number seven. There are many boxes here. Some boxes are small, some are very heavy.\n\nAt ten o'clock we have a break. I eat an apple and talk to Anna. She is from Romania and she works here for two years. She says the job is hard but the people are nice. I think she is right.",
+   "text_pl": "Mam na imię Marek. Dziś jest mój pierwszy dzień w magazynie. Wstaję o czwartej. Jest bardzo wcześnie i ciemno na dworze. Piję kawę i jem dwie kanapki. Mój rower jest stary, ale działa. Jazda zajmuje dwadzieścia minut.\n\nPrzy bramie spotykam Keesa. Jest moim liderem zespołu. Daje mi skaner i żółtą kamizelkę. Kamizelka jest za duża, ale jest w porządku. Idziemy do alejki numer siedem. Jest tu dużo pudeł. Niektóre są małe, niektóre bardzo ciężkie.\n\nO dziesiątej mamy przerwę. Jem jabłko i rozmawiam z Anną. Jest z Rumunii i pracuje tu od dwóch lat. Mówi, że praca jest ciężka, ale ludzie są mili. Myślę, że ma rację.",
+   "questions": [
+    {
+     "text": "How does Marek get to work?",
+     "options": [
+      "By car",
+      "By bicycle",
+      "On foot",
+      "By bus"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Samochodem",
+      "Rowerem",
+      "Pieszo",
+      "Autobusem"
+     ],
+     "pl": "Rowerem — „my bike… the ride takes twenty minutes”."
+    },
+    {
+     "text": "What does Kees give him?",
+     "options": [
+      "Coffee and food",
+      "A scanner and a vest",
+      "A bike",
+      "A map of the city"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Kawę i jedzenie",
+      "Skaner i kamizelkę",
+      "Rower",
+      "Mapę miasta"
+     ],
+     "pl": "Skaner i żółtą kamizelkę."
+    },
+    {
+     "text": "What does Anna think about the job?",
+     "options": [
+      "It is easy and boring",
+      "It is demanding but the team is friendly",
+      "She wants to leave",
+      "She has just started"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Jest łatwa i nudna",
+      "Jest wymagająca, ale zespół jest miły",
+      "Chce odejść",
+      "Dopiero zaczęła"
+     ],
+     "pl": "Praca jest ciężka, ale ludzie mili."
+    }
+   ]
+  },
+  {
+   "id": "r_a2_email",
+   "level": "A2",
+   "title": "An email from the office",
+   "emoji": "✉️",
+   "text": "Hi everyone,\n\nNext Monday we are changing the schedule. The morning shift will start at 5:30 instead of 6:00. The reason is simple: three big trucks arrive early and we need more people at the ramp.\n\nPlease remember two things. First, park your bikes behind building B, not in front of the main entrance. Second, if you cannot come to work, call your team leader before 5:00. Do not send a message on WhatsApp — nobody reads it at night.\n\nThe canteen will open at 5:15, so you can still have coffee before work. On Friday we will order pizza for everyone who worked the early shift.\n\nThanks for your patience,\nHR Department",
+   "text_pl": "Cześć wszystkim,\n\nW przyszły poniedziałek zmieniamy grafik. Poranna zmiana zacznie się o 5:30 zamiast 6:00. Powód jest prosty: trzy duże ciężarówki przyjeżdżają wcześnie i potrzebujemy więcej ludzi przy rampie.\n\nPamiętajcie o dwóch rzeczach. Po pierwsze, parkujcie rowery za budynkiem B, nie przed głównym wejściem. Po drugie, jeśli nie możecie przyjść do pracy, zadzwońcie do lidera przed 5:00. Nie wysyłajcie wiadomości na WhatsApp — nikt tego nie czyta w nocy.\n\nStołówka otworzy się o 5:15, więc nadal zdążycie na kawę przed pracą. W piątek zamówimy pizzę dla wszystkich, którzy pracowali na wczesnej zmianie.\n\nDzięki za cierpliwość,\nDział HR",
+   "questions": [
+    {
+     "text": "Why is the shift starting earlier?",
+     "options": [
+      "The canteen opens earlier",
+      "Deliveries arrive sooner and need more staff",
+      "Workers asked for it",
+      "The building is closed at six"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Stołówka otwiera się wcześniej",
+      "Dostawy przyjeżdżają wcześniej i trzeba więcej ludzi",
+      "Pracownicy o to prosili",
+      "Budynek jest zamknięty o szóstej"
+     ],
+     "pl": "Trzy ciężarówki przyjeżdżają wcześnie."
+    },
+    {
+     "text": "What should you do if you are ill?",
+     "options": [
+      "Send a WhatsApp message",
+      "Phone your team leader before five",
+      "Wait until the morning meeting",
+      "Write an email to HR"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Wysłać wiadomość na WhatsApp",
+      "Zadzwonić do lidera przed piątą",
+      "Poczekać do porannej odprawy",
+      "Napisać e-mail do HR"
+     ],
+     "pl": "Zadzwonić do lidera przed 5:00."
+    },
+    {
+     "text": "Where should bikes be left?",
+     "options": [
+      "In front of the main entrance",
+      "Behind building B",
+      "Inside the canteen",
+      "Next to the ramp"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Przed głównym wejściem",
+      "Za budynkiem B",
+      "W stołówce",
+      "Przy rampie"
+     ],
+     "pl": "Za budynkiem B."
+    }
+   ]
+  },
+  {
+   "id": "r_b1_robots",
+   "level": "B1",
+   "title": "Robots on the floor",
+   "emoji": "🤖",
+   "text": "Six months ago our company installed twelve robots in the picking area. At first, most of us were worried. People said the machines would take our jobs and that we would all be looking for work by Christmas.\n\nWhat actually happened was different. The robots carry heavy pallets between the aisles, which used to be the hardest part of the day. Nobody misses that. However, somebody has to tell the robots where to go, check their batteries and solve problems when a pallet is not where the system thinks it is. Those tasks did not exist before.\n\nThree colleagues from my team have already moved to the control room. They earn more than they did on the floor, but they had to learn new software and improve their English, because all the manuals are written in English. The company paid for the training.\n\nI have applied for the next course. I am not sure I will get a place, but if I do not try, nothing will change.",
+   "text_pl": "Pół roku temu nasza firma zainstalowała dwanaście robotów w strefie kompletacji. Na początku większość z nas się martwiła. Ludzie mówili, że maszyny zabiorą nam pracę i że do świąt wszyscy będziemy jej szukać.\n\nTo, co się stało naprawdę, było inne. Roboty wożą ciężkie palety między alejkami, co było najtrudniejszą częścią dnia. Nikt za tym nie tęskni. Jednak ktoś musi mówić robotom, dokąd jechać, sprawdzać ich baterie i rozwiązywać problemy, gdy paleta nie jest tam, gdzie sądzi system. Tych zadań wcześniej nie było.\n\nTroje kolegów z mojego zespołu przeszło już do sterowni. Zarabiają więcej niż na hali, ale musieli nauczyć się nowego oprogramowania i poprawić angielski, bo wszystkie instrukcje są po angielsku. Firma zapłaciła za szkolenie.\n\nZłożyłem podanie na następny kurs. Nie jestem pewien, czy dostanę miejsce, ale jeśli nie spróbuję, nic się nie zmieni.",
+   "questions": [
+    {
+     "text": "What were people afraid of at the beginning?",
+     "options": [
+      "That the robots would break down",
+      "That they would lose their jobs",
+      "That the work would get heavier",
+      "That salaries would rise"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Że roboty się zepsują",
+      "Że stracą pracę",
+      "Że praca stanie się cięższa",
+      "Że wzrosną pensje"
+     ],
+     "pl": "Bali się utraty pracy."
+    },
+    {
+     "text": "What new kind of work appeared?",
+     "options": [
+      "Carrying pallets by hand",
+      "Supervising the machines and fixing problems",
+      "Cleaning the aisles",
+      "Driving trucks"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Ręczne noszenie palet",
+      "Nadzorowanie maszyn i rozwiązywanie problemów",
+      "Sprzątanie alejek",
+      "Prowadzenie ciężarówek"
+     ],
+     "pl": "Kierowanie robotami, baterie, rozwiązywanie problemów."
+    },
+    {
+     "text": "What did the colleagues need in order to move to the control room?",
+     "options": [
+      "Longer experience only",
+      "New software skills and better English",
+      "A driving licence",
+      "Permission from the customers"
+     ],
+     "answer": 1,
+     "options_pl": [
+      "Tylko dłuższy staż",
+      "Znajomość nowego oprogramowania i lepszy angielski",
+      "Prawo jazdy",
+      "Zgodę klientów"
+     ],
+     "pl": "Nowe oprogramowanie i lepszy angielski."
+    }
+   ]
+  }
+ ],
+ "etykieta": "Teksty do czytania"
+}

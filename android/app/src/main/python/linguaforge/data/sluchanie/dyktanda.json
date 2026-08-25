@@ -1,0 +1,78 @@
+{
+ "items": [
+  {
+   "id": "li1",
+   "level": "A1",
+   "en": "I work in a big warehouse.",
+   "nr": 1
+  },
+  {
+   "id": "li2",
+   "level": "A1",
+   "en": "The break starts at half past twelve.",
+   "nr": 2
+  },
+  {
+   "id": "li3",
+   "level": "A1",
+   "en": "Please close the door.",
+   "nr": 3
+  },
+  {
+   "id": "li4",
+   "level": "A2",
+   "en": "Put the heavy boxes on the bottom shelf.",
+   "nr": 4
+  },
+  {
+   "id": "li5",
+   "level": "A2",
+   "en": "My shift finishes at ten in the evening.",
+   "nr": 5
+  },
+  {
+   "id": "li6",
+   "level": "A2",
+   "en": "The forklift driver needs more empty pallets.",
+   "nr": 6
+  },
+  {
+   "id": "li7",
+   "level": "B1",
+   "en": "We have already packed most of the orders for today.",
+   "nr": 7
+  },
+  {
+   "id": "li8",
+   "level": "B1",
+   "en": "If the scanner stops working, tell your team leader.",
+   "nr": 8
+  },
+  {
+   "id": "li9",
+   "level": "B1",
+   "en": "The delivery was delayed because of the traffic.",
+   "nr": 9
+  },
+  {
+   "id": "li10",
+   "level": "B2",
+   "en": "All damaged goods must be reported before the end of the shift.",
+   "nr": 10
+  },
+  {
+   "id": "li11",
+   "level": "B2",
+   "en": "Unless we receive the missing parts, the order will not be completed on time.",
+   "nr": 11
+  },
+  {
+   "id": "li12",
+   "level": "A2",
+   "en": "Where can I find the safety vests?",
+   "nr": 12
+  }
+ ],
+ "name": "Dyktanda",
+ "etykieta": "Dyktanda"
+}

@@ -1,0 +1,462 @@
+{
+ "topics": [
+  {
+   "id": "pronouns",
+   "name": "Zaimki (I/me/my/mine)",
+   "level": "A1",
+   "theory": "<b>Cztery rodziny zaimków:</b><br>• podmiot: <b>I, you, he, she, it, we, they</b> — kto robi: <i>She works here.</i><br>• dopełnienie: <b>me, you, him, her, it, us, them</b> — komu/kogo: <i>Help me. Tell him.</i><br>• dzierżawcze przymiotne: <b>my, your, his, her, its, our, their</b> + rzeczownik: <i>my scanner</i>.<br>• dzierżawcze samodzielne: <b>mine, yours, his, hers, ours, theirs</b> — bez rzeczownika: <i>This badge is mine.</i><br><b>Typowy błąd:</b> ~~Me and Tom work…~~ → <b>Tom and I work…</b>",
+   "exercises": [
+    {
+     "id": "pr1",
+     "type": "choice",
+     "text": "Give ___ the scanner, please.",
+     "options": [
+      "I",
+      "me",
+      "my",
+      "mine"
+     ],
+     "answer": 1,
+     "pl": "Podaj mi skaner, proszę.",
+     "explain": "Komu? → me.",
+     "nr": 1
+    },
+    {
+     "id": "pr2",
+     "type": "choice",
+     "text": "___ shift starts at six.",
+     "options": [
+      "Me",
+      "I",
+      "My",
+      "Mine"
+     ],
+     "answer": 2,
+     "pl": "Moja zmiana zaczyna się o szóstej.",
+     "explain": "Przed rzeczownikiem → my.",
+     "nr": 2
+    },
+    {
+     "id": "pr3",
+     "type": "choice",
+     "text": "This vest is ___.",
+     "options": [
+      "my",
+      "me",
+      "mine",
+      "I"
+     ],
+     "answer": 2,
+     "pl": "Ta kamizelka jest moja.",
+     "explain": "Bez rzeczownika → mine.",
+     "nr": 3
+    },
+    {
+     "id": "pr4",
+     "type": "gap",
+     "text": "Tom is my friend. I work with ___ every day.",
+     "accept": [
+      "him"
+     ],
+     "pl": "Tom to mój kolega. Pracuję z nim codziennie.",
+     "explain": "z nim → with him.",
+     "nr": 4
+    },
+    {
+     "id": "pr5",
+     "type": "choice",
+     "text": "Anna and ___ are in the same team.",
+     "options": [
+      "me",
+      "I",
+      "my",
+      "mine"
+     ],
+     "answer": 1,
+     "pl": "Anna i ja jesteśmy w tym samym zespole.",
+     "explain": "Podmiot zdania → I.",
+     "nr": 5
+    },
+    {
+     "id": "pr6",
+     "type": "gap",
+     "text": "They forgot ___ badges at home. (swoje)",
+     "accept": [
+      "their"
+     ],
+     "pl": "Zapomnieli swoich identyfikatorów.",
+     "explain": "ich/swoje + rzeczownik → their.",
+     "nr": 6
+    },
+    {
+     "id": "pr7",
+     "type": "choice",
+     "text": "Is this box ___ or ___? (jej / nasza)",
+     "options": [
+      "her / our",
+      "hers / ours",
+      "she / we",
+      "her / ours"
+     ],
+     "answer": 1,
+     "pl": "Czy to pudło jest jej czy nasze?",
+     "explain": "Bez rzeczownika → hers / ours.",
+     "nr": 7
+    }
+   ],
+   "rule": "Zaimki: podmiot (I, she) — kto robi; dopełnienie (me, him) — komu/kogo; my/your + rzeczownik; mine/yours bez rzeczownika."
+  },
+  {
+   "id": "articles",
+   "name": "Przedimki a / an / the",
+   "level": "A1",
+   "theory": "<b>a/an</b> = „jakiś, jeden z wielu” (pierwsza wzmianka): <i>I need <b>a</b> pallet.</i> <b>an</b> przed samogłoską: <i>an order, an hour</i> (h nieme!).<br><b>the</b> = „ten konkretny, obaj wiemy który”: <i>Where is <b>the</b> pallet?</i> Także rzeczy jedyne: <i>the sun, the manager</i> (nasz jedyny).<br><b>Bez przedimka:</b> liczba mnoga ogólnie (<i>Pallets are heavy</i>), języki, posiłki, miasta.<br><b>Dla Polaka:</b> po polsku przedimków nie ma, więc trenuj pytanie: „czy słuchacz wie, o KTÓRĄ rzecz chodzi?” Tak → the. Nie → a/an.",
+   "exercises": [
+    {
+     "id": "ar1",
+     "type": "choice",
+     "text": "There's ___ new worker in our team.",
+     "options": [
+      "a",
+      "an",
+      "the",
+      "—"
+     ],
+     "answer": 0,
+     "pl": "W naszym zespole jest nowy pracownik.",
+     "explain": "Pierwsza wzmianka → a.",
+     "nr": 1
+    },
+    {
+     "id": "ar2",
+     "type": "choice",
+     "text": "I'll be back in ___ hour.",
+     "options": [
+      "a",
+      "an",
+      "the",
+      "—"
+     ],
+     "answer": 1,
+     "pl": "Wrócę za godzinę.",
+     "explain": "hour — h nieme, słychać samogłoskę → an.",
+     "nr": 2
+    },
+    {
+     "id": "ar3",
+     "type": "choice",
+     "text": "___ manager wants to see you.",
+     "options": [
+      "A",
+      "An",
+      "The",
+      "—"
+     ],
+     "answer": 2,
+     "pl": "Kierownik (nasz, ten) chce cię widzieć.",
+     "explain": "Konkretna, znana osoba → the.",
+     "nr": 3
+    },
+    {
+     "id": "ar4",
+     "type": "choice",
+     "text": "I don't like ___ Mondays.",
+     "options": [
+      "a",
+      "an",
+      "the",
+      "—"
+     ],
+     "answer": 3,
+     "pl": "Nie lubię poniedziałków.",
+     "explain": "Ogólnie, liczba mnoga → bez przedimka.",
+     "nr": 4
+    },
+    {
+     "id": "ar5",
+     "type": "gap",
+     "text": "I saw ___ truck. ___ truck was red. (wpisz oba)",
+     "accept": [
+      "a the",
+      "a, the"
+     ],
+     "pl": "Widziałem ciężarówkę. Ta ciężarówka była czerwona.",
+     "explain": "a truck — pierwsza wzmianka (jakaś ciężarówka); the truck — druga wzmianka, już wiadomo która.",
+     "nr": 5
+    },
+    {
+     "id": "ar6",
+     "type": "choice",
+     "text": "She speaks ___ Polish and ___ English.",
+     "options": [
+      "the / the",
+      "a / a",
+      "— / —",
+      "the / —"
+     ],
+     "answer": 2,
+     "pl": "Ona mówi po polsku i po angielsku.",
+     "explain": "Języki bez przedimka.",
+     "nr": 6
+    }
+   ],
+   "rule": "Przedimki: a/an = pierwsza wzmianka lub dowolny egzemplarz; the = konkret znany obu stronom; brak przedimka przy liczbie mnogiej ogólnie."
+  },
+  {
+   "id": "past_continuous",
+   "name": "Past Continuous",
+   "level": "B1",
+   "theory": "<b>Kiedy?</b> Czynność trwająca w konkretnym momencie przeszłości, często przerwana inną: <i>I <b>was loading</b> the truck when the alarm <b>rang</b>.</i><br><b>Budowa:</b> was/were + -ing.<br><b>Duet z Past Simple:</b> tło (Continuous) + zdarzenie (Simple): <i>While we were counting the stock, the lights went out.</i>",
+   "exercises": [
+    {
+     "id": "pco1",
+     "type": "gap",
+     "text": "I ___ (drive) the forklift when you called.",
+     "accept": [
+      "was driving"
+     ],
+     "pl": "Prowadziłem wózek, kiedy zadzwoniłeś.",
+     "explain": "Czynność w trakcie → was driving.",
+     "nr": 1
+    },
+    {
+     "id": "pco2",
+     "type": "choice",
+     "text": "They ___ lunch when the manager arrived.",
+     "options": [
+      "had",
+      "were having",
+      "have",
+      "are having"
+     ],
+     "answer": 1,
+     "pl": "Jedli lunch, kiedy przyszedł kierownik.",
+     "explain": "Tło w przeszłości → were having.",
+     "nr": 2
+    },
+    {
+     "id": "pco3",
+     "type": "choice",
+     "text": "What ___ you ___ at 6 p.m. yesterday?",
+     "options": [
+      "did / do",
+      "were / doing",
+      "have / done",
+      "are / doing"
+     ],
+     "answer": 1,
+     "pl": "Co robiłeś wczoraj o 18:00?",
+     "explain": "Konkretny moment przeszłości → were doing.",
+     "nr": 3
+    },
+    {
+     "id": "pco4",
+     "type": "gap",
+     "text": "While we ___ (wait), it started to rain.",
+     "accept": [
+      "were waiting"
+     ],
+     "pl": "Podczas gdy czekaliśmy, zaczęło padać.",
+     "explain": "while + Continuous.",
+     "nr": 4
+    },
+    {
+     "id": "pco5",
+     "type": "choice",
+     "text": "Wybierz poprawne:",
+     "options": [
+      "I was work when he came.",
+      "I was working when he came.",
+      "I working when he came.",
+      "I were working when he came."
+     ],
+     "answer": 1,
+     "pl": "Pracowałem, kiedy przyszedł.",
+     "explain": "I → was + working.",
+     "nr": 5
+    }
+   ],
+   "rule": "Past Continuous: was/were + -ing — czynność TRWAJĄCA w przeszłości, często przerwana zdarzeniem w Past Simple."
+  },
+  {
+   "id": "countable",
+   "name": "Policzalne i niepoliczalne (much / many)",
+   "level": "A2",
+   "rule": "Policzalne (można policyć sztuki): a box, two boxes → many, few, a number of. Niepoliczalne (masa, substancja, pojęcie): water, money, information → much, little, an amount of. W zdaniach twierdzących zwykle: a lot of (pasuje do obu).",
+   "theory": "<h4>Dwa światy rzeczowników</h4><p><b>Policzalne</b> mają liczbę mnogą i można powiedzieć „jeden, dwa”: <i>a box → two boxes, an apple → three apples</i>.<br><b>Niepoliczalne</b> to masa lub pojęcie — nie mają liczby mnogiej i nie stawiamy przed nimi „a”: <i>water, money, time, information, advice, work, bread, sugar, luggage</i>.</p><h4>Jak pytać o ilość</h4><p><b>How many</b> + liczba mnoga: <i>How many boxes?</i><br><b>How much</b> + niepoliczalny: <i>How much sugar? How much time?</i></p><h4>Określniki ilości</h4><div class='kb-form'><div>policzalne: many, a few (kilka), few (mało), a number of</div><div>niepoliczalne: much, a little (trochę), little (mało), an amount of</div><div>oba: a lot of / lots of, some, any, plenty of, no</div></div><h4>some czy any?</h4><p><b>some</b> — twierdzenia i propozycje: <i>I need some help. Would you like some coffee?</i><br><b>any</b> — przeczenia i pytania: <i>I don't have any time. Do you have any questions?</i></p><h4>Pułapki dla Polaków</h4><p>Po polsku „informacje, rady, meble, bagaże” są w liczbie mnogiej — po angielsku NIE: <i>information, advice, furniture, luggage</i> są zawsze pojedyncze. Mówimy: <i>a piece of information, a piece of advice, two pieces of luggage</i>. Podobnie <b>money</b> jest pojedyncze: <i>The money IS on the table.</i></p>",
+   "exercises": [
+    {
+     "nr": 1,
+     "id": "cnt1",
+     "type": "choice",
+     "text": "How ___ boxes are on the pallet?",
+     "options": [
+      "much",
+      "many",
+      "little",
+      "amount"
+     ],
+     "answer": 1,
+     "pl": "Ile pudeł jest na palecie?",
+     "explain": "boxes = policzalne w liczbie mnogiej → how MANY. „How much” byłoby możliwe tylko przy masie, np. how much wood."
+    },
+    {
+     "nr": 2,
+     "id": "cnt2",
+     "type": "choice",
+     "text": "How ___ water do you drink every day?",
+     "options": [
+      "many",
+      "much",
+      "few",
+      "number"
+     ],
+     "answer": 1,
+     "pl": "Ile wody pijesz codziennie?",
+     "explain": "water = niepoliczalne (masa) → how MUCH. Policzyć da się dopiero opakowania: how many bottles of water."
+    },
+    {
+     "nr": 3,
+     "id": "cnt3",
+     "type": "gap",
+     "text": "I don't have ___ time. (przeczenie)",
+     "accept": [
+      "much",
+      "any"
+     ],
+     "pl": "Nie mam dużo czasu.",
+     "explain": "time jest niepoliczalne, a zdanie jest przeczące → much albo any. „many time” jest zawsze błędne."
+    },
+    {
+     "nr": 4,
+     "id": "cnt4",
+     "type": "choice",
+     "text": "There are only ___ pallets left — maybe three.",
+     "options": [
+      "a little",
+      "a few",
+      "much",
+      "less"
+     ],
+     "answer": 1,
+     "pl": "Zostało tylko kilka palet — może trzy.",
+     "explain": "pallets = policzalne → a FEW (kilka). „a little” byłoby przy niepoliczalnym: a little water."
+    },
+    {
+     "nr": 5,
+     "id": "cnt5",
+     "type": "choice",
+     "text": "Could you give me ___ advice?",
+     "options": [
+      "an",
+      "some",
+      "a few",
+      "many"
+     ],
+     "answer": 1,
+     "pl": "Czy możesz dać mi radę?",
+     "explain": "advice jest NIEPOLICZALNE, mimo że po polsku „rady” brzmią policzalnie. Nie mówimy „an advice” ani „advices” — poprawnie: some advice albo a piece of advice."
+    },
+    {
+     "nr": 6,
+     "id": "cnt6",
+     "type": "choice",
+     "text": "We need ___ information about the order.",
+     "options": [
+      "a few",
+      "many",
+      "some",
+      "an"
+     ],
+     "answer": 2,
+     "pl": "Potrzebujemy informacji o zamówieniu.",
+     "explain": "information = niepoliczalne, zawsze w liczbie pojedynczej → some information (albo a piece of information). „informations” nie istnieje."
+    },
+    {
+     "nr": 7,
+     "id": "cnt7",
+     "type": "gap",
+     "text": "Do you have ___ questions? (pytanie)",
+     "accept": [
+      "any"
+     ],
+     "pl": "Czy masz jakieś pytania?",
+     "explain": "W pytaniach i przeczeniach domyślnie ANY; some zostawiamy dla twierdzeń i propozycji (Would you like some coffee?)."
+    },
+    {
+     "nr": 8,
+     "id": "cnt8",
+     "type": "choice",
+     "text": "The money ___ on the table.",
+     "options": [
+      "are",
+      "is",
+      "were",
+      "have"
+     ],
+     "answer": 1,
+     "pl": "Pieniądze są na stole.",
+     "explain": "money to rzeczownik niepoliczalny i traktujemy go jak liczbę pojedynczą → money IS. To częsty błąd, bo po polsku „pieniądze” są mnogie."
+    },
+    {
+     "nr": 9,
+     "id": "cnt9",
+     "type": "choice",
+     "text": "There isn't ___ bread left.",
+     "options": [
+      "many",
+      "much",
+      "a few",
+      "few"
+     ],
+     "answer": 1,
+     "pl": "Nie został już (prawie) żaden chleb.",
+     "explain": "bread = niepoliczalne → much w przeczeniu. Policzalnie: how many loaves of bread (bochenki)."
+    },
+    {
+     "nr": 10,
+     "id": "cnt10",
+     "type": "choice",
+     "text": "He has ___ luggage — only one small bag.",
+     "options": [
+      "a few",
+      "few",
+      "a little",
+      "little"
+     ],
+     "answer": 2,
+     "pl": "Ma trochę bagażu — tylko jedną małą torbę.",
+     "explain": "luggage jest niepoliczalne → a little (trochę). Uwaga na różnicę: „a little” = trochę (pozytywnie), „little” = mało (za mało)."
+    },
+    {
+     "nr": 11,
+     "id": "cnt11",
+     "type": "gap",
+     "text": "How ___ people work in your team?",
+     "accept": [
+      "many"
+     ],
+     "pl": "Ile osób pracuje w twoim zespole?",
+     "explain": "people to nieregularna liczba mnoga od person → policzalne → how many."
+    },
+    {
+     "nr": 12,
+     "id": "cnt12",
+     "type": "choice",
+     "text": "I'd like ___ coffee, please.",
+     "options": [
+      "any",
+      "some",
+      "many",
+      "a few"
+     ],
+     "answer": 1,
+     "pl": "Poproszę kawę.",
+     "explain": "Propozycje i uprzejme prośby biorą SOME, mimo że zdanie nie jest twierdzeniem faktu: I'd like some coffee / Would you like some tea?"
+    }
+   ]
+  }
+ ],
+ "name": "Gramatyka — zaimki, przedimki, policzalne",
+ "etykieta": "Gramatyka — zaimki, przedimki, policzalne"
+}

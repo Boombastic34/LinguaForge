@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.LinguaForge" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#e8590c</item>
+        <item name="android:windowBackground">#ffffff</item>
+    </style>
+</resources>

@@ -1,0 +1,462 @@
+{
+ "items": [
+  {
+   "id": "tr1",
+   "level": "A1",
+   "domain": "general",
+   "pl": "Jestem zmęczony po pracy.",
+   "en_ref": "I am tired after work.",
+   "tense_name": "Present Simple (to be)",
+   "tense_patterns": [
+    " i am ",
+    " i'm "
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "tired"
+    ],
+    [
+     "after"
+    ],
+    [
+     "work"
+    ]
+   ],
+   "tense_hint": "Stan obecny → I am…",
+   "nr": 1
+  },
+  {
+   "id": "tr2",
+   "level": "A1",
+   "domain": "general",
+   "pl": "Mój przyjaciel mieszka w Amsterdamie.",
+   "en_ref": "My friend lives in Amsterdam.",
+   "tense_name": "Present Simple",
+   "tense_patterns": [
+    " lives "
+   ],
+   "forbidden": [
+    [
+     "Present Continuous",
+     " is living "
+    ]
+   ],
+   "keywords": [
+    [
+     "friend"
+    ],
+    [
+     "lives",
+     "live"
+    ],
+    [
+     "amsterdam"
+    ]
+   ],
+   "tense_hint": "Stała sytuacja → Present Simple, 3. os. +s.",
+   "nr": 2
+  },
+  {
+   "id": "tr3",
+   "level": "A2",
+   "domain": "general",
+   "pl": "Wczoraj poszliśmy do kina.",
+   "en_ref": "Yesterday we went to the cinema.",
+   "tense_name": "Past Simple",
+   "tense_patterns": [
+    " went "
+   ],
+   "forbidden": [
+    [
+     "Present Perfect",
+     " have gone "
+    ],
+    [
+     "Present Simple",
+     " we go "
+    ]
+   ],
+   "keywords": [
+    [
+     "went"
+    ],
+    [
+     "yesterday"
+    ],
+    [
+     "cinema",
+     "movies"
+    ]
+   ],
+   "tense_hint": "Wczoraj = zamknięta przeszłość → Past Simple.",
+   "nr": 3
+  },
+  {
+   "id": "tr4",
+   "level": "A2",
+   "domain": "warehouse",
+   "pl": "Ta paleta jest za ciężka.",
+   "en_ref": "This pallet is too heavy.",
+   "tense_name": "Present Simple (to be)",
+   "tense_patterns": [
+    " is "
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "pallet"
+    ],
+    [
+     "too heavy",
+     "very heavy",
+     "heavy"
+    ]
+   ],
+   "tense_hint": "„za ciężka” = too heavy.",
+   "nr": 4
+  },
+  {
+   "id": "tr5",
+   "level": "A2",
+   "domain": "warehouse",
+   "pl": "Nie mogę znaleźć tego produktu w alejce 7.",
+   "en_ref": "I can't find this product in aisle 7.",
+   "tense_name": "can + bezokolicznik",
+   "tense_patterns": [
+    "can't find",
+    "cannot find",
+    "can not find"
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "find"
+    ],
+    [
+     "product",
+     "item"
+    ],
+    [
+     "aisle"
+    ],
+    [
+     "7",
+     "seven"
+    ]
+   ],
+   "tense_hint": "can't + bezokolicznik.",
+   "nr": 5
+  },
+  {
+   "id": "tr6",
+   "level": "B1",
+   "domain": "general",
+   "pl": "Mieszkam w Holandii od trzech lat.",
+   "en_ref": "I have lived in the Netherlands for three years.",
+   "tense_name": "Present Perfect",
+   "tense_patterns": [
+    "have lived",
+    "'ve lived",
+    "have been living"
+   ],
+   "forbidden": [
+    [
+     "Present Simple",
+     " i live "
+    ],
+    [
+     "Past Simple",
+     " i lived "
+    ]
+   ],
+   "keywords": [
+    [
+     "netherlands",
+     "holland"
+    ],
+    [
+     "three years",
+     "3 years"
+    ],
+    [
+     "for"
+    ]
+   ],
+   "tense_hint": "Sytuacja trwa do teraz → Present Perfect + for.",
+   "nr": 6
+  },
+  {
+   "id": "tr7",
+   "level": "B1",
+   "domain": "warehouse",
+   "pl": "Właśnie rozładowaliśmy ostatnią ciężarówkę.",
+   "en_ref": "We have just unloaded the last truck.",
+   "tense_name": "Present Perfect",
+   "tense_patterns": [
+    "have just unloaded",
+    "'ve just unloaded",
+    "have unloaded"
+   ],
+   "forbidden": [
+    [
+     "Past Simple",
+     " we just unloaded ",
+     " we unloaded "
+    ]
+   ],
+   "keywords": [
+    [
+     "unloaded"
+    ],
+    [
+     "last"
+    ],
+    [
+     "truck",
+     "lorry"
+    ],
+    [
+     "just"
+    ]
+   ],
+   "tense_hint": "„Właśnie” = just → Present Perfect.",
+   "nr": 7
+  },
+  {
+   "id": "tr8",
+   "level": "B1",
+   "domain": "warehouse",
+   "pl": "Zgłosiłem uszkodzoną paletę liderowi zespołu.",
+   "en_ref": "I reported the damaged pallet to the team leader.",
+   "tense_name": "Past Simple",
+   "tense_patterns": [
+    " reported "
+   ],
+   "forbidden": [
+    [
+     "Present Simple",
+     " i report "
+    ]
+   ],
+   "keywords": [
+    [
+     "reported"
+    ],
+    [
+     "damaged"
+    ],
+    [
+     "pallet"
+    ],
+    [
+     "team leader",
+     "leader"
+    ]
+   ],
+   "tense_hint": "Dokonana czynność w przeszłości → Past Simple.",
+   "nr": 8
+  },
+  {
+   "id": "tr9",
+   "level": "B1",
+   "domain": "general",
+   "pl": "Jeśli będzie padać, zostaniemy w domu.",
+   "en_ref": "If it rains, we will stay at home.",
+   "tense_name": "First Conditional",
+   "tense_patterns": [
+    "if it rains",
+    "will stay",
+    "'ll stay"
+   ],
+   "forbidden": [
+    [
+     "will po if",
+     "if it will rain"
+    ]
+   ],
+   "keywords": [
+    [
+     "rains",
+     "rain"
+    ],
+    [
+     "stay"
+    ],
+    [
+     "home"
+    ]
+   ],
+   "tense_hint": "1. tryb: if + Present Simple, will + bezokolicznik. Po IF nie ma WILL!",
+   "nr": 9
+  },
+  {
+   "id": "tr10",
+   "level": "B2",
+   "domain": "general",
+   "pl": "Gdybym miał więcej pieniędzy, kupiłbym samochód.",
+   "en_ref": "If I had more money, I would buy a car.",
+   "tense_name": "Second Conditional",
+   "tense_patterns": [
+    "if i had",
+    "would buy",
+    "'d buy"
+   ],
+   "forbidden": [
+    [
+     "First Conditional",
+     "if i have",
+     "will buy"
+    ]
+   ],
+   "keywords": [
+    [
+     "had"
+    ],
+    [
+     "money"
+    ],
+    [
+     "would"
+    ],
+    [
+     "buy"
+    ],
+    [
+     "car"
+    ]
+   ],
+   "tense_hint": "Hipoteza → if + Past Simple, would + bezokolicznik.",
+   "nr": 10
+  },
+  {
+   "id": "tr11",
+   "level": "B2",
+   "domain": "warehouse",
+   "pl": "Towary są teraz ładowane na ciężarówkę.",
+   "en_ref": "The goods are being loaded onto the truck now.",
+   "tense_name": "Strona bierna (Present Continuous)",
+   "tense_patterns": [
+    "are being loaded",
+    "is being loaded"
+   ],
+   "forbidden": [
+    [
+     "strona czynna",
+     " are loading "
+    ]
+   ],
+   "keywords": [
+    [
+     "goods",
+     "items"
+    ],
+    [
+     "loaded"
+    ],
+    [
+     "truck",
+     "lorry"
+    ]
+   ],
+   "tense_hint": "Strona bierna „w tej chwili”: are being + 3. forma.",
+   "nr": 11
+  },
+  {
+   "id": "tr12",
+   "level": "A2",
+   "domain": "warehouse",
+   "pl": "Czy mogę wziąć dzień wolny w piątek?",
+   "en_ref": "Can I have a day off on Friday?",
+   "tense_name": "Pytanie z can",
+   "tense_patterns": [
+    "can i have",
+    "could i have",
+    "can i take",
+    "could i take"
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "day off"
+    ],
+    [
+     "friday"
+    ]
+   ],
+   "tense_hint": "Prośba: Can/Could I have…?",
+   "nr": 12
+  },
+  {
+   "id": "tr13",
+   "level": "B1",
+   "domain": "general",
+   "pl": "Uczę się angielskiego, ponieważ chcę dostać lepszą pracę.",
+   "en_ref": "I am learning English because I want to get a better job.",
+   "tense_name": "Present Continuous + Present Simple",
+   "tense_patterns": [
+    "am learning",
+    "'m learning",
+    "am studying"
+   ],
+   "forbidden": [],
+   "keywords": [
+    [
+     "learning",
+     "studying"
+    ],
+    [
+     "english"
+    ],
+    [
+     "because"
+    ],
+    [
+     "better"
+    ],
+    [
+     "job"
+    ]
+   ],
+   "tense_hint": "Proces trwający → am learning; want = stan → Present Simple.",
+   "nr": 13
+  },
+  {
+   "id": "tr14",
+   "level": "B2",
+   "domain": "warehouse",
+   "pl": "Zanim przyjechał kierownik, skończyliśmy inwentaryzację.",
+   "en_ref": "Before the manager arrived, we had finished the stock count.",
+   "tense_name": "Past Perfect + Past Simple",
+   "tense_patterns": [
+    "had finished"
+   ],
+   "forbidden": [
+    [
+     "dwa Past Simple",
+     "we finished"
+    ]
+   ],
+   "keywords": [
+    [
+     "manager"
+    ],
+    [
+     "arrived"
+    ],
+    [
+     "finished"
+    ],
+    [
+     "stock",
+     "count",
+     "inventory"
+    ]
+   ],
+   "tense_hint": "Wcześniejsza z dwóch przeszłości → Past Perfect (had finished).",
+   "nr": 14
+  }
+ ],
+ "name": "Zdania do tłumaczenia",
+ "etykieta": "Zdania do tłumaczenia"
+}

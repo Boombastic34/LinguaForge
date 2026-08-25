@@ -1,0 +1,337 @@
+
+// ---------- v0.4: porównywanie odpowiedzi wyrozumiałe dla ogonków i literówek ----------
+const PL_FOLD = { "ą":"a","ć":"c","ę":"e","ł":"l","ń":"n","ó":"o","ś":"s","ź":"z","ż":"z" };
+function foldPl(s) {
+  return (s || "").toLowerCase().replace(/[ąćęłńóśźż]/g, ch => PL_FOLD[ch]);
+}
+function normAns(s) {
+  return foldPl(s).replace(/[.,!?;:„”"'()]/g, "").replace(/\s+/g, " ").trim();
+}
+// odległość Levenshteina (do 2 znaków tolerancji)
+function editDist(a, b) {
+  const m = a.length, n = b.length;
+  if (Math.abs(m - n) > 2) return 99;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = cur;
+  }
+  return prev[n];
+}
+// zgodne? (ogonki nieistotne, 1 literówka wybaczona przy dłuższych słowach)
+function answersMatch(given, expected) {
+  const a = normAns(given), b = normAns(expected);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  const tol = b.length >= 8 ? 2 : (b.length >= 5 ? 1 : 0);
+  return tol > 0 && editDist(a, b) <= tol;
+}
+// Pomocnicze funkcje interfejsu
+function el(tag, attrs = {}, ...children) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v;
+    else if (k === "html") n.innerHTML = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v);
+  }
+  for (const c of children) if (c != null) n.append(c.nodeType ? c : document.createTextNode(c));
+  return n;
+}
+
+function toast(msg, isErr = false) {
+  const t = el("div", { class: "toast" + (isErr ? " err" : "") }, msg);
+  document.getElementById("toasts").append(t);
+  setTimeout(() => t.remove(), 3400);
+}
+
+function xpPop(xp, x, y) {
+  if (!xp) return;
+  const p = el("div", { class: "xp-pop" }, `+${xp} XP`);
+  p.style.left = (x || innerWidth / 2) + "px";
+  p.style.top = (y || innerHeight / 2) + "px";
+  document.body.append(p);
+  setTimeout(() => p.remove(), 1000);
+}
+
+function confetti() {
+  for (let i = 0; i < 26; i++) {
+    const c = el("div");
+    const colors = ["#e8590c", "#4c5fd5", "#0ca678", "#e8a202", "#7048e8"];
+    Object.assign(c.style, {
+      position: "fixed", left: Math.random() * 100 + "vw", top: "-12px",
+      width: "9px", height: "9px", zIndex: 70, pointerEvents: "none",
+      background: colors[i % colors.length],
+      borderRadius: Math.random() > .5 ? "50%" : "2px",
+      transition: "transform 1.4s ease-in, opacity 1.4s",
+    });
+    document.body.append(c);
+    requestAnimationFrame(() => {
+      c.style.transform = `translateY(${innerHeight + 40}px) rotate(${Math.random() * 600}deg)`;
+      c.style.opacity = "0";
+    });
+    setTimeout(() => c.remove(), 1500);
+  }
+}
+
+// Synteza mowy (angielski). Wewnątrz aplikacji Android WebView nie obsługuje
+// window.speechSynthesis — wtedy korzystamy z natywnego mostu NativeTTS
+// (zarejestrowanego przez MainActivity.kt). W zwykłej przeglądarce działa jak dotąd.
+const HAS_NATIVE_TTS = (typeof window.NativeTTS !== "undefined" && !!window.NativeTTS);
+
+let VOICE = null;
+function pickVoice() {
+  if (!("speechSynthesis" in window)) return;
+  const vs = speechSynthesis.getVoices().filter(v => v.lang.startsWith("en"));
+  VOICE = vs.find(v => v.lang === "en-GB") || vs.find(v => v.lang === "en-US") || vs[0] || null;
+}
+if ("speechSynthesis" in window) {
+  pickVoice();
+  speechSynthesis.onvoiceschanged = pickVoice;
+}
+let VOICE_PL = null;
+function pickVoicePl() {
+  if (!("speechSynthesis" in window)) return;
+  const vs = speechSynthesis.getVoices().filter(v => v.lang.startsWith("pl"));
+  VOICE_PL = vs[0] || null;
+}
+if ("speechSynthesis" in window) { pickVoicePl(); const prev = speechSynthesis.onvoiceschanged; speechSynthesis.onvoiceschanged = () => { pickVoice(); pickVoicePl(); }; }
+
+function speak(text, rate = 0.95, lang = "en") {
+  if (!text) return;
+  if (HAS_NATIVE_TTS) {
+    try { window.NativeTTS.speak(String(text), lang === "pl" ? "pl" : "en", rate); }
+    catch (e) { /* most niedostępny mimo detekcji — cicho pomijamy */ }
+    return;
+  }
+  if (!("speechSynthesis" in window)) { toast("Brak syntezy mowy w tej przeglądarce", true); return; }
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  if (lang === "pl") { u.lang = "pl-PL"; if (VOICE_PL) u.voice = VOICE_PL; }
+  else { u.lang = "en-GB"; if (VOICE) u.voice = VOICE; }
+  u.rate = rate;
+  speechSynthesis.speak(u);
+}
+
+function ring(value, goal, label) {
+  const pct = Math.min(1, goal ? value / goal : 0);
+  const R = 56, C = 2 * Math.PI * R;
+  const wrap = el("div", { class: "ringwrap" });
+  wrap.innerHTML = `<svg width="130" height="130">
+    <circle class="ring-bg" cx="65" cy="65" r="${R}"></circle>
+    <circle class="ring-fg" cx="65" cy="65" r="${R}" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - pct)}"></circle>
+  </svg>`;
+  wrap.append(el("div", { class: "ringtxt" },
+    el("div", { class: "big" }, String(value)),
+    el("div", { class: "muted" }, label)));
+  return wrap;
+}
+
+function skillBar(name, val, lvl) {
+  return el("div", { class: "skill-row" },
+    el("span", {}, name),
+    el("div", { class: "bar" }, el("div", { style: `width:${val}%` })),
+    el("b", { class: "lvl" }, lvl));
+}
+
+function levelSelect(current, id) {
+  const s = el("select", id ? { id } : {});
+  s.append(el("option", { value: "" }, "— wybierz —"));
+  for (const L of ["A1", "A2", "B1", "B2", "C1", "C2"])
+    s.append(el("option", { value: L, ...(L === current ? { selected: 1 } : {}) }, L));
+  return s;
+}
+
+function clearMain() {
+  exitFocus();
+  const m = document.querySelector("main");
+  m.innerHTML = "";
+  m.scrollTop = 0;
+  window.scrollTo(0, 0);
+  return m;
+}
+
+// ================= TRYB SKUPIENIA =================
+// Podczas zadania znika menu i wszystko poza samym ćwiczeniem.
+// opts: {title, subtitle, onExit, theme}
+function enterFocus(opts = {}) {
+  exitFocus();
+  document.body.classList.add("focus");
+  const bar = el("div", { class: "focus-bar focus-" + (opts.theme || "ember"), id: "focusbar" },
+    el("button", {
+      class: "focus-back", title: "Zakończ i wróć",
+      onclick: () => {
+        if (typeof opts.onExit === "function") opts.onExit();
+        else { exitFocus(); location.hash = "#dashboard"; }
+      },
+    }, "←"),
+    el("div", { class: "focus-txt" },
+      el("div", { class: "focus-title" }, opts.title || ""),
+      el("div", { class: "focus-sub", id: "focussub" }, opts.subtitle || "")),
+    typeof muteButton === "function" ? muteButton() : null,
+    el("div", { class: "focus-count", id: "focuscount" }, ""));
+  const line = el("div", { class: "focus-line" }, el("div", { class: "focus-line-fill", id: "focusfill" }));
+  bar.append(line);
+  document.body.prepend(bar);
+  return bar;
+}
+
+function exitFocus() {
+  document.body.classList.remove("focus");
+  const b = document.getElementById("focusbar");
+  if (b) b.remove();
+}
+
+// aktualizacja paska postępu w trybie skupienia
+function focusProgress(done, total, label) {
+  const fill = document.getElementById("focusfill");
+  const cnt = document.getElementById("focuscount");
+  const sub = document.getElementById("focussub");
+  if (fill && total) fill.style.width = Math.round(100 * done / total) + "%";
+  if (cnt && total) cnt.textContent = `${done}/${total}`;
+  if (sub && label !== undefined) sub.textContent = label;
+}
+
+// ---------- v0.2: pasek hero modułu ----------
+function hero(emoji, title, sub, theme = "ember", counter = "") {
+  return el("div", { class: "hero hero-" + theme },
+    el("div", { class: "hero-emoji" }, emoji),
+    el("div", { class: "hero-txt" },
+      el("h2", {}, title),
+      sub ? el("div", { class: "hero-sub" }, sub) : null),
+    counter ? el("div", { class: "hero-count" }, counter) : null);
+}
+
+// ---------- v0.2: licznik serii (combo) ----------
+const COMBO = { n: 0 };
+function comboHit(ok) {
+  if (!ok) { COMBO.n = 0; return; }
+  COMBO.n++;
+  if (COMBO.n === 3) toast("🔥 Seria x3!");
+  if (COMBO.n === 5) { toast("🔥🔥 Seria x5 — nieźle!"); confetti(); }
+  if (COMBO.n === 10) { toast("⚡ SERIA x10 — mistrzostwo!"); confetti(); }
+}
+
+// ---------- v0.2: panel feedbacku czekający na „Dalej” ----------
+// opts: {correct, your, answer, pl, explain, tts, ttsPl, askKnown, onNext(guessed), extraHtml}
+function feedbackPanel(opts) {
+  const state = opts.state || (opts.correct ? "good" : "bad");
+  comboHit(state === "good");
+  if (typeof haptic === "function") haptic(state === "good" ? "good" : "bad");
+  const cls = { good: "fb-good", partial: "fb-part", bad: "fb-bad" }[state];
+  const head = { good: "✔ Dobrze!", partial: "◐ Prawie — częściowo dobrze", bad: "✘ Niestety nie" }[state];
+  const box = el("div", { class: "feedback " + cls });
+  box.append(el("div", { class: "fb-head" },
+    opts.label || head,
+    typeof opts.score === "number" ? el("span", { class: "fb-score" }, ` ${Math.round(opts.score * 100)}%`) : null,
+    COMBO.n >= 2 ? el("span", { class: "fb-combo" }, ` 🔥x${COMBO.n}`) : null));
+
+  const grid = el("div", { class: "fb-grid" });
+  if (opts.your !== undefined && opts.your !== "" && state !== "good")
+    grid.append(el("div", { class: "fb-label" }, "Twoja odpowiedź:"),
+                el("div", { class: "fb-your" }, String(opts.your)));
+  if (opts.answer)
+    grid.append(el("div", { class: "fb-label" }, "Poprawna odpowiedź:"),
+                el("div", { class: "fb-answer" },
+                  String(opts.answer), " ",
+                  (!opts.en && opts.tts) ? el("button", { class: "mini-tts", onclick: () => speak(opts.tts) }, "🔊 EN") : null));
+  if (opts.en && opts.en !== opts.answer)
+    grid.append(el("div", { class: "fb-label" }, "Całe zdanie EN:"),
+                el("div", { class: "fb-en" }, String(opts.en), " ",
+                  el("button", { class: "mini-tts", onclick: () => speak(opts.en) }, "🔊 EN")));
+  else if (opts.en)
+    grid.append(el("div", { class: "fb-label" }, "Po angielsku:"),
+                el("div", { class: "fb-en" }, "— jak wyżej — ",
+                  el("button", { class: "mini-tts", onclick: () => speak(opts.en) }, "🔊 EN")));
+  if (opts.pl)
+    grid.append(el("div", { class: "fb-label" }, "Po polsku:"),
+                el("div", { class: "fb-pl" },
+                  String(opts.pl), " ",
+                  el("button", { class: "mini-tts", onclick: () => speak(opts.pl, 0.95, "pl") }, "🔊 PL")));
+  box.append(grid);
+  if (opts.options && opts.options.length) {
+    const ol = el("div", { class: "fb-options" },
+      el("div", { class: "fb-label" }, "Wszystkie odpowiedzi z tłumaczeniem:"));
+    opts.options.forEach(o => ol.append(
+      el("div", { class: "fb-opt" + (o.correct ? " fb-opt-good" : "") + (o.chosen && !o.correct ? " fb-opt-bad" : "") },
+        o.correct ? "✔ " : (o.chosen ? "✘ " : "· "),
+        el("b", {}, o.en), o.pl ? " — " + o.pl : "")));
+    box.append(ol);
+  }
+  if (opts.explain) box.append(el("div", { class: "fb-explain" }, "💡 " + opts.explain));
+  if (opts.rule) box.append(el("div", { class: "fb-rule" },
+    el("b", {}, "📏 Reguła" + (opts.ruleTitle ? " — " + opts.ruleTitle : "") + ": "), opts.rule));
+  if (opts.extraHtml) box.append(el("div", { html: opts.extraHtml }));
+
+  const btns = el("div", { class: "fb-btns" });
+  if (opts.correct && opts.askKnown) {
+    btns.append(
+      el("button", { class: "btn ok", onclick: () => opts.onNext(false) }, "✔ Wiedziałem"),
+      el("button", { class: "btn ghost", onclick: () => opts.onNext(true) }, "🤞 Zgadywałem"));
+    box.append(el("div", { class: "fb-note muted" },
+      "Szczerość pomaga: zgadnięcia liczą się z mniejszą wagą, dzięki czemu wynik jest prawdziwy."));
+  } else {
+    btns.append(el("button", { class: "btn primary", onclick: () => opts.onNext(false) }, "Dalej →"));
+  }
+  box.append(btns);
+  setTimeout(() => { const b = btns.querySelector("button"); if (b) b.focus(); }, 60);
+  return box;
+}
+
+
+// ---------- v0.4: interakcja z odpowiedziami (klawisze 1–4, zaznaczenie) ----------
+document.addEventListener("click", e => {
+  const opt = e.target.closest(".option");
+  if (!opt || opt.disabled) return;
+  const wrap = opt.closest(".options");
+  if (!wrap) return;
+  wrap.querySelectorAll(".option").forEach(o => o.classList.remove("opt-picked"));
+  opt.classList.add("opt-picked");
+});
+
+document.addEventListener("keydown", e => {
+  if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName)) return;
+  const n = parseInt(e.key, 10);
+  if (!n || n < 1 || n > 9) return;
+  const wrap = document.querySelector("main .options");
+  if (!wrap) return;
+  const btn = wrap.querySelectorAll(".option")[n - 1];
+  if (btn && !btn.disabled) { e.preventDefault(); btn.click(); }
+});
+
+
+// ---------- v0.5.1: wybór liczby zadań przed sesją ----------
+// opts: {title, subtitle, pool, suggested, unit, onStart(n), extra}
+function sizePicker(opts) {
+  const pool = opts.pool || 0;
+  const box = el("div", { class: "card size-picker" });
+  box.append(
+    el("h3", {}, opts.title || "Ile zadań chcesz przerobić?"),
+    el("p", { class: "muted" },
+      opts.subtitle || `Dostępna pula: ${pool} ${opts.unit || "zadań"}. Wybierz, ile chcesz zrobić teraz.`),
+    el("div", { class: "pool-badge" }, `📚 pula: ${pool} ${opts.unit || "zadań"}`));
+
+  const presets = [5, 10, 15, 20, 30].filter(n => n < pool);
+  const grid = el("div", { class: "size-grid" });
+  presets.forEach(n => grid.append(el("button", { class: "size-btn", onclick: () => opts.onStart(n) },
+    el("b", {}, String(n)), el("div", { class: "small" }, opts.unit || "zadań"))));
+  grid.append(el("button", { class: "size-btn size-all", onclick: () => opts.onStart("all") },
+    el("b", {}, "WSZYSTKIE"), el("div", { class: "small" }, `${pool} ${opts.unit || "zadań"} — pełna seria`)));
+  box.append(grid);
+
+  const custom = el("input", { class: "input short", type: "number", min: 1, max: pool,
+    value: Math.min(opts.suggested || 10, pool) });
+  custom.onkeydown = e => { if (e.key === "Enter") start(); };
+  const start = () => {
+    const v = Math.max(1, Math.min(pool, +custom.value || 1));
+    opts.onStart(v);
+  };
+  box.append(el("div", { class: "set-row" },
+    "Własna liczba: ", custom,
+    el("button", { class: "btn primary", onclick: start }, "▶ Start")));
+  if (opts.extra) box.append(opts.extra);
+  return box;
+}

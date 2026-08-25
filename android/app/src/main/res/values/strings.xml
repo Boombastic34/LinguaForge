@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LinguaForge</string>
+    <string name="service_title">LinguaForge działa</string>
+    <string name="service_text">Nauka gotowa — dotknij, aby wrócić</string>
+</resources>
