@@ -29,7 +29,7 @@ function boot() {
   const nav = el("nav", {});
   const aside = el("aside", {},
     el("div", { class: "brand" }, "Lingua", el("span", {}, "Forge")),
-    el("div", { class: "brand-sub", id: "verbox" }, "v1.3.0 · kuźnia języka"),
+    el("div", { class: "brand-sub", id: "verbox" }, "v1.6.0 · kuźnia języka"),
     nav,
     el("div", { class: "spacer" }),
     el("div", { class: "userbox" },
@@ -51,7 +51,7 @@ function boot() {
     const box = document.getElementById("verbox");
     if (!box) return;
     box.textContent = "v" + v.version + " · kuźnia języka";
-    if (v.version !== "1.3.0") {
+    if (v.version !== "1.6.0") {
       box.textContent = "v" + v.version + " · odśwież (Ctrl+F5)";
       box.style.color = "#ffd43b";
     }
@@ -302,6 +302,15 @@ const LFSET = {
     API.post("/api/settings", { [key]: !!val }).catch(() => {});
   },
 };
+
+// ustawienia tekstowe (np. kierunek tłumaczenia)
+function LFSET_str(key, def) {
+  try { return localStorage.getItem("lf_" + key) || def; } catch (e) { return def; }
+}
+function LFSET_setStr(key, val) {
+  try { localStorage.setItem("lf_" + key, val); } catch (e) {}
+  API.post("/api/settings", { [key]: val }).catch(() => {});
+}
 
 // krótka wibracja przy dotknięciu — daje wrażenie natywnej aplikacji
 function haptic(kind = "tap") {

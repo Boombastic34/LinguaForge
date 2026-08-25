@@ -192,21 +192,40 @@ def grade_translation(answer: str, item: dict) -> dict:
 
 
 def grade_dictation(answer: str, target: str) -> dict:
-    """Dyktando: porównanie słowo po słowie."""
+    """Dyktando: ocena słowo po słowie.
+
+    Wynik = odsetek TRAFIONYCH SŁÓW (nie podobieństwo tekstu). Wcześniej używany
+    SequenceMatcher.ratio() liczył podobieństwo znaków całego zdania, przez co
+    "way" zamiast "wear" dawało ~97% i przechodziło jako poprawne.
+    Każde słowo jest teraz albo trafione, albo nie — bez półśrodków.
+    """
     a, t = _words(answer), _words(target)
     sm = difflib.SequenceMatcher(None, t, a)
-    ratio = sm.ratio()
-    diff = []
+    diff, hits = [], 0
     for op, i1, i2, j1, j2 in sm.get_opcodes():
         if op == "equal":
-            diff.append({"ok": " ".join(t[i1:i2])})
+            for w in t[i1:i2]:
+                diff.append({"w": w, "ok": True})
+            hits += (i2 - i1)
         elif op == "replace":
-            diff.append({"exp": " ".join(t[i1:i2]), "got": " ".join(a[j1:j2])})
-        elif op == "delete":
-            diff.append({"exp": " ".join(t[i1:i2]), "got": ""})
-        elif op == "insert":
-            diff.append({"exp": "", "got": " ".join(a[j1:j2])})
-    return {"score": round(ratio, 2), "diff": diff, "target": target}
+            exp, got = t[i1:i2], a[j1:j2]
+            for k in range(max(len(exp), len(got))):
+                diff.append({"w": got[k] if k < len(got) else "",
+                             "exp": exp[k] if k < len(exp) else "",
+                             "ok": False, "kind": "wrong"})
+        elif op == "delete":                 # uczeń pominął słowo
+            for w in t[i1:i2]:
+                diff.append({"w": "", "exp": w, "ok": False, "kind": "missing"})
+        elif op == "insert":                 # uczeń dopisał coś zbędnego
+            for w in a[j1:j2]:
+                diff.append({"w": w, "exp": "", "ok": False, "kind": "extra"})
+    total = max(1, len(t))
+    score = hits / total
+    wrong_words = [d for d in diff if not d.get("ok")]
+    return {"score": round(score, 2), "diff": diff, "target": target,
+            "hits": hits, "total": total,
+            "pct": round(100 * score),
+            "wrong": [d.get("exp") or d.get("w") for d in wrong_words]}
 
 
 PL_MAP = str.maketrans("ąćęłńóśźż", "acelnoszz")

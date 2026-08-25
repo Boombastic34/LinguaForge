@@ -100,7 +100,40 @@ function pickVoicePl() {
 }
 if ("speechSynthesis" in window) { pickVoicePl(); const prev = speechSynthesis.onvoiceschanged; speechSynthesis.onvoiceschanged = () => { pickVoice(); pickVoicePl(); }; }
 
-function speak(text, rate = 0.95, lang = "en") {
+// Prędkość lektora zapisana w ustawieniach (0.6–1.2). Używana wszędzie,
+// gdzie moduł nie podał własnej wartości.
+function ttsRate() {
+  try {
+    const v = parseFloat(localStorage.getItem("lf_tts_rate"));
+    return (v >= 0.5 && v <= 1.5) ? v : 0.92;
+  } catch (e) { return 0.92; }
+}
+function setTtsRate(v) {
+  try { localStorage.setItem("lf_tts_rate", String(v)); } catch (e) {}
+  API.post("/api/settings", { tts_rate: v }).catch(() => {});
+}
+
+// Pasek wyboru prędkości — wstawiany w modułach ze słuchaniem
+const TTS_SPEEDS = [[0.6, "🐢", "wolno"], [0.85, "▶", "normalnie"], [1.05, "🐇", "szybko"]];
+function speedPicker(current, onChange) {
+  const row = el("div", { class: "speed-row" }, el("span", { class: "muted small" }, "tempo:"));
+  TTS_SPEEDS.forEach(([v, icon, label]) => {
+    const b = el("button", {
+      class: "speed-btn" + (Math.abs(v - current) < 0.06 ? " active" : ""),
+      onclick: () => {
+        row.querySelectorAll(".speed-btn").forEach(x => x.classList.remove("active"));
+        b.classList.add("active");
+        setTtsRate(v);
+        onChange(v);
+      },
+    }, icon + " " + label);
+    row.append(b);
+  });
+  return row;
+}
+
+function speak(text, rate, lang = "en") {
+  if (rate === undefined || rate === null) rate = ttsRate();
   if (!text) return;
   if (HAS_NATIVE_TTS) {
     try { window.NativeTTS.speak(String(text), lang === "pl" ? "pl" : "en", rate); }
@@ -115,6 +148,14 @@ function speak(text, rate = 0.95, lang = "en") {
   u.rate = rate;
   speechSynthesis.speak(u);
 }
+
+// Telefon bez polskich danych głosowych — podpowiadamy, gdzie je włączyć
+let TTS_PL_WARNED = false;
+window.onNativeTtsMissing = function (lang) {
+  if (lang !== "pl" || TTS_PL_WARNED) return;
+  TTS_PL_WARNED = true;
+  toast("Brak polskiego głosu w telefonie — Ustawienia → Ułatwienia dostępu → Zamiana tekstu na mowę → dodaj język polski", true);
+};
 
 function ring(value, goal, label) {
   const pct = Math.min(1, goal ? value / goal : 0);
